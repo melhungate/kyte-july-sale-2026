@@ -1,0 +1,2507 @@
+{
+  "almond": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Almond"
+  },
+  "aloe chick": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Girl\u2019s Undies",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Aloe Chick"
+  },
+  "alpine village": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Short Sleeve with Pants Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Alpine Village"
+  },
+  "apple orchard": {
+    "categories": {
+      "friday": [
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Apple Orchard"
+  },
+  "apricot": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Apricot"
+  },
+  "barbie astronaut": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Barbie Astronaut"
+  },
+  "barbie beach": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Barbie Beach"
+  },
+  "basketball": {
+    "categories": {
+      "friday": [
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Basketball"
+  },
+  "bear hearts": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Swaddle Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Bear Hearts"
+  },
+  "bee mine": {
+    "categories": {
+      "friday": [
+        "Twirl Dress",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Bee Mine"
+  },
+  "bewitched": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Bewitched"
+  },
+  "bisque": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Long Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Bisque"
+  },
+  "black and white tree": {
+    "categories": {
+      "friday": [
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Black and White Tree"
+  },
+  "black and white zen": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Black and White Zen"
+  },
+  "blueberry": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Swaddler",
+        "Twirl Dress",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Blueberry"
+  },
+  "blush rabbit": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Girl\u2019s Undies",
+        "Girl\u2019s Shorties",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Blush Rabbit"
+  },
+  "boho tree": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Boho Tree"
+  },
+  "butter": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Butter"
+  },
+  "butterfly": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Butterfly"
+  },
+  "candy cane": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Bib"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Candy Cane"
+  },
+  "canyon": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Short Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Canyon"
+  },
+  "caribbean": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Zippered Romper",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Caribbean"
+  },
+  "celebration": {
+    "categories": {
+      "friday": [
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Celebration"
+  },
+  "charcoal": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Charcoal"
+  },
+  "cherry": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cherry"
+  },
+  "cherry blossom": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Short Sleeve Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cherry Blossom"
+  },
+  "chick": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Chick"
+  },
+  "cloud constellations": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cloud Constellations"
+  },
+  "cloud deer": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cloud Deer"
+  },
+  "cloud party": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Bodysuit",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cloud Party"
+  },
+  "cloud poppies": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Short Sleeve Crew Neck Tee",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cloud Poppies"
+  },
+  "cloud rainbow heart": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cloud Rainbow Heart"
+  },
+  "coffee": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Coffee"
+  },
+  "coffee rainbow": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Coffee Rainbow"
+  },
+  "construction": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Construction"
+  },
+  "cove": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Cove"
+  },
+  "crawl": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Crawl"
+  },
+  "crepe": {
+    "categories": {
+      "friday": [
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Crepe"
+  },
+  "crocodile": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Crocodile"
+  },
+  "currant": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Currant"
+  },
+  "dew": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dew"
+  },
+  "dew surf": {
+    "categories": {
+      "friday": [
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dew Surf"
+  },
+  "disco cowgirl": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Disco Cowgirl"
+  },
+  "dolphin": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag Swaddler",
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dolphin"
+  },
+  "dragon": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dragon"
+  },
+  "dragonfly": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dragonfly"
+  },
+  "duck": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Duck"
+  },
+  "dusty blue": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dusty Blue"
+  },
+  "dusty rose": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dusty Rose"
+  },
+  "dusty rose herringbone": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Dusty Rose Herringbone"
+  },
+  "ecru": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Ecru"
+  },
+  "ecru roar": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "0.5 TOG Sleep Bag Walker",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Ecru Roar"
+  },
+  "elephant": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Elephant"
+  },
+  "emerald": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Emerald"
+  },
+  "espresso": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Espresso"
+  },
+  "espresso herringbone": {
+    "categories": {
+      "friday": [
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Espresso Herringbone"
+  },
+  "eucalyptus": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Eucalyptus"
+  },
+  "evergreen": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Evergreen"
+  },
+  "fir": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Fir"
+  },
+  "flight": {
+    "categories": {
+      "friday": [
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Flight"
+  },
+  "fog": {
+    "categories": {
+      "friday": [
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Fog"
+  },
+  "foliage": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Foliage"
+  },
+  "football": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Football"
+  },
+  "forest": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Forest"
+  },
+  "frosty friends": {
+    "categories": {
+      "friday": [
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Frosty Friends"
+  },
+  "fungi": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Fungi"
+  },
+  "gingham fir": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Swaddle Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Gingham Fir"
+  },
+  "giraffe": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Giraffe"
+  },
+  "glacier": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Glacier"
+  },
+  "goat": {
+    "categories": {
+      "friday": [
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Goat"
+  },
+  "guava": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Swaddle Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Long Sleeve Pajama Set",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Guava"
+  },
+  "harbor": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harbor"
+  },
+  "harry potter\u2122 hufflepuff": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Hufflepuff"
+  },
+  "harry potter\u2122 icon": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Icon"
+  },
+  "harry potter\u2122 journey": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Journey"
+  },
+  "harry potter\u2122 ravenclaw": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Ravenclaw"
+  },
+  "harry potter\u2122 slytherin": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Slytherin"
+  },
+  "haze": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Haze"
+  },
+  "hibiscus": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Hibiscus"
+  },
+  "holiday bow": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Holiday Bow"
+  },
+  "honu": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Honu"
+  },
+  "horse": {
+    "categories": {
+      "friday": [
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Horse"
+  },
+  "hot air balloon": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Hot Air Balloon"
+  },
+  "hot wheels\u2122 fast and fierce": {
+    "categories": {
+      "sunday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Hot Wheels\u2122 Fast and Fierce"
+  },
+  "hot wheels\u2122 sparkles and speed": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Hot Wheels\u2122 Sparkles and Speed"
+  },
+  "humpback": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Humpback"
+  },
+  "hunter rainbow": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Hunter Rainbow"
+  },
+  "hydrangea": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Hydrangea"
+  },
+  "ice rabbit": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Girl\u2019s Undies"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Ice Rabbit"
+  },
+  "ice space": {
+    "categories": {
+      "friday": [
+        "Boy\u2019s Briefs",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Ice Space"
+  },
+  "jurassic": {
+    "categories": {
+      "sunday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Long Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Jurassic"
+  },
+  "khaki": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Khaki"
+  },
+  "kite": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Kite"
+  },
+  "latte": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Latte"
+  },
+  "latte leopard": {
+    "categories": {
+      "sunday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Latte Leopard"
+  },
+  "lemon": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Lemon"
+  },
+  "liberty rip tide": {
+    "categories": {
+      "friday": [
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Liberty Rip Tide"
+  },
+  "lilac": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Lilac"
+  },
+  "lilikoi": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Lilikoi"
+  },
+  "loch": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Loch"
+  },
+  "love bug": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Love Bug"
+  },
+  "macaw": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Macaw"
+  },
+  "makai": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Swaddle Bag",
+        "0.5 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Makai"
+  },
+  "makai rainbow": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Swaddler",
+        "0.5 TOG Sleep Bag Walker",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Short Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Makai Rainbow"
+  },
+  "marigold": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Marigold"
+  },
+  "mauve": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Mauve"
+  },
+  "mermaid": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Romper",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Mermaid"
+  },
+  "merry & bright": {
+    "categories": {
+      "sunday": [
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Merry & Bright"
+  },
+  "midnight constellations": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Constellations"
+  },
+  "midnight deer": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Deer"
+  },
+  "midnight leopard": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Leopard"
+  },
+  "midnight lily": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Lily"
+  },
+  "midnight party": {
+    "categories": {
+      "friday": [
+        "Twirl Dress",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Party"
+  },
+  "midnight plaid": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Plaid"
+  },
+  "midnight poppies": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Poppies"
+  },
+  "midnight rainbow heart": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Rainbow Heart"
+  },
+  "midnight roar": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Sleep Bag Walker",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Girl\u2019s Undies",
+        "Girl\u2019s Shorties",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Midnight Roar"
+  },
+  "mint": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Mint"
+  },
+  "mist": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Short Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Mist"
+  },
+  "mistletoe": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Mistletoe"
+  },
+  "moo": {
+    "categories": {
+      "sunday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Moo"
+  },
+  "nutcracker": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Nutcracker"
+  },
+  "oat leopard": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Oat Leopard"
+  },
+  "papaya": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Papaya"
+  },
+  "pastel ghost": {
+    "categories": {
+      "friday": [
+        "Twirl Dress",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Pastel Ghost"
+  },
+  "peach": {
+    "categories": {
+      "friday": [
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Peach"
+  },
+  "periwinkle": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Periwinkle"
+  },
+  "pig": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Pig"
+  },
+  "pineapple": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Short Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Pineapple"
+  },
+  "pirate": {
+    "categories": {
+      "friday": [
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Pirate"
+  },
+  "pistachio": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Pistachio"
+  },
+  "poi rainbow": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "0.5 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Poi Rainbow"
+  },
+  "polar lights": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Polar Lights"
+  },
+  "porcelain": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Porcelain"
+  },
+  "powder": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Twirl Dress",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Powder"
+  },
+  "puffin": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Puffin"
+  },
+  "raspberry": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Raspberry"
+  },
+  "raspberry shell": {
+    "categories": {
+      "friday": [
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Raspberry Shell"
+  },
+  "rhino": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Rhino"
+  },
+  "road trip": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set"
+      ],
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday",
+      "sunday"
+    ],
+    "display_name": "Road Trip"
+  },
+  "robin": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Robin"
+  },
+  "robin cuddle": {
+    "categories": {
+      "friday": [
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Robin Cuddle"
+  },
+  "robin rip tide": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Robin Rip Tide"
+  },
+  "royal": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Royal"
+  },
+  "royal shell": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Royal Shell"
+  },
+  "rust": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Rust"
+  },
+  "rust rainbow on midnight": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Rust Rainbow on Midnight"
+  },
+  "rust rainbow on oat": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Rust Rainbow on Oat"
+  },
+  "sakura peony": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Sakura Peony"
+  },
+  "sakura space": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Sakura Space"
+  },
+  "santa sleigh": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Santa Sleigh"
+  },
+  "sienna woodland": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Sienna Woodland"
+  },
+  "skeleton": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Skeleton"
+  },
+  "ski": {
+    "categories": {
+      "sunday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Ski"
+  },
+  "small khaki magnolia": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Small Magnolia on Khaki"
+  },
+  "small love bow": {
+    "categories": {
+      "sunday": [
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Swaddle Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajamas",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Small Love Bow"
+  },
+  "small midnight magnolia": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Small Magnolia on Midnight"
+  },
+  "spooky": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Spooky"
+  },
+  "storm": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "0.5 TOG Sleep Bag Walker",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Storm"
+  },
+  "stream": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Stream"
+  },
+  "stream shark": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Stream Shark"
+  },
+  "sugar plum": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Sugar Plum"
+  },
+  "superman\u2122": {
+    "categories": {
+      "friday": [
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Superman\u2122"
+  },
+  "tahoe": {
+    "categories": {
+      "friday": [
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Tahoe"
+  },
+  "thyme": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Thyme"
+  },
+  "thyme lily": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Thyme Lily"
+  },
+  "tractor": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Boy\u2019s Briefs",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Tractor"
+  },
+  "trick or treat": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Zippered Romper"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Trick or Treat"
+  },
+  "twinkle tree": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Twinkle Tree"
+  },
+  "under the stars": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Swaddler",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Under the Stars"
+  },
+  "vintage boats": {
+    "categories": {
+      "friday": [
+        "Toddler Short Sleeve Pajama Set",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Vintage Boats"
+  },
+  "vintage santa": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Footie",
+        "Bib"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Vintage Santa"
+  },
+  "vintage toys": {
+    "categories": {
+      "sunday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Bib"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Vintage Toys"
+  },
+  "vintage truck": {
+    "categories": {
+      "friday": [
+        "0.5 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag",
+        "0.5 TOG Sleep Bag Swaddler",
+        "0.5 TOG Sleep Bag Walker",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Vintage Truck"
+  },
+  "wasabi": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Swaddler",
+        "Toddler Long Sleeve Pajama Set",
+        "Twirl Dress",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Wasabi"
+  },
+  "watermelon": {
+    "categories": {
+      "friday": [
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Watermelon"
+  },
+  "wicked": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Twirl Dress"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Wicked"
+  },
+  "winterberry": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Zippered Romper",
+        "Long Sleeve Bodysuit",
+        "Bib"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Winterberry"
+  },
+  "wisteria": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve with Pants Pajama Set",
+        "Short Sleeve Crew Neck Tee",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Wisteria"
+  },
+  "yellowstone": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag Walker"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Yellowstone"
+  },
+  "yeti": {
+    "categories": {
+      "friday": [
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Yeti"
+  }
+}

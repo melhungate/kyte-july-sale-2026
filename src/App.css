@@ -1,0 +1,257 @@
+:root {
+  --primary-color: #000000;
+  --primary-light: #FBF6F3;
+  --accent-color: #D9C5A7;
+  --text-dark: #000000;
+  --text-light: #737373;
+  --border-color: #E5E5E4;
+  --bg-color: #FBF6F3;
+  --success-color: #2E9E7B;
+  --friday-color: #c0392b;
+  --sunday-color: #8e44ad;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding-bottom: 60px;
+}
+
+.app-header {
+  background: var(--primary-color);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+
+.controls {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.day-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.day-button {
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  color: var(--text-dark);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.day-button:hover {
+  border-color: var(--primary-color);
+}
+
+.day-button.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.day-button.friday.active {
+  background-color: var(--friday-color);
+  border-color: var(--friday-color);
+}
+
+.day-button.sunday.active {
+  background-color: var(--sunday-color);
+  border-color: var(--sunday-color);
+}
+
+.day-button.friday:hover:not(.active) {
+  border-color: var(--friday-color);
+  color: var(--friday-color);
+}
+
+.day-button.sunday:hover:not(.active) {
+  border-color: var(--sunday-color);
+  color: var(--sunday-color);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  color: var(--text-dark);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-button:hover {
+  border-color: var(--primary-color);
+}
+
+.filter-button.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.items-grid {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-light);
+}
+
+.no-results p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Wishlist toggle button */
+.wishlist-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wishlist-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.wishlist-toggle .heart {
+  font-size: 16px;
+}
+
+.wishlist-toggle .count {
+  background: white;
+  color: #667eea;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  min-width: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 24px;
+  }
+
+  .items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+
+  .filter-buttons {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .day-filter {
+    flex-wrap: wrap;
+  }
+
+  .wishlist-toggle {
+    top: 10px;
+    bottom: auto;
+    right: 10px;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+  }
+
+  .wishlist-toggle .heart {
+    font-size: 12px;
+  }
+
+  .wishlist-toggle .label {
+    display: none;
+  }
+
+  .wishlist-toggle .count {
+    padding: 1px 5px;
+    font-size: 10px;
+    min-width: 14px;
+  }
+}

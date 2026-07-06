@@ -1,0 +1,32 @@
+{
+  "_comment": "Maps the ~20 PDF look-book categories to their predictions-dataset product_type(s). Only categories that appear in the PDF need an entry here — every other predictions product_type (the other ~165) simply has no PDF price/day coverage and falls back to predictions pricing + a carryover-default Friday day. title_prefix (optional) further restricts a product_type match to titles starting with that string, for cases where one product_type covers two different PDF categories (e.g. 'Underwear' covers both Boy's Briefs and Girl's Undies).",
+  "category_aliases": {
+    "0.5 tog sleep bag": [{"product_type": "Sleep Bag 0.5 Tog"}],
+    "1.0 tog sleep bag": [{"product_type": "Sleep Bag 1.0 Tog"}],
+    "0.5 tog swaddle bag": [{"product_type": "Swaddle Bag"}],
+    "0.5 tog sleep bag swaddler": [{"product_type": "Sleep Bag Swaddler 0.5"}],
+    "1.0 tog sleep bag swaddler": [{"product_type": "Sleep Bag Swaddler"}],
+    "0.5 tog sleep bag walker": [{"product_type": "Sleep Bag Walker 0.5 TOG"}],
+    "1.0 tog sleep bag walker": [{"product_type": "Sleep Bag Walker 1.0 Tog"}],
+    "toddler long sleeve pajama set": [{"product_type": "Toddler Long Sleeve Pajamas"}],
+    "toddler short sleeve pajama set": [{"product_type": "Short Sleeve Toddler Pajama Set"}],
+    "toddler short sleeve with pants pajama set": [{"product_type": "Short Sleeve with Pants Pajamas"}],
+    "short sleeve crew neck tee": [{"product_type": "Short Sleeve Toddler Unisex Tee"}],
+    "twirl dress": [
+      {"product_type": "Toddler Long Sleeve Twirl Dress"},
+      {"product_type": "Toddler Short Sleeve Twirl Dress"}
+    ],
+    "boy's briefs": [{"product_type": "Underwear", "title_prefix": "Briefs"}],
+    "girl's undies": [{"product_type": "Underwear", "title_prefix": "Undies"}],
+    "girl's shorties": [{"product_type": "Shorties"}],
+    "zippered romper": [{"product_type": "Zippered Rompers"}],
+    "zippered footie": [{"product_type": "Zippered Footies"}],
+    "short sleeve bodysuit": [{"product_type": "Short Sleeve Bodysuits"}],
+    "long sleeve bodysuit": [{"product_type": "Long Sleeve Bodysuits"}],
+    "bib": [{"product_type": "Bib"}]
+  },
+  "print_aliases": {
+    "Small Magnolia on Khaki": "Small Khaki Magnolia",
+    "Small Magnolia on Midnight": "Small Midnight Magnolia"
+  }
+}

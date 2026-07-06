@@ -1,0 +1,182 @@
+#!/usr/bin/env node
+
+/**
+ * Script to download all Kyte Baby print swatch images locally
+ *
+ * Usage: node scripts/download-swatches.js
+ *
+ * This will download all images to public/swatches/ directory
+ */
+
+const https = require('https');
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const { URL } = require('url');
+
+// Import the print database
+// Since this is a .ts file, we'll parse it manually
+const printImagesPath = path.join(__dirname, '../src/data/printImages.ts');
+const printImagesContent = fs.readFileSync(printImagesPath, 'utf-8');
+
+// Extract the printDatabase object from the file
+const databaseMatch = printImagesContent.match(/export const printDatabase: Record<string, string> = \{([\s\S]*?)\};/);
+if (!databaseMatch) {
+  console.error('Could not find printDatabase in printImages.ts');
+  process.exit(1);
+}
+
+// Parse the database entries
+const entries = [];
+const entryRegex = /"([^"]+)":\s*"([^"]+)"/g;
+let match;
+while ((match = entryRegex.exec(databaseMatch[1])) !== null) {
+  entries.push({ name: match[1], url: match[2] });
+}
+
+console.log(`Found ${entries.length} prints to download\n`);
+
+// Create output directory
+const outputDir = path.join(__dirname, '../public/swatches');
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+// Sanitize filename
+function sanitizeFilename(name) {
+  return name
+    .replace(/[/\\?%*:|"<>]/g, '-')
+    .replace(/\s+/g, '-')
+    .toLowerCase();
+}
+
+// Get file extension from URL
+function getExtension(url) {
+  const urlPath = new URL(url).pathname;
+  const ext = path.extname(urlPath).split('?')[0].toLowerCase();
+  // Default to .jpg if no extension or unusual extension
+  if (!ext || !['.jpg', '.jpeg', '.png', '.gif', '.webp'].includes(ext)) {
+    return '.jpg';
+  }
+  return ext;
+}
+
+// Download a single image
+function downloadImage(url, filepath) {
+  return new Promise((resolve, reject) => {
+    const protocol = url.startsWith('https') ? https : http;
+
+    const request = protocol.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+      }
+    }, (response) => {
+      // Handle redirects
+      if (response.statusCode >= 300 && response.statusCode < 400 && response.headers.location) {
+        downloadImage(response.headers.location, filepath)
+          .then(resolve)
+          .catch(reject);
+        return;
+      }
+
+      if (response.statusCode !== 200) {
+        reject(new Error(`HTTP ${response.statusCode}`));
+        return;
+      }
+
+      const file = fs.createWriteStream(filepath);
+      response.pipe(file);
+
+      file.on('finish', () => {
+        file.close();
+        resolve();
+      });
+
+      file.on('error', (err) => {
+        fs.unlink(filepath, () => {}); // Delete partial file
+        reject(err);
+      });
+    });
+
+    request.on('error', reject);
+    request.setTimeout(30000, () => {
+      request.destroy();
+      reject(new Error('Timeout'));
+    });
+  });
+}
+
+// Download all images with rate limiting
+async function downloadAll() {
+  const results = {
+    success: [],
+    failed: []
+  };
+
+  // Create a mapping file for later use
+  const mapping = {};
+
+  for (let i = 0; i < entries.length; i++) {
+    const { name, url } = entries[i];
+    const filename = sanitizeFilename(name) + getExtension(url);
+    const filepath = path.join(outputDir, filename);
+
+    process.stdout.write(`[${i + 1}/${entries.length}] ${name}... `);
+
+    // Skip if already downloaded
+    if (fs.existsSync(filepath)) {
+      console.log('already exists');
+      mapping[name] = `/swatches/${filename}`;
+      results.success.push(name);
+      continue;
+    }
+
+    try {
+      await downloadImage(url, filepath);
+      console.log('done');
+      mapping[name] = `/swatches/${filename}`;
+      results.success.push(name);
+    } catch (error) {
+      console.log(`FAILED: ${error.message}`);
+      results.failed.push({ name, url, error: error.message });
+    }
+
+    // Small delay to be respectful to servers
+    await new Promise(resolve => setTimeout(resolve, 100));
+  }
+
+  // Write mapping file
+  const mappingPath = path.join(outputDir, 'mapping.json');
+  fs.writeFileSync(mappingPath, JSON.stringify(mapping, null, 2));
+
+  // Summary
+  console.log('\n' + '='.repeat(50));
+  console.log('Download Summary');
+  console.log('='.repeat(50));
+  console.log(`Success: ${results.success.length}`);
+  console.log(`Failed: ${results.failed.length}`);
+
+  if (results.failed.length > 0) {
+    console.log('\nFailed downloads:');
+    results.failed.forEach(({ name, url, error }) => {
+      console.log(`  - ${name}: ${error}`);
+      console.log(`    URL: ${url}`);
+    });
+  }
+
+  console.log(`\nImages saved to: ${outputDir}`);
+  console.log(`Mapping file: ${mappingPath}`);
+
+  // Generate TypeScript file for local images
+  const tsContent = `// Auto-generated file - local swatch image paths
+// Generated by: node scripts/download-swatches.js
+
+export const localSwatches: Record<string, string> = ${JSON.stringify(mapping, null, 2)};
+`;
+
+  const tsPath = path.join(__dirname, '../src/data/localSwatches.ts');
+  fs.writeFileSync(tsPath, tsContent);
+  console.log(`TypeScript mapping: ${tsPath}`);
+}
+
+downloadAll().catch(console.error);
