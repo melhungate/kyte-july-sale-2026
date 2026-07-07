@@ -230,6 +230,7 @@ def normalize_print(name, print_aliases=None):
     if print_aliases:
         n = print_aliases.get(n, n)
     n = n.rstrip("*")
+    n = n.replace("™", "").replace("®", "").replace("©", "")
     n = re.sub(r"\s+", " ", n)
     n = normalize_apostrophes(n.lower())
     return strip_brand_prefix(n)

@@ -1,5 +1,5 @@
 import { getPrintImageUrl } from '../data/printImages';
-import type { EnrichedPrint, PriceRange, PriceSource } from '../data/saleData';
+import type { EnrichedPrint } from '../data/saleData';
 
 // public/ assets (product photos, local swatches) are generated as base-relative
 // paths (e.g. "product-photos/x.jpg", "swatches/hufflepuff.jpg") since this app
@@ -9,9 +9,9 @@ function withBase(path: string): string {
   return path.startsWith('http') ? path : `${import.meta.env.BASE_URL}${path}`;
 }
 
-// Centralizes the fallback order so ItemCard / WishlistSidebar / PrintGallery
-// don't each reimplement it: real product photo -> swatch -> undefined (caller
-// renders a text-only placeholder).
+// Centralizes the fallback order so PhotoGridView / WishlistSidebar /
+// PrintGallery don't each reimplement it: real product photo -> swatch ->
+// undefined (caller renders a text-only placeholder).
 export function resolveImage(print: EnrichedPrint): string | undefined {
   if (print.source === 'predictions-product' && print.imageUrl) {
     return withBase(print.imageUrl);
@@ -24,15 +24,14 @@ export function resolveImage(print: EnrichedPrint): string | undefined {
   return undefined;
 }
 
-// "pdf-starting-only" means larger sizes' pricing couldn't be confirmed
-// against a live product, so a flat price is shown with a "+" to signal it may
-// not hold for every size (e.g. "$25+"). "pdf-confirmed"/"predictions" have a
-// real (possibly ranged) price we trust across sizes, e.g. "$25–$28".
-export function formatPriceRange(price: PriceRange | null, priceSource?: PriceSource): string {
-  if (!price) return '';
-  if (price.min === price.max) {
-    const suffix = priceSource === 'pdf-starting-only' ? '+' : '';
-    return `$${price.min.toFixed(0)}${suffix}`;
+// The grouped view's small per-print tiles show a plain color swatch when one
+// exists (resolved at pipeline time into `swatchImageUrl`). When no swatch
+// exists, fall back to this specific product's own real photo via
+// resolveImage — NOT a generic print-name lookup, which could pick a
+// different product's photo that happens to share the same print name.
+export function resolveSwatchOnly(print: EnrichedPrint): string | undefined {
+  if (print.swatchImageUrl) {
+    return withBase(print.swatchImageUrl);
   }
-  return `$${price.min.toFixed(0)}–$${price.max.toFixed(0)}`;
+  return resolveImage(print);
 }

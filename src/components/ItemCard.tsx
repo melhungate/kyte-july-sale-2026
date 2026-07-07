@@ -1,7 +1,9 @@
 import React from 'react';
 import type { SaleEntry, EnrichedPrint } from '../data/saleData';
 import { getKyteUrl, getKytePrintUrl } from '../utils/kyteUrls';
-import { resolveImage, formatPriceRange } from '../utils/resolveImage';
+import { resolveSwatchOnly } from '../utils/resolveImage';
+import { sortSizes } from '../utils/priceUtils';
+import { filterPrintsBySearch } from '../utils/searchFilter';
 import './ItemCard.css';
 
 type SaleDay = 'all' | 'friday' | 'sunday';
@@ -14,6 +16,28 @@ interface ItemCardProps {
   onWishlistClick?: (print: EnrichedPrint, day: 'friday' | 'sunday') => void;
 }
 
+function summarizePrints(prints: EnrichedPrint[]): { priceLabel: string; sizesLabel: string; hasNoSalePrice: boolean } | null {
+  if (prints.length === 0) return null;
+
+  const withPrice = prints.filter(p => p.price);
+  let priceLabel = '';
+  if (withPrice.length > 0) {
+    const min = Math.min(...withPrice.map(p => p.price!.min));
+    const max = Math.max(...withPrice.map(p => p.price!.max));
+    const hasUncertain = withPrice.some(p => p.priceSource === 'pdf-starting-only');
+    priceLabel = min === max ? `$${min.toFixed(0)}` : `$${min.toFixed(0)}–$${max.toFixed(0)}`;
+    if (hasUncertain) priceLabel += '+';
+  }
+
+  const allSizes = new Set<string>();
+  prints.forEach(p => p.productMatch?.variants.forEach(v => allSizes.add(v.size)));
+  const sizesLabel = allSizes.size > 0 ? sortSizes(Array.from(allSizes)).join(', ') : '';
+
+  const hasNoSalePrice = prints.some(p => p.noSalePriceFound);
+
+  return { priceLabel, sizesLabel, hasNoSalePrice };
+}
+
 const PrintButton: React.FC<{
   print: EnrichedPrint;
   itemName: string;
@@ -21,10 +45,7 @@ const PrintButton: React.FC<{
   onClick?: () => void;
   onWishlistClick?: () => void;
 }> = ({ print, itemName, dayLabel, onClick, onWishlistClick }) => {
-  const imageUrl = resolveImage(print);
-  const sizeChip = print.productMatch
-    ? Array.from(new Set(print.productMatch.variants.map(v => v.size))).join(', ')
-    : undefined;
+  const imageUrl = resolveSwatchOnly(print);
 
   const handleWishlistClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -51,28 +72,9 @@ const PrintButton: React.FC<{
               loading="lazy"
             />
             <span className="print-name">{print.name}</span>
-            {print.price && (
-              <span
-                className="print-price-chip"
-                title={print.priceSource === 'pdf-starting-only' ? 'Starting price only — larger sizes may cost more' : undefined}
-              >
-                {formatPriceRange(print.price, print.priceSource)}
-              </span>
-            )}
-            {sizeChip && <span className="print-size-chip" title="Sizes currently in stock">{sizeChip}</span>}
           </div>
         ) : (
-          <span className="print-name-only">
-            {print.name}
-            {print.price && (
-              <span
-                className="print-price-chip"
-                title={print.priceSource === 'pdf-starting-only' ? 'Starting price only — larger sizes may cost more' : undefined}
-              >
-                {formatPriceRange(print.price, print.priceSource)}
-              </span>
-            )}
-          </span>
+          <span className="print-name-only">{print.name}</span>
         )}
       </button>
       <a
@@ -89,7 +91,7 @@ const PrintButton: React.FC<{
       <button
         className="wishlist-btn"
         onClick={handleWishlistClick}
-        title="Add to wishlist"
+        title="Add to wishlist — pick a size there"
         aria-label={`Add ${print.name} to wishlist`}
       >
         ♡
@@ -99,17 +101,13 @@ const PrintButton: React.FC<{
 };
 
 export const ItemCard: React.FC<ItemCardProps> = ({ item, filterDay, searchTerm, onPrintClick, onWishlistClick }) => {
-  // Filter prints based on search term
-  const filterPrints = (prints: EnrichedPrint[]) => {
-    if (!searchTerm) return prints;
-    const searchLower = searchTerm.toLowerCase();
-    // Only filter prints if the search term doesn't match the item name
-    if (item.name.toLowerCase().includes(searchLower)) return prints;
-    return prints.filter(print => print.name.toLowerCase().includes(searchLower));
-  };
+  const filteredFridayPrints = filterPrintsBySearch(item.fridayPrints, item.name, searchTerm);
+  const filteredSundayPrints = filterPrintsBySearch(item.sundayPrints, item.name, searchTerm);
 
-  const filteredFridayPrints = filterPrints(item.fridayPrints);
-  const filteredSundayPrints = filterPrints(item.sundayPrints);
+  const summaryPrints = filterDay === 'friday' ? filteredFridayPrints
+    : filterDay === 'sunday' ? filteredSundayPrints
+    : [...filteredFridayPrints, ...filteredSundayPrints];
+  const summary = summarizePrints(summaryPrints);
 
   const renderPrintsSection = () => {
     if (filterDay === 'friday') {
@@ -199,8 +197,26 @@ export const ItemCard: React.FC<ItemCardProps> = ({ item, filterDay, searchTerm,
             {item.name}
           </a>
         </h3>
-        <span className="category-badge">{item.section}</span>
       </div>
+
+      {summary && (summary.priceLabel || summary.sizesLabel) && (
+        <div className="item-meta">
+          {summary.priceLabel && (
+            <span
+              className="price"
+              title={summary.priceLabel.endsWith('+') ? 'Some prints show a starting price only — larger sizes may cost more' : undefined}
+            >
+              {summary.priceLabel}
+            </span>
+          )}
+          {summary.sizesLabel && <span className="sizes">Sizes: {summary.sizesLabel}</span>}
+          {summary.hasNoSalePrice && (
+            <span className="no-sale-price-flag" title="Regular price shown — no comparable sale price found">
+              ⓘ
+            </span>
+          )}
+        </div>
+      )}
 
       {renderPrintsSection()}
     </div>

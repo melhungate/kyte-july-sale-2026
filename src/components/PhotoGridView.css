@@ -1,0 +1,154 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 0 20px 20px;
+}
+
+.photo-card {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E5E5E4;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card-image-link {
+  display: block;
+}
+
+.photo-card-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  background: #FBF6F3;
+}
+
+.photo-card-no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #737373;
+  font-size: 14px;
+}
+
+.photo-card-day-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: white;
+}
+
+.photo-card-day-badge.friday {
+  background-color: var(--friday-color);
+}
+
+.photo-card-day-badge.sunday {
+  background-color: var(--sunday-color);
+}
+
+.photo-card-wishlist-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  padding: 0;
+  line-height: 1;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.photo-card-wishlist-btn:hover {
+  background: #fff0f3;
+  border-color: #e91e63;
+  color: #e91e63;
+  transform: scale(1.1);
+}
+
+.photo-card-body {
+  padding: 12px 14px;
+}
+
+.photo-card-item-name {
+  font-size: 12px;
+  color: #737373;
+  margin-bottom: 2px;
+}
+
+.photo-card-print-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.photo-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.photo-card-price {
+  background: #2E9E7B;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.photo-grid-sentinel {
+  grid-column: 1 / -1;
+  height: 1px;
+}
+
+.photo-card-sizes {
+  background: #FBF6F3;
+  color: #737373;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.no-sale-price-flag {
+  color: #b8860b;
+  font-size: 13px;
+  cursor: help;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 0 12px 12px;
+  }
+}

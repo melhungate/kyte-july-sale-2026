@@ -787,6 +787,24 @@
     ],
     "display_name": "Evergreen"
   },
+  "fast and fierce": {
+    "categories": {
+      "sunday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Boy\u2019s Briefs",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "sunday"
+    ],
+    "display_name": "Hot Wheels\u2122 Fast and Fierce"
+  },
   "fir": {
     "categories": {
       "friday": [
@@ -977,75 +995,6 @@
     ],
     "display_name": "Harbor"
   },
-  "harry potter\u2122 hufflepuff": {
-    "categories": {
-      "friday": [
-        "Toddler Long Sleeve Pajama Set",
-        "Zippered Romper",
-        "Zippered Footie",
-        "Long Sleeve Bodysuit"
-      ]
-    },
-    "days": [
-      "friday"
-    ],
-    "display_name": "Harry Potter\u2122 Hufflepuff"
-  },
-  "harry potter\u2122 icon": {
-    "categories": {
-      "friday": [
-        "1.0 TOG Sleep Bag",
-        "Toddler Long Sleeve Pajama Set",
-        "Zippered Romper",
-        "Zippered Footie",
-        "Long Sleeve Bodysuit"
-      ]
-    },
-    "days": [
-      "friday"
-    ],
-    "display_name": "Harry Potter\u2122 Icon"
-  },
-  "harry potter\u2122 journey": {
-    "categories": {
-      "friday": [
-        "1.0 TOG Sleep Bag",
-        "Toddler Long Sleeve Pajama Set",
-        "Zippered Romper",
-        "Zippered Footie"
-      ]
-    },
-    "days": [
-      "friday"
-    ],
-    "display_name": "Harry Potter\u2122 Journey"
-  },
-  "harry potter\u2122 ravenclaw": {
-    "categories": {
-      "friday": [
-        "Toddler Long Sleeve Pajama Set",
-        "Zippered Romper",
-        "Zippered Footie"
-      ]
-    },
-    "days": [
-      "friday"
-    ],
-    "display_name": "Harry Potter\u2122 Ravenclaw"
-  },
-  "harry potter\u2122 slytherin": {
-    "categories": {
-      "friday": [
-        "Toddler Long Sleeve Pajama Set",
-        "Zippered Romper",
-        "Zippered Footie"
-      ]
-    },
-    "days": [
-      "friday"
-    ],
-    "display_name": "Harry Potter\u2122 Slytherin"
-  },
   "haze": {
     "categories": {
       "friday": [
@@ -1134,42 +1083,19 @@
     ],
     "display_name": "Hot Air Balloon"
   },
-  "hot wheels\u2122 fast and fierce": {
-    "categories": {
-      "sunday": [
-        "1.0 TOG Sleep Bag",
-        "Toddler Long Sleeve Pajama Set",
-        "Toddler Short Sleeve Pajama Set",
-        "Twirl Dress",
-        "Boy\u2019s Briefs",
-        "Zippered Romper",
-        "Zippered Footie",
-        "Short Sleeve Bodysuit"
-      ]
-    },
-    "days": [
-      "sunday"
-    ],
-    "display_name": "Hot Wheels\u2122 Fast and Fierce"
-  },
-  "hot wheels\u2122 sparkles and speed": {
+  "hufflepuff": {
     "categories": {
       "friday": [
-        "1.0 TOG Sleep Bag",
-        "1.0 TOG Sleep Bag Walker",
         "Toddler Long Sleeve Pajama Set",
-        "Toddler Short Sleeve Pajama Set",
-        "Twirl Dress",
-        "Girl\u2019s Undies",
         "Zippered Romper",
         "Zippered Footie",
-        "Short Sleeve Bodysuit"
+        "Long Sleeve Bodysuit"
       ]
     },
     "days": [
       "friday"
     ],
-    "display_name": "Hot Wheels\u2122 Sparkles and Speed"
+    "display_name": "Harry Potter\u2122 Hufflepuff"
   },
   "humpback": {
     "categories": {
@@ -1232,6 +1158,35 @@
       "friday"
     ],
     "display_name": "Ice Space"
+  },
+  "icon": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Long Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Icon"
+  },
+  "journey": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Journey"
   },
   "jurassic": {
     "categories": {
@@ -1909,6 +1864,19 @@
     ],
     "display_name": "Raspberry Shell"
   },
+  "ravenclaw": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Ravenclaw"
+  },
   "rhino": {
     "categories": {
       "friday": [
@@ -2123,6 +2091,19 @@
     ],
     "display_name": "Ski"
   },
+  "slytherin": {
+    "categories": {
+      "friday": [
+        "Toddler Long Sleeve Pajama Set",
+        "Zippered Romper",
+        "Zippered Footie"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Harry Potter\u2122 Slytherin"
+  },
   "small khaki magnolia": {
     "categories": {
       "friday": [
@@ -2168,6 +2149,25 @@
       "friday"
     ],
     "display_name": "Small Magnolia on Midnight"
+  },
+  "sparkles and speed": {
+    "categories": {
+      "friday": [
+        "1.0 TOG Sleep Bag",
+        "1.0 TOG Sleep Bag Walker",
+        "Toddler Long Sleeve Pajama Set",
+        "Toddler Short Sleeve Pajama Set",
+        "Twirl Dress",
+        "Girl\u2019s Undies",
+        "Zippered Romper",
+        "Zippered Footie",
+        "Short Sleeve Bodysuit"
+      ]
+    },
+    "days": [
+      "friday"
+    ],
+    "display_name": "Hot Wheels\u2122 Sparkles and Speed"
   },
   "spooky": {
     "categories": {
@@ -2238,7 +2238,7 @@
     ],
     "display_name": "Sugar Plum"
   },
-  "superman\u2122": {
+  "superman": {
     "categories": {
       "friday": [
         "Short Sleeve Crew Neck Tee",

@@ -1,0 +1,29 @@
+.masonry-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.masonry-column {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grouped-view-sentinel {
+  height: 1px;
+}
+
+@media (max-width: 768px) {
+  .masonry-columns {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .masonry-column {
+    gap: 12px;
+  }
+}

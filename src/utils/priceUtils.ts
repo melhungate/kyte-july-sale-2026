@@ -268,3 +268,44 @@ export function getAvailableSizes(sizesStr: string | undefined): string[] {
 export function formatPrice(price: number): string {
   return `$${price.toFixed(0)}`;
 }
+
+// Real per-size labels pulled from live inventory are messier than the
+// hand-written size strings above (e.g. "18-24 months" vs "18-24M", plus
+// gendered prefixes like "Men's L"), so this is a separate, more forgiving
+// heuristic sort used only for the aggregated size-range display and the
+// size filter dropdown — not for price-range parsing.
+const SIZE_ORDER_HINTS = [
+  'preemie', 'newborn', 'nb',
+  '0-3', '0-6', '3-6', '6-12', '6-18', '6-24', '12-18', '12-24', '18-24', '18-36',
+  '1-2t', '2t-4t', '4t-6t', '1-4t', '2-6t', '2t', '3t', '4t', '5t', '6t', '7t',
+  'xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', '2x', '2xl', '3xl', '4xl',
+];
+
+function sizeSortRank(size: string): [number, number, string] {
+  let s = size.toLowerCase().trim();
+  s = s.replace(/^(men's|women's|women’s)\s*/, '');
+  s = s.replace(/\(.*?\)/g, '').trim();
+  s = s.replace(/\s*months?$/, '');
+
+  for (let i = 0; i < SIZE_ORDER_HINTS.length; i++) {
+    const hint = SIZE_ORDER_HINTS[i];
+    if (s === hint || s.startsWith(`${hint}/`) || s.startsWith(`${hint} `)) {
+      return [0, i, size];
+    }
+  }
+  if (/^\d+$/.test(s)) {
+    return [1, parseInt(s, 10), size];
+  }
+  return [2, 0, size]; // unrecognized labels (e.g. "One Size", "Youth", data anomalies) — alphabetical, last
+}
+
+export function sortSizes(sizes: string[]): string[] {
+  const unique = Array.from(new Set(sizes));
+  return unique.sort((a, b) => {
+    const ra = sizeSortRank(a);
+    const rb = sizeSortRank(b);
+    if (ra[0] !== rb[0]) return ra[0] - rb[0];
+    if (ra[1] !== rb[1]) return ra[1] - rb[1];
+    return ra[2].localeCompare(rb[2]);
+  });
+}

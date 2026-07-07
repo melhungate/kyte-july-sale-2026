@@ -24,7 +24,9 @@ export type DaySource = 'pdf' | 'default-carryover' | 'default-conflict';
 // 'pdf-starting-only': PDF price could not be confirmed against a live product
 // (or didn't match one) — only the smallest size's price is known; larger
 // sizes may cost more. 'predictions': no PDF coverage, live price range used.
-export type PriceSource = 'pdf-confirmed' | 'pdf-starting-only' | 'predictions';
+// 'manual-override': no PDF/predictions sale-price evidence at all — a flat
+// historical sale price was hand-entered in aliases.json's manual_price_overrides.
+export type PriceSource = 'pdf-confirmed' | 'pdf-starting-only' | 'predictions' | 'manual-override';
 
 export interface ProductVariantInfo {
   size: string;
@@ -38,6 +40,7 @@ export interface ProductMatch {
   productUrl: string;
   localImage: string;
   variants: ProductVariantInfo[];
+  isFirstTimeOnClearance: boolean;
 }
 
 export interface PriceRange {
@@ -51,8 +54,16 @@ export interface EnrichedPrint {
   daySource: DaySource;
   source: PrintSource;
   imageUrl?: string | null;
+  // A plain color swatch (remote printDatabase URL or local public/swatches/
+  // file), resolved regardless of `source` — used by the grouped view's
+  // small tiles, which show swatches even for real-photo-backed prints.
+  swatchImageUrl?: string | null;
   price: PriceRange | null;
   priceSource: PriceSource;
+  // True when the pipeline found zero sale-price evidence anywhere (no PDF
+  // coverage, and the predictions scrape found no compare_at_price/discount
+  // either) — `price` above is just Kyte's regular retail price.
+  noSalePriceFound: boolean;
   productMatch?: ProductMatch | null;
 }
 

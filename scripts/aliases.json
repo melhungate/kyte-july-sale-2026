@@ -28,5 +28,17 @@
   "print_aliases": {
     "Small Magnolia on Khaki": "Small Khaki Magnolia",
     "Small Magnolia on Midnight": "Small Midnight Magnolia"
+  },
+  "manual_price_overrides_comment": "Keyed by Kyte's raw product_type. Only applied when the pipeline found zero sale-price evidence anywhere (predictions price_confidence == 'no_baseline_match' AND no PDF/look-book coverage) — fills in the user's own memory of a past sale's price for that product. Never overrides a real PDF-confirmed price.",
+  "manual_price_overrides": {
+    "Baby Doll Sleep Bag": 20,
+    "Cushy Bib": 9,
+    "King Pillow Case": 30,
+    "Knotted Gown with Bow Set": 20,
+    "Scratch Mittens": 4,
+    "Sleep Bag Walker": 50,
+    "Standard Pillow Case": 27,
+    "Toddler Long Sleeve Polo": 24,
+    "Women's Short Sleeve Pajama Set": 40
   }
 }

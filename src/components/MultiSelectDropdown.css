@@ -1,0 +1,126 @@
+.multiselect {
+  position: relative;
+  display: inline-block;
+}
+
+.multiselect-trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--border-color, #E5E5E4);
+  background-color: white;
+  color: var(--text-dark, #000);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.multiselect-trigger:hover {
+  border-color: var(--primary-color, #000);
+}
+
+.multiselect-trigger.active {
+  border-color: var(--primary-color, #000);
+  background-color: #FBF6F3;
+}
+
+.multiselect-count {
+  background: #000;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.multiselect-caret {
+  font-size: 9px;
+  color: var(--text-light, #737373);
+}
+
+.multiselect-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 50;
+  background: white;
+  border: 1px solid var(--border-color, #E5E5E4);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  min-width: 260px;
+  max-width: 340px;
+  padding: 10px;
+}
+
+.multiselect-search {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid var(--border-color, #E5E5E4);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.multiselect-search:focus {
+  outline: none;
+  border-color: var(--primary-color, #000);
+}
+
+.multiselect-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--text-light, #737373);
+  margin-bottom: 6px;
+  padding: 0 2px;
+}
+
+.multiselect-actions button {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.multiselect-actions button:hover {
+  text-decoration: underline;
+}
+
+.multiselect-options {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.multiselect-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.multiselect-option:hover {
+  background-color: #FBF6F3;
+}
+
+.multiselect-option input {
+  cursor: pointer;
+}
+
+.multiselect-empty {
+  padding: 10px 4px;
+  font-size: 12px;
+  color: var(--text-light, #737373);
+  text-align: center;
+}
