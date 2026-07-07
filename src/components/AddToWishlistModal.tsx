@@ -25,7 +25,7 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
   const { addItem, isInWishlist } = useWishlist();
   const sizesAreInferred = !print.productMatch && !!print.inferredSizes?.length;
   const availableSizes = print.productMatch
-    ? Array.from(new Set(print.productMatch.variants.map(v => v.size)))
+    ? sortSizes(Array.from(new Set(print.productMatch.variants.map(v => v.size))))
     : sizesAreInferred
       ? sortSizes(print.inferredSizes!)
       : ['One Size'];

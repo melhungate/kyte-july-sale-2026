@@ -62,7 +62,7 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
         const imageUrl = resolveImage(print);
         const sizesInferred = !print.productMatch && !!print.inferredSizes?.length;
         const sizeChip = print.productMatch
-          ? Array.from(new Set(print.productMatch.variants.map(v => v.size))).join(', ')
+          ? sortSizes(Array.from(new Set(print.productMatch.variants.map(v => v.size)))).join(', ')
           : sizesInferred
             ? sortSizes(print.inferredSizes!).join(', ')
             : undefined;
