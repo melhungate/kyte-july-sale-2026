@@ -65,6 +65,11 @@ export interface EnrichedPrint {
   // either) — `price` above is just Kyte's regular retail price.
   noSalePriceFound: boolean;
   productMatch?: ProductMatch | null;
+  // Only set when productMatch is null (a PDF-only print with no live Kyte
+  // product): the union of sizes seen across this print's sibling prints in
+  // the same category, since no real size/stock data exists for this print
+  // itself. The UI should flag these as unconfirmed for this specific print.
+  inferredSizes?: string[];
 }
 
 export interface SaleEntry {

@@ -4,6 +4,7 @@ import { resolveImage } from '../utils/resolveImage';
 import { getKytePrintUrl } from '../utils/kyteUrls';
 import { filterPrintsBySearch } from '../utils/searchFilter';
 import { useIncrementalRender } from '../hooks/useIncrementalRender';
+import { sortSizes } from '../utils/priceUtils';
 import './PhotoGridView.css';
 
 const PAGE_SIZE = 200;
@@ -59,9 +60,12 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
     <div className="photo-grid">
       {visibleCards.map(({ key, itemId, itemName, print }) => {
         const imageUrl = resolveImage(print);
+        const sizesInferred = !print.productMatch && !!print.inferredSizes?.length;
         const sizeChip = print.productMatch
           ? Array.from(new Set(print.productMatch.variants.map(v => v.size))).join(', ')
-          : undefined;
+          : sizesInferred
+            ? sortSizes(print.inferredSizes!).join(', ')
+            : undefined;
         return (
           <div className="photo-card" key={key}>
             <span className={`photo-card-day-badge ${print.day}`}>{print.day === 'friday' ? 'Friday' : 'Sunday'}</span>
@@ -102,7 +106,14 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
                     ⓘ
                   </span>
                 )}
-                {sizeChip && <span className="photo-card-sizes" title="Sizes currently in stock">{sizeChip}</span>}
+                {sizeChip && (
+                  <span
+                    className="photo-card-sizes"
+                    title={sizesInferred ? "Based on this product's other prints — exact stock for this print unknown" : 'Sizes currently in stock'}
+                  >
+                    {sizeChip}{sizesInferred ? ' ⓘ' : ''}
+                  </span>
+                )}
               </div>
             </div>
           </div>

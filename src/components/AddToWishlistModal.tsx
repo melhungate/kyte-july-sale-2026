@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useWishlist } from '../context/WishlistContext';
-import { formatPrice } from '../utils/priceUtils';
+import { formatPrice, sortSizes } from '../utils/priceUtils';
 import { resolveImage } from '../utils/resolveImage';
 import type { EnrichedPrint } from '../data/saleData';
 import './AddToWishlistModal.css';
@@ -23,9 +23,12 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
   day,
 }) => {
   const { addItem, isInWishlist } = useWishlist();
+  const sizesAreInferred = !print.productMatch && !!print.inferredSizes?.length;
   const availableSizes = print.productMatch
     ? Array.from(new Set(print.productMatch.variants.map(v => v.size)))
-    : ['One Size'];
+    : sizesAreInferred
+      ? sortSizes(print.inferredSizes!)
+      : ['One Size'];
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
 
   const alreadyInWishlist = isInWishlist(itemId, print.name);
@@ -88,6 +91,11 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
               </button>
             ))}
           </div>
+          {sizesAreInferred && (
+            <p className="size-inferred-note">
+              ⓘ Sizes shown are based on this product's other prints — exact stock for {print.name} isn't confirmed.
+            </p>
+          )}
         </div>
 
         <div className="modal-price">

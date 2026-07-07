@@ -550,6 +550,32 @@ def main():
             entry = get_entry(day, category_display, category_norm)
             entry["prints"].append(enriched_print)
 
+    # PDF-only prints (no live Kyte product, so no real variant data) — infer
+    # an exhaustive size list from sibling prints of the SAME product that DO
+    # have real data. A single print's own live listing only shows whatever
+    # sizes happened to still be in stock when scraped, so unioning sizes
+    # across every print in the category gives the fullest picture of what
+    # sizes this product normally comes in. Left unset (falls back to "One
+    # Size" in the UI) when the category has no real size data at all.
+    for entry in entries.values():
+        real_sizes = []
+        seen_sizes = set()
+        for p in entry["prints"]:
+            if p.get("productMatch"):
+                for v in p["productMatch"]["variants"]:
+                    # Kyte's own size labels are inconsistently cased across
+                    # different prints of the same product (e.g. "12-18
+                    # months" vs "12-18 Months") — dedupe case-insensitively
+                    # so the union doesn't show near-duplicate entries.
+                    size_key = v["size"].lower()
+                    if size_key not in seen_sizes:
+                        seen_sizes.add(size_key)
+                        real_sizes.append(v["size"])
+        if real_sizes:
+            for p in entry["prints"]:
+                if not p.get("productMatch"):
+                    p["inferredSizes"] = real_sizes
+
     sale_entries = list(entries.values())
     (DATA_DIR / "resolved_sale_data.json").write_text(json.dumps(sale_entries, indent=2))
 

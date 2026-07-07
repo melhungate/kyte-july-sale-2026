@@ -6383,7 +6383,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Lemon",
@@ -6398,7 +6401,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Bisque",
@@ -6413,7 +6419,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Fir",
@@ -6428,7 +6437,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Mist",
@@ -6443,7 +6455,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Tahoe",
@@ -6458,7 +6473,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Candy Cane",
@@ -6473,7 +6491,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Santa Sleigh",
@@ -6488,7 +6509,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Vintage Santa",
@@ -6503,7 +6527,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       },
       {
         "name": "Vintage Toys",
@@ -6518,7 +6545,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "One Size"
+        ]
       }
     ]
   },
@@ -9204,7 +9234,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn",
+          "Preemie"
+        ]
       },
       {
         "name": "Bisque",
@@ -9219,7 +9258,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn",
+          "Preemie"
+        ]
       },
       {
         "name": "Dew",
@@ -9234,7 +9282,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn",
+          "Preemie"
+        ]
       },
       {
         "name": "Espresso",
@@ -9249,7 +9306,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn",
+          "Preemie"
+        ]
       },
       {
         "name": "Mauve",
@@ -9264,7 +9330,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn",
+          "Preemie"
+        ]
       }
     ]
   },
@@ -10507,7 +10582,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "6T",
+          "7T",
+          "10",
+          "4T",
+          "7",
+          "8",
+          "5T",
+          "12",
+          "14"
+        ]
       },
       {
         "name": "Fir",
@@ -10522,7 +10610,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "6T",
+          "7T",
+          "10",
+          "4T",
+          "7",
+          "8",
+          "5T",
+          "12",
+          "14"
+        ]
       }
     ]
   },
@@ -25145,7 +25246,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "18-24 months",
+          "6-12 months",
+          "12-18 months",
+          "Preemie"
+        ]
       },
       {
         "name": "Bisque",
@@ -25160,7 +25270,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "18-24 months",
+          "6-12 months",
+          "12-18 months",
+          "Preemie"
+        ]
       },
       {
         "name": "Espresso",
@@ -25175,7 +25294,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "18-24 months",
+          "6-12 months",
+          "12-18 months",
+          "Preemie"
+        ]
       },
       {
         "name": "Fir",
@@ -25190,7 +25318,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "18-24 months",
+          "6-12 months",
+          "12-18 months",
+          "Preemie"
+        ]
       },
       {
         "name": "Latte",
@@ -25205,7 +25342,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "18-24 months",
+          "6-12 months",
+          "12-18 months",
+          "Preemie"
+        ]
       },
       {
         "name": "Santa Sleigh",
@@ -25220,7 +25366,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "18-24 months",
+          "6-12 months",
+          "12-18 months",
+          "Preemie"
+        ]
       },
       {
         "name": "Twinkle Tree",
@@ -25235,7 +25390,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "18-24 months",
+          "6-12 months",
+          "12-18 months",
+          "Preemie"
+        ]
       }
     ]
   },
@@ -29716,7 +29880,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Cloud Constellations",
@@ -29731,7 +29908,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Pig",
@@ -29746,7 +29936,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Puffin",
@@ -29761,7 +29964,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Sakura Space",
@@ -29776,7 +29992,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Skeleton",
@@ -29791,7 +30020,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Bisque",
@@ -29806,7 +30048,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Charcoal",
@@ -29821,7 +30076,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Espresso",
@@ -29836,7 +30104,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Fir",
@@ -29851,7 +30132,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Latte",
@@ -29866,7 +30160,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Mauve",
@@ -29881,7 +30188,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Candy Cane",
@@ -29896,7 +30216,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Holiday Bow",
@@ -29911,7 +30244,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Latte Leopard",
@@ -29926,7 +30272,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Polar Lights",
@@ -29941,7 +30300,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Sakura Peony",
@@ -29956,7 +30328,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Santa Sleigh",
@@ -29971,7 +30356,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Twinkle Tree",
@@ -29986,7 +30384,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Vintage Santa",
@@ -30001,7 +30412,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       },
       {
         "name": "Vintage Toys",
@@ -30016,7 +30440,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "10",
+          "6T",
+          "7",
+          "8",
+          "12",
+          "7T"
+        ]
       }
     ]
   },
@@ -39933,7 +40370,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       },
       {
         "name": "Bewitched",
@@ -39948,7 +40398,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       },
       {
         "name": "Pastel Ghost",
@@ -39963,7 +40426,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       },
       {
         "name": "Skeleton",
@@ -39978,7 +40454,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       },
       {
         "name": "Dew",
@@ -39993,7 +40482,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       },
       {
         "name": "Sakura Peony",
@@ -40008,7 +40510,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       }
     ]
   },
@@ -58455,7 +58970,19 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "10",
+          "8",
+          "18-24 M"
+        ]
       },
       {
         "name": "Sakura Peony",
@@ -58470,7 +58997,19 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "10",
+          "8",
+          "18-24 M"
+        ]
       }
     ]
   },
@@ -61038,7 +61577,19 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "10",
+          "5T",
+          "6T",
+          "7",
+          "8",
+          "7T"
+        ]
       }
     ]
   },
@@ -63526,7 +64077,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "XS"
+        ]
       },
       {
         "name": "Bisque",
@@ -63541,7 +64095,10 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "XS"
+        ]
       }
     ]
   },
@@ -63999,7 +64556,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Barbie Beach",
@@ -64014,7 +64576,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Bear Hearts",
@@ -64029,7 +64596,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Chick",
@@ -64044,7 +64616,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Eucalyptus",
@@ -64059,7 +64636,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Giraffe",
@@ -64074,7 +64656,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Harbor",
@@ -64089,7 +64676,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Hibiscus",
@@ -64104,7 +64696,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Hydrangea",
@@ -64119,7 +64716,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Lemon",
@@ -64134,7 +64736,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Makai Rainbow",
@@ -64149,7 +64756,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Road Trip",
@@ -64164,7 +64776,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Small Magnolia on Khaki",
@@ -64179,7 +64796,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Small Magnolia on Midnight",
@@ -64194,7 +64816,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Sienna Woodland",
@@ -64209,7 +64836,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Yellowstone",
@@ -64224,7 +64856,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Bisque",
@@ -64239,7 +64876,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Canyon",
@@ -64254,7 +64896,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Caribbean",
@@ -64269,7 +64916,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Cove",
@@ -64284,7 +64936,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Espresso",
@@ -64299,7 +64956,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Latte",
@@ -64314,7 +64976,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Loch",
@@ -64329,7 +64996,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Marigold",
@@ -64344,7 +65016,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Porcelain",
@@ -64359,7 +65036,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Thyme",
@@ -64374,7 +65056,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       },
       {
         "name": "Wisteria",
@@ -64389,7 +65076,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "XL",
+          "M"
+        ]
       }
     ]
   },
@@ -64563,7 +65255,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL"
+        ]
       }
     ]
   },
@@ -67899,7 +68596,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Cloud Constellations",
@@ -67914,7 +68618,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Ecru Roar",
@@ -67929,7 +68640,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Midnight Constellations",
@@ -67944,7 +68662,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Bisque",
@@ -67959,7 +68684,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Butter",
@@ -67974,7 +68706,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Espresso",
@@ -67989,7 +68728,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Fir",
@@ -68004,7 +68750,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Stream",
@@ -68019,7 +68772,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       },
       {
         "name": "Latte Leopard",
@@ -68034,7 +68794,14 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
       }
     ]
   },
@@ -73495,7 +74262,12 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "Newborn",
+          "S",
+          "XS"
+        ]
       }
     ]
   },
@@ -82827,7 +83599,20 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "18-24 months",
+          "2T",
+          "5T",
+          "6T",
+          "7",
+          "3T",
+          "4T",
+          "12-18 months",
+          "7T",
+          "10",
+          "8"
+        ]
       }
     ]
   },
@@ -89206,7 +89991,17 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "6T",
+          "10",
+          "4T",
+          "5T",
+          "7",
+          "8"
+        ]
       },
       {
         "name": "Mauve",
@@ -89221,7 +90016,17 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "6T",
+          "10",
+          "4T",
+          "5T",
+          "7",
+          "8"
+        ]
       },
       {
         "name": "Sakura Peony",
@@ -89236,7 +90041,17 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "6T",
+          "10",
+          "4T",
+          "5T",
+          "7",
+          "8"
+        ]
       }
     ]
   },
@@ -109551,7 +110366,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Bear Hearts",
@@ -109566,7 +110390,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Bewitched",
@@ -109581,7 +110414,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Frosty Friends",
@@ -109596,7 +110438,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Pig",
@@ -109611,7 +110462,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Skeleton",
@@ -109626,7 +110486,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Yeti",
@@ -109641,7 +110510,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Bisque",
@@ -109656,7 +110534,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Butter",
@@ -109671,7 +110558,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Dew",
@@ -109686,7 +110582,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Espresso",
@@ -109701,7 +110606,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Fir",
@@ -109716,7 +110630,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Latte",
@@ -109731,7 +110654,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Holiday Bow",
@@ -109746,7 +110678,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Latte Leopard",
@@ -109761,7 +110702,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Merry & Bright",
@@ -109776,7 +110726,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Polar Lights",
@@ -109791,7 +110750,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Sakura Peony",
@@ -109806,7 +110774,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Santa Sleigh",
@@ -109821,7 +110798,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Twinkle Tree",
@@ -109836,7 +110822,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Vintage Santa",
@@ -109851,7 +110846,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       },
       {
         "name": "Vintage Toys",
@@ -109866,7 +110870,16 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       }
     ]
   },
@@ -115033,7 +116046,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Bear Hearts",
@@ -115048,7 +116072,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Bewitched",
@@ -115063,7 +116098,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Frosty Friends",
@@ -115078,7 +116124,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Pastel Ghost",
@@ -115093,7 +116150,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Pig",
@@ -115108,7 +116176,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Puffin",
@@ -115123,7 +116202,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Bisque",
@@ -115138,7 +116228,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Dew",
@@ -115153,7 +116254,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Fir",
@@ -115168,7 +116280,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Latte",
@@ -115183,7 +116306,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Mauve",
@@ -115198,7 +116332,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Holiday Bow",
@@ -115213,7 +116358,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Latte Leopard",
@@ -115228,7 +116384,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Merry & Bright",
@@ -115243,7 +116410,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Polar Lights",
@@ -115258,7 +116436,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Sakura Peony",
@@ -115273,7 +116462,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Santa Sleigh",
@@ -115288,7 +116488,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Twinkle Tree",
@@ -115303,7 +116514,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       },
       {
         "name": "Vintage Toys",
@@ -115318,7 +116540,18 @@
         },
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
-        "productMatch": null
+        "productMatch": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       }
     ]
   },
