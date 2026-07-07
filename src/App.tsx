@@ -144,6 +144,13 @@ function AppContent() {
         <p className="subtitle">Friday vs Sunday Visual Browser</p>
       </header>
 
+      <div className="assumptions-banner">
+        ⚠️ This site assumes previously-unsold clearance inventory will still be available for this sale, and that every leftover product carrying a print shown in the official Look Book will be included, not just the specific items pictured there. Please watch Kyte's Instagram Live on Wednesday, July 8th for official confirmation of what's actually included and up to date prices for items not shown in the{' '}
+        <a href="https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Anniversary_Sale_Look_Book.pdf" target="_blank" rel="noopener noreferrer">
+          look book
+        </a>.
+      </div>
+
       <div className="controls">
         <div className="top-controls-row">
           <div className="view-mode-toggle">
