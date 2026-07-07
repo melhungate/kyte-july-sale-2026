@@ -29,6 +29,10 @@
     "Small Magnolia on Khaki": "Small Khaki Magnolia",
     "Small Magnolia on Midnight": "Small Midnight Magnolia"
   },
+  "pdf_category_aliases_comment": "Some PDF pages phrase the same product line's category header slightly differently (e.g. 'Toddler Short Sleeve with Pants Pajamas' on one page vs '...Pajama Set' on another) — maps the normalized variant text to the normalized canonical text so both resolve to one category instead of splitting into two, one of which would otherwise be an orphaned PDF-only category with no real product data to draw sizes from.",
+  "pdf_category_aliases": {
+    "toddler short sleeve with pants pajamas": "toddler short sleeve with pants pajama set"
+  },
   "manual_price_overrides_comment": "Keyed by Kyte's raw product_type. Only applied when the pipeline found zero sale-price evidence anywhere (predictions price_confidence == 'no_baseline_match' AND no PDF/look-book coverage) — fills in the user's own memory of a past sale's price for that product. Never overrides a real PDF-confirmed price.",
   "manual_price_overrides": {
     "Baby Doll Sleep Bag": 20,

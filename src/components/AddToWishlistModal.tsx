@@ -100,7 +100,12 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
 
         <div className="modal-price">
           <span>Price:</span>
-          <span className="price-value">{formatPrice(currentPrice)}</span>
+          <span
+            className="price-value"
+            title={print.priceSource === 'pdf-starting-only' ? 'Starting price only — larger sizes may cost more' : undefined}
+          >
+            {formatPrice(currentPrice)}{print.priceSource === 'pdf-starting-only' ? '+' : ''}
+          </span>
         </div>
 
         <button className="add-btn" onClick={handleAdd}>

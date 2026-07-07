@@ -288,6 +288,7 @@ def main():
     category_aliases = aliases["category_aliases"]
     print_aliases = aliases.get("print_aliases", {})
     manual_price_overrides = aliases.get("manual_price_overrides", {})
+    pdf_category_aliases = aliases.get("pdf_category_aliases", {})
 
     pdf_data = json.loads((DATA_DIR / "pdf_sale_data.json").read_text())
     print_day_map = json.loads((DATA_DIR / "print_day_map.json").read_text())
@@ -517,8 +518,13 @@ def main():
     pdf_only_swatch_count = 0
     for pdf_entry in pdf_data["entries"]:
         day = pdf_entry["day"]
-        category_display = pdf_entry["category"]
-        category_norm = normalize_category(category_display)
+        # Canonicalize so a variant-phrased category header (see
+        # pdf_category_aliases) resolves to the exact same category identity
+        # a real predictions product already uses — otherwise this loop can't
+        # tell the print is already covered and creates a redundant, orphaned
+        # duplicate category for it.
+        category_norm = pdf_category_aliases.get(normalize_category(pdf_entry["category"]), normalize_category(pdf_entry["category"]))
+        category_display = category_display_names.get(category_norm, pdf_entry["category"])
         price = pdf_entry["starting_price"]
         for print_name in pdf_entry["prints"]:
             normalized_print = normalize_print(print_name, print_aliases)

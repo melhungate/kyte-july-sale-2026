@@ -119823,28 +119823,5 @@ export const saleEntries: SaleEntry[] = [
         }
       }
     ]
-  },
-  {
-    "id": "toddler-short-sleeve-with-pants-pajamas",
-    "name": "Toddler Short Sleeve with Pants Pajamas",
-    "section": "Pajamas",
-    "fridayPrints": [],
-    "sundayPrints": [
-      {
-        "name": "Small Love Bow",
-        "day": "sunday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "swatches/small-love-bow.jpeg",
-        "swatchImageUrl": "swatches/small-love-bow.jpeg",
-        "price": {
-          "min": 24,
-          "max": 24
-        },
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": false,
-        "productMatch": null
-      }
-    ]
   }
 ];
