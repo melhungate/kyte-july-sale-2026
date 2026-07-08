@@ -35,6 +35,41 @@ PRODUCT_PHOTOS_DIR = ROOT / "public" / "product-photos"
 PRINT_IMAGES_TS = ROOT / "src" / "data" / "printImages.ts"
 LOCAL_SWATCHES_DIR = ROOT / "public" / "swatches"
 
+# Narrowly-scoped snapshots that deliberately captured specific prints right
+# before Kyte pulled them from the site (folder name lists the exact prints) —
+# unlike the broad whole-catalog snapshots (2026-01-19, 2026-01-20_discounted,
+# expected_next_sale — that last one is literally the same dataset
+# predictions_data.json comes from), which aren't curated to "about to be
+# removed" prints and would just add noise here.
+HISTORICAL_SNAPSHOTS_DIR = Path("/Users/melaniehungate/kyte_jan_site_inventory/snapshots")
+TARGETED_HISTORICAL_SNAPSHOTS = [
+    "2026-02-09_all-vintage-truck_ecru-roar_midnight-roar_sparkles-and-speed_latte-leopard_gingham-fir_gilmore-girls_puffin_latte_fir_bisque_espresso",
+    "2026-02-16_all-burgundy",
+    "2026-03-02_all-small-love-bow_bear-hearts_cardinal",
+    "2026-03-24_all-moo_ski",
+    "2026-04-13_all-wicked_disco-cowgirl_basketball_gingham-bisque",
+    "2026-06-01_all-jurassic_fast-and-fierce_gingham-breeze_gingham-chamomile_gingham-thistle_carrot_storm_dew_bisque",
+    "2026-07-05_all-storm",
+    "2026-07-06_all-wildflower_classic-cowboy_tahoe_patriotic-gingham_patriotic-goose",
+]
+
+
+def load_historical_snapshot_products():
+    """Products from the targeted snapshots above, each tagged with where it
+    came from so we can locate its photo file and cite the capture date."""
+    products = []
+    for name in TARGETED_HISTORICAL_SNAPSHOTS:
+        snapshot_dir = HISTORICAL_SNAPSHOTS_DIR / name
+        inventory_path = snapshot_dir / "inventory.json"
+        if not inventory_path.exists():
+            continue
+        data = json.loads(inventory_path.read_text())
+        for p in data["products"]:
+            p["_snapshot_dir"] = snapshot_dir
+            p["_snapshot_date"] = name.split("_")[0]
+            products.append(p)
+    return products
+
 
 def normalize_apostrophes(name):
     # The PDF (and Kyte's own product_type strings) mix curly (') and
@@ -304,6 +339,27 @@ def main():
     bare_type_tog_suffixes = find_bare_type_tog_suffixes(predictions["products"])
     swapped_option_vocab = find_swapped_option_types(predictions["products"])
 
+    # (pdf_category_norm, normalized_print) -> historical product dict, for
+    # backfilling real photos/sizes on PDF-only prints (see loop (b) below).
+    # PDF-only entries only ever occur for the ~20 PDF-aliased categories, so
+    # match_product_category alone (no split/bare-TOG heuristics needed) is
+    # enough to resolve each historical product's category correctly.
+    historical_lookup = {}
+    for hp in load_historical_snapshot_products():
+        variants = hp.get("variants", [])
+        if not variants:
+            continue
+        matched = match_product_category(hp, matchers)
+        if matched is None:
+            continue
+        hist_print_raw = variants[0].get("option1") or ""
+        if not hist_print_raw:
+            continue
+        hist_print_norm = normalize_print(hist_print_raw, print_aliases)
+        key = (matched, hist_print_norm)
+        if key not in historical_lookup:  # earliest-listed snapshot wins
+            historical_lookup[key] = hp
+
     # normalized PDF category -> original display text (e.g. "0.5 tog sleep bag" -> "0.5 TOG Sleep Bag")
     category_display_names = {}
     for pdf_entry in pdf_data["entries"]:
@@ -516,6 +572,7 @@ def main():
     # (b) PDF-only entries: (category, print, day) not covered by any predictions product
     missing_swatches = []  # (day, category, print)
     pdf_only_swatch_count = 0
+    historical_backfill_count = 0
     for pdf_entry in pdf_data["entries"]:
         day = pdf_entry["day"]
         # Canonicalize so a variant-phrased category header (see
@@ -531,7 +588,38 @@ def main():
             if (category_norm, normalized_print) in covered_category_print_pairs:
                 continue  # already represented by a real predictions product
 
-            image_url = find_swatch_url(print_name, normalized_print, swatch_database, swatch_database_lower, local_swatch_files)
+            swatch_url = find_swatch_url(print_name, normalized_print, swatch_database, swatch_database_lower, local_swatch_files)
+            image_url = swatch_url
+
+            # A historical "about to be pulled" snapshot may have a real
+            # photo and real confirmed sizes for this exact print — prefer
+            # that over a flat swatch. Never use its price: that reflects
+            # whatever Kyte charged pre-clearance, not this sale.
+            historical_sizes = None
+            historical_snapshot_date = None
+            historical_product = historical_lookup.get((category_norm, normalized_print))
+            if historical_product is not None:
+                local_image = historical_product.get("local_image")
+                if local_image:
+                    src = historical_product["_snapshot_dir"] / local_image
+                    if src.exists():
+                        dst = PRODUCT_PHOTOS_DIR / Path(local_image).name
+                        if not dst.exists():
+                            shutil.copy2(src, dst)
+                        image_url = f"product-photos/{Path(local_image).name}"
+                sizes_seen = []
+                seen_size_keys = set()
+                for v in historical_product.get("variants", []):
+                    size = v.get("option2") or "One Size"
+                    size_key = size.lower()
+                    if size_key not in seen_size_keys:
+                        seen_size_keys.add(size_key)
+                        sizes_seen.append(size)
+                if sizes_seen:
+                    historical_sizes = sizes_seen
+                    historical_snapshot_date = historical_product["_snapshot_date"]
+                    historical_backfill_count += 1
+
             source = "pdf-only-swatch" if image_url is not None else "pdf-only-missing"
 
             if source == "pdf-only-swatch":
@@ -545,13 +633,15 @@ def main():
                 "daySource": "pdf",
                 "source": source,
                 "imageUrl": image_url,
-                "swatchImageUrl": image_url,
+                "swatchImageUrl": swatch_url,
                 "price": {"min": price, "max": price} if price is not None else None,
                 # No live product to compare against, so we can't confirm the
                 # PDF's "starting at" price holds for larger sizes either.
                 "priceSource": "pdf-starting-only",
                 "noSalePriceFound": False,
                 "productMatch": None,
+                "historicalSizes": historical_sizes,
+                "historicalSnapshotDate": historical_snapshot_date,
             }
             entry = get_entry(day, category_display, category_norm)
             entry["prints"].append(enriched_print)
@@ -579,7 +669,10 @@ def main():
                         real_sizes.append(v["size"])
         if real_sizes:
             for p in entry["prints"]:
-                if not p.get("productMatch"):
+                # historicalSizes (a real past listing of this exact print)
+                # is more specific than inferring from sibling prints —
+                # don't overwrite it when already set.
+                if not p.get("productMatch") and not p.get("historicalSizes"):
                     p["inferredSizes"] = real_sizes
 
     sale_entries = list(entries.values())
@@ -657,6 +750,7 @@ def main():
     print(f"Dual-day-conflict-defaulted prints (see scripts/day_conflicts_defaulted.md): {len(set((p,t) for p,t,d in conflict_defaulted))}")
     print(f"Real-photo prints with no swatch (grouped small-tile view only, see MISSING_SWATCHES.md): {len(predictions_products_no_swatch)}")
     print(f"Product types with NO sale price found anywhere (see scripts/no_sale_price_found.md): {len(set(pt for pt, _ in no_sale_price_found))}")
+    print(f"PDF-only prints backfilled with real photo/sizes from a historical snapshot: {historical_backfill_count}")
 
 
 if __name__ == "__main__":

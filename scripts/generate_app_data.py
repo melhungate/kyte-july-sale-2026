@@ -69,7 +69,15 @@ export interface EnrichedPrint {
   // product): the union of sizes seen across this print's sibling prints in
   // the same category, since no real size/stock data exists for this print
   // itself. The UI should flag these as unconfirmed for this specific print.
+  // Superseded by historicalSizes when that's set (more specific).
   inferredSizes?: string[];
+  // Only set when productMatch is null: real confirmed sizes (and imageUrl
+  // is a real photo, not a swatch) pulled from a snapshot taken shortly
+  // before Kyte removed this exact print from the site — never its price,
+  // which reflects a pre-clearance cost, not this sale's pricing. The UI
+  // should flag current availability as unconfirmed.
+  historicalSizes?: string[] | null;
+  historicalSnapshotDate?: string | null;
 }
 
 export interface SaleEntry {

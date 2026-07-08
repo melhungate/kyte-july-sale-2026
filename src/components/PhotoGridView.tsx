@@ -60,12 +60,15 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
     <div className="photo-grid">
       {visibleCards.map(({ key, itemId, itemName, print }) => {
         const imageUrl = resolveImage(print);
-        const sizesInferred = !print.productMatch && !!print.inferredSizes?.length;
+        const sizesHistorical = !print.productMatch && !!print.historicalSizes?.length;
+        const sizesInferred = !print.productMatch && !sizesHistorical && !!print.inferredSizes?.length;
         const sizeChip = print.productMatch
           ? sortSizes(Array.from(new Set(print.productMatch.variants.map(v => v.size)))).join(', ')
-          : sizesInferred
-            ? sortSizes(print.inferredSizes!).join(', ')
-            : undefined;
+          : sizesHistorical
+            ? sortSizes(print.historicalSizes!).join(', ')
+            : sizesInferred
+              ? sortSizes(print.inferredSizes!).join(', ')
+              : undefined;
         return (
           <div className="photo-card" key={key}>
             <span className={`photo-card-day-badge ${print.day}`}>{print.day === 'friday' ? 'Friday' : 'Sunday'}</span>
@@ -109,9 +112,15 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
                 {sizeChip && (
                   <span
                     className="photo-card-sizes"
-                    title={sizesInferred ? "Based on this product's other prints — exact stock for this print unknown" : 'Sizes currently in stock'}
+                    title={
+                      sizesHistorical
+                        ? `From a ${print.historicalSnapshotDate} snapshot before this print was removed — current availability unconfirmed`
+                        : sizesInferred
+                          ? "Based on this product's other prints — exact stock for this print unknown"
+                          : 'Sizes currently in stock'
+                    }
                   >
-                    {sizeChip}{sizesInferred ? ' ⓘ' : ''}
+                    {sizeChip}{sizesHistorical || sizesInferred ? ' ⓘ' : ''}
                   </span>
                 )}
               </div>

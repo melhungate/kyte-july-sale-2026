@@ -53,7 +53,15 @@ export interface EnrichedPrint {
   // product): the union of sizes seen across this print's sibling prints in
   // the same category, since no real size/stock data exists for this print
   // itself. The UI should flag these as unconfirmed for this specific print.
+  // Superseded by historicalSizes when that's set (more specific).
   inferredSizes?: string[];
+  // Only set when productMatch is null: real confirmed sizes (and imageUrl
+  // is a real photo, not a swatch) pulled from a snapshot taken shortly
+  // before Kyte removed this exact print from the site — never its price,
+  // which reflects a pre-clearance cost, not this sale's pricing. The UI
+  // should flag current availability as unconfirmed.
+  historicalSizes?: string[] | null;
+  historicalSnapshotDate?: string | null;
 }
 
 export interface SaleEntry {
@@ -6333,6 +6341,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6351,6 +6361,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6369,6 +6381,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6387,6 +6401,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6405,6 +6421,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6414,7 +6432,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/tahoe.jpeg",
+        "imageUrl": "product-photos/7033535660143_82e1af1b0a78.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
         "price": {
           "min": 9,
@@ -6423,9 +6441,10 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "One Size"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -6583,6 +6602,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6601,6 +6622,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6619,6 +6642,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -6637,6 +6662,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
         ]
@@ -9158,7 +9185,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7969958854767_9a4f28404a8d.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 12,
@@ -9167,22 +9194,22 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "0-3 months",
-          "12-18 months",
-          "18-24 months",
-          "3-6 months",
-          "6-12 months",
-          "Newborn",
-          "Preemie"
-        ]
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       },
       {
         "name": "Bisque",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7798827188335_9a0d31f094b2.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 12,
@@ -9191,22 +9218,22 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "0-3 months",
-          "12-18 months",
-          "18-24 months",
-          "3-6 months",
-          "6-12 months",
-          "Newborn",
-          "Preemie"
-        ]
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Dew",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "imageUrl": "product-photos/7750223855727_fbd90616b49b.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
         "price": {
           "min": 12,
@@ -9215,22 +9242,21 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "0-3 months",
-          "12-18 months",
-          "18-24 months",
-          "3-6 months",
-          "6-12 months",
-          "Newborn",
-          "Preemie"
-        ]
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       },
       {
         "name": "Espresso",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/espresso.jpeg",
+        "imageUrl": "product-photos/7119951593583_3806abf0440b.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
         "price": {
           "min": 12,
@@ -9239,15 +9265,15 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "0-3 months",
           "12-18 months",
           "18-24 months",
           "3-6 months",
           "6-12 months",
-          "Newborn",
-          "Preemie"
-        ]
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Mauve",
@@ -9263,6 +9289,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "0-3 months",
           "12-18 months",
@@ -10519,7 +10547,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7799320641647_1f68a37d6537.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 7,
@@ -10528,26 +10556,24 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
+          "10",
           "2T",
           "3T",
-          "6T",
-          "7T",
-          "10",
           "4T",
-          "7",
-          "8",
           "5T",
-          "12",
-          "14"
-        ]
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Fir",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/fir.jpeg",
+        "imageUrl": "product-photos/7799320445039_80a4eacc2510.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
         "price": {
           "min": 7,
@@ -10556,19 +10582,13 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "2T",
           "3T",
-          "6T",
-          "7T",
-          "10",
-          "4T",
-          "7",
-          "8",
           "5T",
-          "12",
-          "14"
-        ]
+          "6T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -25277,6 +25297,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "0-3 months",
           "3-6 months",
@@ -25292,7 +25314,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7799190290543_61a517d23d8f.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 14,
@@ -25301,22 +25323,21 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "0-3 months",
-          "3-6 months",
-          "Newborn",
-          "18-24 months",
-          "6-12 months",
-          "12-18 months",
-          "Preemie"
-        ]
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Espresso",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/espresso.jpeg",
+        "imageUrl": "product-photos/7120037249135_9453a98c20c5.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
         "price": {
           "min": 14,
@@ -25325,22 +25346,21 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "0-3 months",
-          "3-6 months",
-          "Newborn",
-          "18-24 months",
-          "6-12 months",
           "12-18 months",
-          "Preemie"
-        ]
+          "3-6 months",
+          "6-12 months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Fir",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/fir.jpeg",
+        "imageUrl": "product-photos/7799190356079_9d4196b910c9.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
         "price": {
           "min": 14,
@@ -25349,22 +25369,20 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "0-3 months",
-          "3-6 months",
-          "Newborn",
-          "18-24 months",
-          "6-12 months",
-          "12-18 months",
-          "Preemie"
-        ]
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Latte",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte.jpeg",
+        "imageUrl": "product-photos/7799190388847_5c2fac1f73c7.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
         "price": {
           "min": 14,
@@ -25373,15 +25391,15 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "0-3 months",
-          "3-6 months",
-          "Newborn",
-          "18-24 months",
-          "6-12 months",
-          "12-18 months",
-          "Preemie"
-        ]
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -25505,6 +25523,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "0-3 months",
           "3-6 months",
@@ -25529,6 +25549,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "0-3 months",
           "3-6 months",
@@ -29715,6 +29737,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -29743,6 +29767,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -29771,6 +29797,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -29790,7 +29818,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/puffin.jpeg",
+        "imageUrl": "product-photos/7853576749167_5b6491d1c0dc.jpg",
         "swatchImageUrl": "swatches/puffin.jpeg",
         "price": {
           "min": 25,
@@ -29799,19 +29827,15 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
-          "2T",
-          "3T",
-          "4T",
-          "5T",
+        "historicalSizes": [
           "10",
-          "6T",
-          "7",
-          "8",
           "12",
-          "7T"
-        ]
+          "18-24 Months",
+          "2T",
+          "4T",
+          "5T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Sakura Space",
@@ -29827,6 +29851,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -29855,6 +29881,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -29874,7 +29902,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7799344332911_f6c0ee2e86b9.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 25,
@@ -29883,19 +29911,18 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
+        "historicalSizes": [
+          "10",
+          "18-24 Months",
           "2T",
           "3T",
           "4T",
           "5T",
-          "10",
           "6T",
           "7",
-          "8",
-          "12",
-          "7T"
-        ]
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Charcoal",
@@ -29911,6 +29938,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -29930,7 +29959,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/espresso.jpeg",
+        "imageUrl": "product-photos/7119944384623_41fe28902d2a.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
         "price": {
           "min": 25,
@@ -29939,26 +29968,26 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
+          "10",
+          "12",
           "18-24 months",
           "2T",
           "3T",
           "4T",
           "5T",
-          "10",
           "6T",
-          "7",
-          "8",
-          "12",
-          "7T"
-        ]
+          "7T",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Fir",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/fir.jpeg",
+        "imageUrl": "product-photos/7799344365679_32c0b7672c7f.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
         "price": {
           "min": 25,
@@ -29967,26 +29996,26 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
+        "historicalSizes": [
+          "10",
+          "12",
+          "18-24 Months",
           "2T",
           "3T",
           "4T",
           "5T",
-          "10",
           "6T",
           "7",
-          "8",
-          "12",
-          "7T"
-        ]
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Latte",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte.jpeg",
+        "imageUrl": "product-photos/7799344431215_e6fd31452b37.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
         "price": {
           "min": 25,
@@ -29995,19 +30024,18 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
+        "historicalSizes": [
+          "10",
+          "18-24 Months",
           "2T",
           "3T",
           "4T",
           "5T",
-          "10",
           "6T",
           "7",
-          "8",
-          "12",
-          "7T"
-        ]
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Mauve",
@@ -30023,6 +30051,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30358,6 +30388,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30386,6 +30418,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30405,7 +30439,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "sunday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte-leopard.jpeg",
+        "imageUrl": "product-photos/7812538925167_dbb6818f60bf.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
         "price": {
           "min": 25,
@@ -30414,19 +30448,16 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
-          "2T",
-          "3T",
+        "historicalSizes": [
+          "10",
+          "12",
+          "18-24 Months",
           "4T",
           "5T",
-          "10",
           "6T",
-          "7",
-          "8",
-          "12",
-          "7T"
-        ]
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Polar Lights",
@@ -30442,6 +30473,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30470,6 +30503,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30498,6 +30533,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30526,6 +30563,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30554,6 +30593,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -30582,6 +30623,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -40258,7 +40301,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907270656111_3e16cdd16359.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 28,
@@ -40267,19 +40310,19 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "12-18 months",
-          "18-24 months",
+        "historicalSizes": [
+          "10",
+          "12-18 Months",
+          "18-24 Months",
           "2T",
           "3T",
           "4T",
+          "5T",
           "6T",
           "7",
-          "5T",
-          "7T",
-          "10",
           "8"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       },
       {
         "name": "Bewitched",
@@ -40295,6 +40338,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "12-18 months",
           "18-24 months",
@@ -40323,6 +40368,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "12-18 months",
           "18-24 months",
@@ -40351,6 +40398,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "12-18 months",
           "18-24 months",
@@ -40370,7 +40419,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "imageUrl": "product-photos/7752227389551_19deae1aa65b.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
         "price": {
           "min": 28,
@@ -40379,19 +40428,17 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "12-18 months",
-          "18-24 months",
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
           "2T",
           "3T",
           "4T",
-          "6T",
-          "7",
           "5T",
-          "7T",
-          "10",
-          "8"
-        ]
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -40661,6 +40708,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "12-18 months",
           "18-24 months",
@@ -59102,7 +59151,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "imageUrl": "product-photos/7753004646511_4498b8575702.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
         "price": {
           "min": 22,
@@ -59111,18 +59160,18 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
+        "historicalSizes": [
+          "10",
+          "18-24 Months",
           "2T",
           "3T",
           "4T",
           "5T",
           "6T",
           "7",
-          "10",
-          "8",
-          "18-24 M"
-        ]
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -59203,6 +59252,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "18-24 months",
           "2T",
@@ -61714,7 +61765,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907271082095_ae2eba2000e3.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 24,
@@ -61723,18 +61774,18 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
+        "historicalSizes": [
+          "10",
+          "18-24 Months",
           "2T",
           "3T",
           "4T",
-          "10",
           "5T",
           "6T",
           "7",
-          "8",
-          "7T"
-        ]
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -64227,7 +64278,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907270492271_9b12b0b50919.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 50,
@@ -64236,9 +64287,10 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "XS"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       },
       {
         "name": "Bisque",
@@ -64254,6 +64306,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "XS"
         ]
@@ -64588,6 +64642,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64608,6 +64664,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64619,7 +64677,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907270525039_0fdfc28ec221.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 45,
@@ -64628,11 +64686,12 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "L",
-          "XL",
-          "M"
-        ]
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       },
       {
         "name": "Chick",
@@ -64648,6 +64707,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64668,6 +64729,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64688,6 +64751,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64708,6 +64773,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64728,6 +64795,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64748,6 +64817,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64768,6 +64839,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64788,6 +64861,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64808,6 +64883,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64828,6 +64905,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64848,6 +64927,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64868,6 +64949,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64888,6 +64971,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64899,7 +64984,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7798815883375_05a8a5a9cfb3.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 45,
@@ -64908,11 +64993,12 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "L",
-          "XL",
-          "M"
-        ]
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Canyon",
@@ -64928,6 +65014,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64948,6 +65036,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64968,6 +65058,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -64979,7 +65071,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/espresso.jpeg",
+        "imageUrl": "product-photos/7119950020719_30478f293c8f.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
         "price": {
           "min": 45,
@@ -64988,18 +65080,19 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "L",
-          "XL",
-          "M"
-        ]
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Latte",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte.jpeg",
+        "imageUrl": "product-photos/7798816014447_d6e5931cba67.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
         "price": {
           "min": 45,
@@ -65008,11 +65101,12 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "L",
-          "XL",
-          "M"
-        ]
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Loch",
@@ -65028,6 +65122,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -65048,6 +65144,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -65068,6 +65166,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -65088,6 +65188,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -65108,6 +65210,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "XL",
@@ -65474,6 +65578,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -68593,7 +68699,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907271016559_e6e5d28aea5f.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 35,
@@ -68602,13 +68708,14 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "L",
           "M",
+          "S",
           "XL",
-          "XS",
-          "S"
-        ]
+          "XS"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       },
       {
         "name": "Cloud Constellations",
@@ -68624,6 +68731,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -68646,6 +68755,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -68668,6 +68779,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -68681,7 +68794,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7798802350191_6ac5aa78fa58.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 35,
@@ -68690,13 +68803,14 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "L",
           "M",
+          "S",
           "XL",
-          "XS",
-          "S"
-        ]
+          "XS"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Butter",
@@ -68712,6 +68826,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -68725,7 +68841,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/espresso.jpeg",
+        "imageUrl": "product-photos/7119947006063_b4e5c2979113.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
         "price": {
           "min": 35,
@@ -68734,13 +68850,12 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "L",
           "M",
-          "XL",
-          "XS",
-          "S"
-        ]
+          "XS"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Fir",
@@ -68756,6 +68871,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -68778,6 +68895,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -69017,6 +69136,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "L",
           "M",
@@ -74452,7 +74573,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907281535087_c85f39606ff9.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 30,
@@ -74461,11 +74582,12 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "Newborn",
           "S",
           "XS"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -83780,7 +83902,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907270623343_6b886f47d282.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 16,
@@ -83789,19 +83911,17 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "18-24 months",
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
           "2T",
-          "5T",
-          "6T",
-          "7",
           "3T",
           "4T",
-          "12-18 months",
-          "7T",
-          "10",
-          "8"
-        ]
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -90251,7 +90371,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7799316873327_79b5733b6b2d.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 7,
@@ -90260,16 +90380,15 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
           "2T",
           "3T",
-          "6T",
-          "10",
           "4T",
           "5T",
-          "7",
-          "8"
-        ]
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Mauve",
@@ -90285,6 +90404,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -90312,6 +90433,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -110424,7 +110547,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/basketball.jpeg",
+        "imageUrl": "product-photos/7853569474671_610ee2414063.jpg",
         "swatchImageUrl": "swatches/basketball.jpeg",
         "price": {
           "min": 22,
@@ -110433,22 +110556,22 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
-          "Newborn",
-          "18-24 Months"
-        ]
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
       },
       {
         "name": "Bear Hearts",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907270361199_2893b9ad25a9.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 22,
@@ -110457,15 +110580,14 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
-          "Newborn",
-          "18-24 Months"
-        ]
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       },
       {
         "name": "Bewitched",
@@ -110481,6 +110603,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -110505,6 +110629,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -110529,6 +110655,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -110553,6 +110681,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -110577,6 +110707,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -110592,7 +110724,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7798823420015_e66563e0c738.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 22,
@@ -110601,15 +110733,15 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
-          "Newborn",
-          "18-24 Months"
-        ]
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Butter",
@@ -110625,6 +110757,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -110640,7 +110774,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "imageUrl": "product-photos/7750223986799_a3360a629d22.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
         "price": {
           "min": 22,
@@ -110649,22 +110783,23 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
           "Newborn",
-          "18-24 Months"
-        ]
+          "Preemie"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       },
       {
         "name": "Espresso",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/espresso.jpeg",
+        "imageUrl": "product-photos/7120034824303_24bba08a552b.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
         "price": {
           "min": 22,
@@ -110673,22 +110808,17 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
-          "12-18 Months",
-          "Newborn",
-          "18-24 Months"
-        ]
+        "historicalSizes": [
+          "3-6 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Fir",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/fir.jpeg",
+        "imageUrl": "product-photos/7798823452783_e2bad3e2bd50.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
         "price": {
           "min": 22,
@@ -110697,22 +110827,19 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
-          "Newborn",
-          "18-24 Months"
-        ]
+          "3-6 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Latte",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte.jpeg",
+        "imageUrl": "product-photos/7798823485551_3d4cc238fddf.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
         "price": {
           "min": 22,
@@ -110721,15 +110848,15 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
-          "Newborn",
-          "18-24 Months"
-        ]
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Preemie"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -110987,6 +111114,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -111002,7 +111131,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "sunday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte-leopard.jpeg",
+        "imageUrl": "product-photos/7812538957935_01cb2a6c43c0.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
         "price": {
           "min": 22,
@@ -111011,15 +111140,10 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "3-6 months",
-          "6-12 months",
-          "0-3 months",
-          "Preemie",
-          "12-18 Months",
-          "Newborn",
-          "18-24 Months"
-        ]
+        "historicalSizes": [
+          "Preemie"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Merry & Bright",
@@ -111035,6 +111159,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -111059,6 +111185,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -111083,6 +111211,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -111107,6 +111237,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -111131,6 +111263,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -111155,6 +111289,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -111179,6 +111315,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "3-6 months",
           "6-12 months",
@@ -116016,7 +116154,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/basketball.jpeg",
+        "imageUrl": "product-photos/7853569671279_d7449bf54a6d.jpg",
         "swatchImageUrl": "swatches/basketball.jpeg",
         "price": {
           "min": 22,
@@ -116025,24 +116163,23 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "2T",
-          "3T",
-          "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
+        "historicalSizes": [
           "12-18 Months",
           "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "4T",
+          "6-12 Months",
           "Newborn"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-04-13"
       },
       {
         "name": "Bear Hearts",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bear-hearts.jpeg",
+        "imageUrl": "product-photos/7907270852719_3eed57c07a02.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
           "min": 22,
@@ -116051,17 +116188,16 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
+          "0-3 Months",
           "2T",
+          "3-6 Months",
           "3T",
           "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
-          "12-18 Months",
-          "18-24 Months",
+          "6-12 Months",
           "Newborn"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       },
       {
         "name": "Bewitched",
@@ -116077,6 +116213,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116103,6 +116241,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116129,6 +116269,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116155,6 +116297,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116172,7 +116316,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/puffin.jpeg",
+        "imageUrl": "product-photos/7853577011311_7b19083dd702.jpg",
         "swatchImageUrl": "swatches/puffin.jpeg",
         "price": {
           "min": 22,
@@ -116181,24 +116325,23 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "2T",
-          "3T",
-          "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
+        "historicalSizes": [
           "12-18 Months",
           "18-24 Months",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months",
           "Newborn"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Bisque",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/bisque.jpeg",
+        "imageUrl": "product-photos/7798823583855_6d88c28a7044.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
         "price": {
           "min": 22,
@@ -116207,24 +116350,24 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "2T",
-          "3T",
-          "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
           "18-24 Months",
-          "Newborn"
-        ]
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Dew",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "imageUrl": "product-photos/7750224085103_50803638449e.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
         "price": {
           "min": 22,
@@ -116233,24 +116376,25 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "2T",
-          "3T",
-          "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
           "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months",
           "Newborn"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       },
       {
         "name": "Fir",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/fir.jpeg",
+        "imageUrl": "product-photos/7798823616623_893ef5481418.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
         "price": {
           "min": 22,
@@ -116259,24 +116403,23 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "2T",
-          "3T",
-          "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
+        "historicalSizes": [
           "12-18 Months",
           "18-24 Months",
-          "Newborn"
-        ]
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Latte",
         "day": "friday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte.jpeg",
+        "imageUrl": "product-photos/7798823649391_c1673624286a.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
         "price": {
           "min": 22,
@@ -116285,17 +116428,17 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
-          "2T",
-          "3T",
-          "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
+        "historicalSizes": [
+          "0-3 Months",
           "12-18 Months",
           "18-24 Months",
-          "Newborn"
-        ]
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Mauve",
@@ -116311,6 +116454,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116669,6 +116814,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116686,7 +116833,7 @@ export const saleEntries: SaleEntry[] = [
         "day": "sunday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "swatches/latte-leopard.jpeg",
+        "imageUrl": "product-photos/7812539449455_d735f7ea3b1b.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
         "price": {
           "min": 22,
@@ -116695,17 +116842,16 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
-        "inferredSizes": [
+        "historicalSizes": [
+          "0-3 Months",
           "2T",
+          "3-6 Months",
           "3T",
           "4T",
-          "0-3 months",
-          "3-6 months",
-          "6-12 months",
-          "12-18 Months",
-          "18-24 Months",
+          "6-12 Months",
           "Newborn"
-        ]
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       },
       {
         "name": "Merry & Bright",
@@ -116721,6 +116867,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116747,6 +116895,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116773,6 +116923,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116799,6 +116951,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116825,6 +116979,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",
@@ -116851,6 +117007,8 @@ export const saleEntries: SaleEntry[] = [
         "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
         "inferredSizes": [
           "2T",
           "3T",

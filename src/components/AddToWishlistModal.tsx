@@ -23,12 +23,15 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
   day,
 }) => {
   const { addItem, isInWishlist } = useWishlist();
-  const sizesAreInferred = !print.productMatch && !!print.inferredSizes?.length;
+  const sizesAreHistorical = !print.productMatch && !!print.historicalSizes?.length;
+  const sizesAreInferred = !print.productMatch && !sizesAreHistorical && !!print.inferredSizes?.length;
   const availableSizes = print.productMatch
     ? sortSizes(Array.from(new Set(print.productMatch.variants.map(v => v.size))))
-    : sizesAreInferred
-      ? sortSizes(print.inferredSizes!)
-      : ['One Size'];
+    : sizesAreHistorical
+      ? sortSizes(print.historicalSizes!)
+      : sizesAreInferred
+        ? sortSizes(print.inferredSizes!)
+        : ['One Size'];
   const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
 
   const alreadyInWishlist = isInWishlist(itemId, print.name);
@@ -91,6 +94,11 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
               </button>
             ))}
           </div>
+          {sizesAreHistorical && (
+            <p className="size-inferred-note">
+              ⓘ Sizes shown are from a {print.historicalSnapshotDate} snapshot taken before this print was removed from the site — current availability isn't confirmed.
+            </p>
+          )}
           {sizesAreInferred && (
             <p className="size-inferred-note">
               ⓘ Sizes shown are based on this product's other prints — exact stock for {print.name} isn't confirmed.
