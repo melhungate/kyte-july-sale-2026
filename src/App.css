@@ -42,18 +42,18 @@
   letter-spacing: 0.5px;
 }
 
-.assumptions-banner {
-  background: #fff8ec;
+.methodology-banner {
+  background: #eaf7f3;
   border-bottom: 1px solid var(--border-color);
-  border-left: 4px solid #b8860b;
+  border-left: 4px solid var(--success-color);
   padding: 14px 20px;
   font-size: 13px;
   line-height: 1.5;
   color: var(--text-dark);
 }
 
-.assumptions-banner a {
-  color: #8a6300;
+.methodology-banner a {
+  color: #1f7a5c;
   font-weight: 600;
 }
 

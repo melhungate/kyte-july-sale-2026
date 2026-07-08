@@ -63442,10 +63442,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "swatches/sakura-peony.jpeg",
         "swatchImageUrl": "swatches/sakura-peony.jpeg",
         "price": {
-          "min": 50.0,
-          "max": 50.0
+          "min": 50,
+          "max": 50
         },
-        "priceSource": "inferred-from-siblings",
+        "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
@@ -64813,9 +64813,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-05-31_at_3.12.55_PM_600x600.png?v=1685564345",
         "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-05-31_at_3.12.55_PM_600x600.png?v=1685564345",
-        "price": null,
+        "price": {
+          "min": 43,
+          "max": 43
+        },
         "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": null,
         "historicalSizes": null,
@@ -68648,10 +68651,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "swatches/sakura-peony.jpeg",
         "swatchImageUrl": "swatches/sakura-peony.jpeg",
         "price": {
-          "min": 35.0,
-          "max": 40.0
+          "min": 35,
+          "max": 35
         },
-        "priceSource": "inferred-from-siblings",
+        "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
@@ -116273,10 +116276,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "swatches/candy-cane.jpeg",
         "swatchImageUrl": "swatches/candy-cane.jpeg",
         "price": {
-          "min": 22.0,
-          "max": 22.0
+          "min": 22,
+          "max": 22
         },
-        "priceSource": "inferred-from-siblings",
+        "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
@@ -122042,10 +122045,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "swatches/vintage-santa.jpeg",
         "swatchImageUrl": "swatches/vintage-santa.jpeg",
         "price": {
-          "min": 22.0,
-          "max": 24.0
+          "min": 22,
+          "max": 22
         },
-        "priceSource": "inferred-from-siblings",
+        "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
@@ -122071,10 +122074,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "swatches/candy-cane.jpeg",
         "swatchImageUrl": "swatches/candy-cane.jpeg",
         "price": {
-          "min": 22.0,
-          "max": 24.0
+          "min": 22,
+          "max": 22
         },
-        "priceSource": "inferred-from-siblings",
+        "priceSource": "pdf-starting-only",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
@@ -125217,9 +125220,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-01-30_at_8.54.56_PM_600x600.png?v=1738292133",
         "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-01-30_at_8.54.56_PM_600x600.png?v=1738292133",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55,
+          "max": 55
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": null,
         "historicalSizes": null,
@@ -125232,9 +125238,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-02-03_at_6.53.09_PM_600x600.png?v=1738630406",
         "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-02-03_at_6.53.09_PM_600x600.png?v=1738630406",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55,
+          "max": 55
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": null,
         "historicalSizes": null,
@@ -125249,9 +125258,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539220079_b2cb5a1bd0e2.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55,
+          "max": 55
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
         "historicalSizes": [

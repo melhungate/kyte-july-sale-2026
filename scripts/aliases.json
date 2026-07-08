@@ -51,7 +51,8 @@
   },
   "category_price_overrides_comment": "Keyed by the exact category display name. Overrides EVERY print's price in that category to a flat confirmed number, regardless of what price source the pipeline otherwise derived (predictions, PDF, sibling-inferred) — used when Kyte confirmed a flat promotional price for a whole product line (e.g. via Instagram Live).",
   "category_price_overrides": {
-    "Lounge Pant": 25
+    "Lounge Pant": 25,
+    "Women's Biker Short Set": 55
   },
   "manual_print_additions_comment": "Prints confirmed (e.g. via Instagram Live) for specific categories that neither the Look Book PDF text nor a historical snapshot already covers. Added as pdf-only entries (no real live product), so sizes/price are inferred from sibling prints in the same category exactly like any other PDF-only print. Automatically skipped if the (category, print) pair is already covered by a real product or another loop, so it's safe to list a category that might already have this print.",
   "manual_print_additions": [

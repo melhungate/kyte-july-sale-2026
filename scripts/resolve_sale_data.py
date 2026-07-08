@@ -831,6 +831,19 @@ def main():
             day = addition["day"]
             day_source = "default-carryover"
 
+        # category_norm equals the PDF alias key verbatim when this category
+        # is one of the ~20 the Look Book prices explicitly (see
+        # category_aliases) — reuse that confirmed category-wide price
+        # instead of always falling through to a blank price and hoping a
+        # sibling in the same entry happens to have a trusted price source.
+        pdf_price = category_day_price_map.get(f"{category_norm}|{day}")
+        if pdf_price is not None:
+            price = {"min": pdf_price, "max": pdf_price}
+            is_no_sale_price = False
+        else:
+            price = None
+            is_no_sale_price = True
+
         swatch_url = find_swatch_url(print_name_raw, normalized_print, swatch_database, swatch_database_lower, local_swatch_files)
         source = "pdf-only-swatch" if swatch_url is not None else "pdf-only-missing"
 
@@ -841,9 +854,9 @@ def main():
             "source": source,
             "imageUrl": swatch_url,
             "swatchImageUrl": swatch_url,
-            "price": None,
+            "price": price,
             "priceSource": "pdf-starting-only",
-            "noSalePriceFound": True,
+            "noSalePriceFound": is_no_sale_price,
             "isFirstTimeOnClearance": normalized_print not in print_ever_carryover,
             "productMatch": None,
             "historicalSizes": None,
