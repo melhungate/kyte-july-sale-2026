@@ -10,7 +10,10 @@ export type DaySource = 'pdf' | 'default-carryover' | 'default-conflict';
 // sizes may cost more. 'predictions': no PDF coverage, live price range used.
 // 'manual-override': no PDF/predictions sale-price evidence at all — a flat
 // historical sale price was hand-entered in aliases.json's manual_price_overrides.
-export type PriceSource = 'pdf-confirmed' | 'pdf-starting-only' | 'predictions' | 'manual-override';
+// 'inferred-from-siblings': this print itself has no sale-price evidence, but
+// a sibling print of the same product does — that price was copied over,
+// since Kyte prices by silhouette/size, not by print.
+export type PriceSource = 'pdf-confirmed' | 'pdf-starting-only' | 'predictions' | 'manual-override' | 'inferred-from-siblings';
 
 export interface ProductVariantInfo {
   size: string;
@@ -809,9 +812,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7119944810607_f3f1ed3a08bc.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 135.0,
+          "max": 135.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Adult"
@@ -825,9 +831,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799786668143_6a3836e93660.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 135.0,
+          "max": 135.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Adult"
@@ -841,9 +850,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752396963951_f25c2580d523.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 135.0,
+          "max": 135.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Adult"
@@ -1135,9 +1147,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798817718383_1f66b98d7462.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 80.0,
+          "max": 80.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L/XL",
@@ -1152,9 +1167,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798817816687_82b34bd1f1af.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 80.0,
+          "max": 80.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L/XL",
@@ -1169,9 +1187,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798817783919_de35cc7b0814.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 80.0,
+          "max": 80.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L/XL",
@@ -1188,9 +1209,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812538400879_22f5821d66d5.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 80.0,
+          "max": 80.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L/XL",
@@ -2696,9 +2720,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7800623595631_50f67cee0c56.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -2712,9 +2739,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7800623497327_a8a61d04447c.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -2728,9 +2758,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270099055_6b7edfc5b5cd.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -2744,9 +2777,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7853569310831_05bdde8453c6.jpg",
         "swatchImageUrl": "swatches/basketball.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -2760,9 +2796,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752397095023_159a9130aaf7.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -2776,9 +2815,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033525108847_f29e7b614a24.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -3752,9 +3794,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814122471535_ec6f827a7ccc.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "1-2T",
@@ -3769,9 +3814,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814122504303_09f0d4ba84bd.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "1-2T",
@@ -4810,9 +4858,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814126698607_f1cd93bf3c31.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 24.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -4831,9 +4882,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814126731375_9efacda6a00d.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 24.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -5253,9 +5307,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814122700911_49ca8056544b.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 24.0,
+          "max": 25.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "2T",
@@ -10002,9 +10059,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7816617295983_632b91369738.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -10023,9 +10083,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812981686383_1e0f77bc0737.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -12464,8 +12527,8 @@ export const saleEntries: SaleEntry[] = [
           "min": 20.0,
           "max": 20.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7608644599919,
           "productTitle": "Burp Cloth in Jurassic",
@@ -15369,9 +15432,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7120042164335_226698fe5e93.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "One Size"
@@ -15385,9 +15451,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798819913839_ded184fd5b4a.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "One Size"
@@ -15401,9 +15470,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752233156719_104379eab52d.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "One Size"
@@ -15869,9 +15941,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7853573898351_0709b6b9ec0f.jpg",
         "swatchImageUrl": "swatches/puffin.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 85.0,
+          "max": 85.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -15888,9 +15963,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7816605073519_d944f2a51197.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 85.0,
+          "max": 85.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -15913,8 +15991,8 @@ export const saleEntries: SaleEntry[] = [
           "min": 85.0,
           "max": 85.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7861014495343,
           "productTitle": "Cozy Playsuit in Ski",
@@ -15952,9 +16030,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7815910490223_ffa8b4b21d69.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 85.0,
+          "max": 85.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -17492,9 +17573,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7119948906607_0678f6ea22ed.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Crib Sheet"
@@ -17508,9 +17592,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799190126703_5d6b41858dfa.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Crib Sheet"
@@ -17524,9 +17611,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799190192239_31696934f609.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Crib Sheet"
@@ -17540,9 +17630,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270164591_a94f6c0d4ff9.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Crib Sheet"
@@ -17556,9 +17649,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033543196783_72653baf7ac5.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Crib Sheet"
@@ -17658,9 +17754,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812538794095_2d57c13b0198.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Crib Sheet"
@@ -18344,10 +18443,10 @@ export const saleEntries: SaleEntry[] = [
         "swatchImageUrl": "swatches/ecru-roar.png",
         "price": {
           "min": 20.0,
-          "max": 22.0
+          "max": 24.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7708084699247,
           "productTitle": "Drawstring Short in Ecru Roar",
@@ -18407,10 +18506,10 @@ export const saleEntries: SaleEntry[] = [
         "swatchImageUrl": "swatches/vintage-truck.jpeg",
         "price": {
           "min": 20.0,
-          "max": 22.0
+          "max": 24.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7708082274415,
           "productTitle": "Drawstring Short in Vintage Truck",
@@ -18468,9 +18567,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7853572817007_9be4f31f8c71.jpg",
         "swatchImageUrl": "swatches/basketball.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -18488,9 +18590,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7764309213295_ca7ade78bc34.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -18510,9 +18615,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7766137340015_6bda4e2ced34.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -18538,11 +18646,11 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7787178917999_9b5a53d5192d.jpg",
         "swatchImageUrl": "swatches/fast-and-fierce.jpeg",
         "price": {
-          "min": 22.0,
+          "min": 20.0,
           "max": 24.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7787178917999,
           "productTitle": "Drawstring Short in Fast and Fierce",
@@ -19901,9 +20009,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7749178392687_4a98332fcdea.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -20375,9 +20486,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752227324015_40fc64790dce.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 14.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -20434,9 +20548,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/4426124689519_018439551302.jpg",
         "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 25.0,
+          "max": 25.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -20687,9 +20804,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7852742901871_96b30a2a802e.jpg",
         "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -22314,9 +22434,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7120041508975_41d3a628e27a.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -22333,9 +22456,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799788830831_a73af29ab750.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -22352,9 +22478,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799788798063_e114e14cd5d5.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -22371,9 +22500,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752240005231_85249658c086.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -22391,9 +22523,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7893850849391_1e5af388222f.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "1-4T",
@@ -24111,9 +24246,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7120041181295_dca91037cf01.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -24130,9 +24268,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799786799215_6956d281000b.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -24149,9 +24290,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799786864751_b975012e66c3.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -24167,9 +24311,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799786831983_60867887ef31.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3-6 Months",
@@ -24184,9 +24331,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752240103535_426615b2c882.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -24628,9 +24778,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270033519_f33bd859dcc2.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -34418,9 +34571,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7120040329327_ab7343ea3e27.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 18.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -34441,9 +34597,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799327064175_b456dc5a35a1.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 18.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -34463,9 +34622,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7853569278063_68d37449fb3c.jpg",
         "swatchImageUrl": "swatches/basketball.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 18.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -34626,9 +34788,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812538499183_47730ec444cd.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 18.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -34747,9 +34912,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7853575110767_b810686f5870.jpg",
         "swatchImageUrl": "swatches/puffin.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 18.0,
+          "max": 18.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -34770,9 +34938,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799782834287_f82a02929a6f.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 18.0,
+          "max": 18.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -36674,9 +36845,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7120039346287_8beb1eb7a137.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 25.0,
+          "max": 27.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -36810,9 +36984,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812538531951_133ff1888cb5.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 25.0,
+          "max": 27.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -42341,9 +42518,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7800616976495_ec17e967db9a.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "2XL (20-22)",
@@ -42362,9 +42542,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7800616648815_515839815c45.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "2XL (20-22)",
@@ -42383,9 +42566,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7800616550511_984a00f45165.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "2XL (20-22)",
@@ -42404,9 +42590,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907281928303_ac3cb342062a.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "2XL (20-22)",
@@ -42480,9 +42669,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812982276207_e58bc95c93d1.png",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L (12-14)",
@@ -43325,9 +43517,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812538630255_d641bd181b0a.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 22.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -44054,9 +44249,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752397193327_2ee48d5b35cf.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 10.0,
+          "max": 10.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -45121,9 +45319,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752403157103_788aa4d00747.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 15.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3XL",
@@ -45142,9 +45343,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033805832303_75fdc903f4d2.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 15.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Men's L",
@@ -46682,9 +46886,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033808060527_14b7f989d6d3.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Men's XXL"
@@ -47271,9 +47478,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799779393647_6a3857891d78.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Men's L",
@@ -47291,9 +47501,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7864368660591_cde9b3c07cf2.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Men's L",
@@ -47373,8 +47586,8 @@ export const saleEntries: SaleEntry[] = [
           "min": 135.0,
           "max": 135.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7861014724719,
           "productTitle": "Men's Long Sleeve Pajama Set in Ski",
@@ -48467,9 +48680,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033806520431_745aaca0ac18.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Men's 3XL",
@@ -48947,9 +49163,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799190978671_c2c15e704283.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 22.0,
+          "max": 22.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Mini Crib Sheet"
@@ -49573,9 +49792,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7120038297711_ea09594693a0.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 13.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -49593,9 +49815,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799782408303_3f5dccba65f1.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 13.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "18-24 Months",
@@ -49614,9 +49839,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799782309999_0238d9ca476f.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 13.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -49637,9 +49865,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7750243450991_08159cf56330.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 13.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -49660,9 +49891,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033830015087_4d37d36522d9.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 13.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -49684,9 +49918,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812538663023_84d22640a9ee.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 13.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -50261,9 +50498,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270066287_41c5333b64b0.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 24.0,
+          "max": 26.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -51270,9 +51510,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270393967_646c8aa49d37.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 24.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -51727,9 +51970,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814154551407_5d49b852c81c.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 11.0,
+          "max": 11.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -51746,9 +51992,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814154616943_41c9b5887713.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 11.0,
+          "max": 11.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -51989,9 +52238,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814144852079_f214a16950d9.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 26.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -52012,9 +52264,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814144917615_01678bb8b1cf.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 26.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -52257,9 +52512,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7815484276847_4195e4471cf8.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 25.0,
+          "max": 25.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -52283,9 +52541,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7815484244079_3dc4c4a0896c.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 25.0,
+          "max": 25.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -52570,9 +52831,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7815517896815_0164038d0380.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 16.0,
+          "max": 16.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months"
@@ -52586,9 +52850,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7815517962351_4be8f4c31ad5.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 16.0,
+          "max": 16.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -52973,9 +53240,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7815877984367_7a87817690cd.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 16.0,
+          "max": 19.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months"
@@ -52989,9 +53259,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7815877918831_8b24ec097e3e.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 16.0,
+          "max": 19.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -54265,9 +54538,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814154453103_22fff2beca1d.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 26.0,
+          "max": 26.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -54508,9 +54784,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814150619247_5bc8866a08e5.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 26.0,
+          "max": 28.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -54530,9 +54809,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814150652015_420bf7ce46ab.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 26.0,
+          "max": 28.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -58635,9 +58917,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7749178458223_8cfdc8cadbe8.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -58656,9 +58941,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7011498819695_285e1c1a5256.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -58885,9 +59173,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812538826863_c30a6a009fb5.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 Months",
@@ -58997,9 +59288,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907281666159_02ddd7823762.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Infant"
@@ -59134,9 +59428,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907281698927_af762d894e95.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -72301,9 +72598,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7119947563119_733c28f6e1dc.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 40.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -72319,9 +72619,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798809100399_22f8a1c2322e.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 40.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -72337,9 +72640,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798809198703_76c93dd89a65.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 40.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -72355,9 +72661,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/6990170816623_d199059c32ea.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 40.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -72504,9 +72813,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812540956783_d74f8b3ebff9.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 40.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "S"
@@ -74529,9 +74841,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7749178523759_f2bedbcfdb6a.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 14.0,
+          "max": 16.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -76020,9 +76335,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798807461999_bb838122b4cc.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -79565,9 +79883,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270557807_41f350298ebd.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 22.0,
+          "max": 22.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "One Size"
@@ -79723,9 +80044,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539056239_db6a7b4508d1.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 22.0,
+          "max": 22.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "One Size"
@@ -79786,8 +80110,8 @@ export const saleEntries: SaleEntry[] = [
           "min": 40.0,
           "max": 40.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7901202186351,
           "productTitle": "Take Me Home Set with Bow in Disco Cowgirl",
@@ -79826,8 +80150,8 @@ export const saleEntries: SaleEntry[] = [
           "min": 40.0,
           "max": 40.0
         },
-        "priceSource": "predictions",
-        "noSalePriceFound": true,
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": {
           "productId": 7907285729391,
           "productTitle": "Take Me Home Set with Bow in Small Love Bow",
@@ -79999,9 +80323,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270590575_bce3596083f6.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 24.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "0-3 months",
@@ -80877,9 +81204,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7853569540207_9226c45350fb.jpg",
         "swatchImageUrl": "swatches/basketball.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 14.0,
+          "max": 18.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -80967,9 +81297,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539121775_a46eca3a6110.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 14.0,
+          "max": 18.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -82745,9 +83078,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270262895_2f020bb7b1d8.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -82761,9 +83097,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7853569409135_14bb32f5fa3a.jpg",
         "swatchImageUrl": "swatches/basketball.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -82891,9 +83230,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812982046831_a031556e4a5d.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -83194,9 +83536,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798826008687_9dbd7baed2e6.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -83210,9 +83555,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752397324399_b31272f4d2a0.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -83226,9 +83574,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033525370991_821f59247b94.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -87672,9 +88023,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7119962013807_769a40cf350d.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 14.0,
+          "max": 14.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -87694,9 +88048,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799327260783_5c9b84e5b580.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 14.0,
+          "max": 14.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -88131,9 +88488,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798820110447_1a03b3d831f6.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 12.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -88147,9 +88507,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798820077679_5cfdfa3132b4.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 12.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -88249,9 +88612,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539154543_92a189f37456.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 12.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Toddler"
@@ -89266,9 +89632,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7108574019695_9af318c6f72d.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 12.0,
+          "max": 14.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 months",
@@ -90088,9 +90457,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270721647_33a402e95938.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 14.0,
+          "max": 18.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "10",
@@ -90615,9 +90987,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7119951036527_de8b80c9fd9a.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Twin Sheet"
@@ -90631,9 +91006,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798820175983_3be1242d414b.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Twin Sheet"
@@ -90647,9 +91025,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7047410647151_a39f1f6b4370.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Twin Sheet"
@@ -90693,9 +91074,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539187311_3ca03730eb00.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Twin Sheet"
@@ -93080,9 +93464,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270754415_f9c916032eab.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 22.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "12-18 Months",
@@ -95172,9 +95559,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799196745839_3653e7f88970.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 15.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3XL (24-26)",
@@ -95194,9 +95584,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/14995665191023_eef6f3a28522.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 15.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L (12-14)",
@@ -98522,9 +98915,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799785095279_e90e143cba9c.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3XL (24-26)",
@@ -98604,9 +99000,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539252847_8e5685108f83.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3XL (24-26)",
@@ -99386,9 +99785,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7844711170159_dc8f3d1e42fe.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 15.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -99407,9 +99809,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7831372759151_3640792888c7.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 15.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -100528,9 +100933,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7877053644911_84beabcd5ac7.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3XL (24-26)",
@@ -100663,9 +101071,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539285615_59cfe5aed5d8.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3XL (24-26)",
@@ -101468,9 +101879,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539318383_8e0b6e483473.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 45.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "M/L",
@@ -106512,9 +106926,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539351151_fdbfb00f8101.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 15.0,
+          "max": 15.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -106644,9 +107061,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7232372408431_2b11779a2de8.jpg",
         "swatchImageUrl": "swatches/latte.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 39.0,
+          "max": 39.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L",
@@ -107141,9 +107561,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7125885157487_a46cdf4754b0.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L (12-14)",
@@ -107851,9 +108274,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7752397488239_d6bdb5d0c6de.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 40,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "L (12-14)",
@@ -109110,9 +109536,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7799787061359_1f9b53bf7d42.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 9.0,
+          "max": 9.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "3XL",
@@ -109672,9 +110101,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7119946449007_7ad7b19fcbe9.jpg",
         "swatchImageUrl": "swatches/espresso.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 95.0,
+          "max": 95.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Youth"
@@ -109688,9 +110120,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798826106991_759e2eabc600.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 95.0,
+          "max": 95.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Youth"
@@ -109704,9 +110139,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7798826074223_6e409de95217.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 95.0,
+          "max": 95.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Youth"
@@ -109720,9 +110158,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7907270819951_daf1bab4c762.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 95.0,
+          "max": 95.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Youth"
@@ -109736,9 +110177,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7033527402607_5783e65e2e79.jpg",
         "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 95.0,
+          "max": 95.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Youth"
@@ -109838,9 +110282,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7812539383919_c87292de34db.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 95.0,
+          "max": 95.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "Youth"
@@ -123665,9 +124112,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7750243713135_7945f3d7f76c.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 20.0,
+          "max": 22.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
         "productMatch": null,
         "historicalSizes": [
           "18-24 Months",

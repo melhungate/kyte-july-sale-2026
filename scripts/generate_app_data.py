@@ -26,7 +26,10 @@ export type DaySource = 'pdf' | 'default-carryover' | 'default-conflict';
 // sizes may cost more. 'predictions': no PDF coverage, live price range used.
 // 'manual-override': no PDF/predictions sale-price evidence at all — a flat
 // historical sale price was hand-entered in aliases.json's manual_price_overrides.
-export type PriceSource = 'pdf-confirmed' | 'pdf-starting-only' | 'predictions' | 'manual-override';
+// 'inferred-from-siblings': this print itself has no sale-price evidence, but
+// a sibling print of the same product does — that price was copied over,
+// since Kyte prices by silhouette/size, not by print.
+export type PriceSource = 'pdf-confirmed' | 'pdf-starting-only' | 'predictions' | 'manual-override' | 'inferred-from-siblings';
 
 export interface ProductVariantInfo {
   size: string;

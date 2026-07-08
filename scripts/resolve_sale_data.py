@@ -787,6 +787,24 @@ def main():
                 if not p.get("productMatch") and not p.get("historicalSizes"):
                     p["inferredSizes"] = real_sizes
 
+    # Some prints (mostly historical-snapshot backfills for categories the
+    # PDF doesn't cover) have no sale-price evidence of their own at all. If
+    # a sibling print of the SAME product has a real confirmed sale price
+    # (predictions/pdf-confirmed/manual-override), that price overwhelmingly
+    # likely applies here too — Kyte prices by silhouette/size, not by print.
+    for entry in entries.values():
+        confirmed_prices = [p["price"] for p in entry["prints"]
+                             if p.get("price") and p.get("priceSource") in ("predictions", "pdf-confirmed", "manual-override")]
+        if not confirmed_prices:
+            continue
+        inferred_min = min(p["min"] for p in confirmed_prices)
+        inferred_max = max(p["max"] for p in confirmed_prices)
+        for p in entry["prints"]:
+            if p.get("noSalePriceFound") or p.get("price") is None:
+                p["price"] = {"min": inferred_min, "max": inferred_max}
+                p["priceSource"] = "inferred-from-siblings"
+                p["noSalePriceFound"] = False
+
     sale_entries = list(entries.values())
     (DATA_DIR / "resolved_sale_data.json").write_text(json.dumps(sale_entries, indent=2))
 
@@ -837,17 +855,25 @@ def main():
         lines.append(f"- {print_name} ({product_type}) — PDF has this under: {', '.join(days)}")
     (SCRIPTS_DIR / "day_conflicts_defaulted.md").write_text("\n".join(lines))
 
-    # no_sale_price_found.md
-    by_type = {}
-    for product_type, print_name in no_sale_price_found:
-        by_type.setdefault(product_type, set()).add(print_name)
+    # no_sale_price_found.md — derived from the FINAL entries (after the
+    # sibling-price-inference pass above), not the raw no_sale_price_found
+    # list, since many of those get backfilled with a sibling's confirmed
+    # price and are no longer actually missing.
+    still_missing = []  # (category_display, print_name)
+    for entry in entries.values():
+        for p in entry["prints"]:
+            if p.get("noSalePriceFound"):
+                still_missing.append((entry["name"], p["name"]))
+    by_category = {}
+    for category_display, print_name in still_missing:
+        by_category.setdefault(category_display, set()).add(print_name)
     lines = [
         "# No Sale Price Found\n",
-        f"{len(by_type)} product types ({len(no_sale_price_found)} print entries) have NO sale-price evidence anywhere — not from the predictions scrape (no compare_at_price/discount detected) and not from the PDF look book. The price currently shown for these is just Kyte's regular retail price.\n",
-        "To fix one, add its Kyte `product_type` (the heading below) and a flat historical sale price to `manual_price_overrides` in `scripts/aliases.json`, then rerun the pipeline. The UI also shows a small \"no sale price found\" indicator on these until then.\n",
+        f"{len(by_category)} categories ({len(still_missing)} print entries) have NO sale-price evidence anywhere — not from the predictions scrape, not from the PDF look book, and no sibling print in the same category has a confirmed sale price either. The price currently shown for these (if any) is just Kyte's regular retail price.\n",
+        "To fix one, add its Kyte `product_type` and a flat historical sale price to `manual_price_overrides` in `scripts/aliases.json`, then rerun the pipeline. The UI also shows a small \"no sale price found\" indicator on these until then.\n",
     ]
-    for product_type, prints in sorted(by_type.items()):
-        lines.append(f"### {product_type}")
+    for category_display, prints in sorted(by_category.items()):
+        lines.append(f"### {category_display}")
         for p in sorted(prints, key=str.lower):
             lines.append(f"- {p}")
         lines.append("")
@@ -861,8 +887,9 @@ def main():
     print(f"Carryover-defaulted prints (see scripts/carryover_defaulted.md): {len(set(carryover_defaulted))}")
     print(f"Dual-day-conflict-defaulted prints (see scripts/day_conflicts_defaulted.md): {len(set((p,t) for p,t,d in conflict_defaulted))}")
     print(f"Real-photo prints with no swatch (grouped small-tile view only, see MISSING_SWATCHES.md): {len(predictions_products_no_swatch)}")
-    print(f"Product types with NO sale price found anywhere (see scripts/no_sale_price_found.md): {len(set(pt for pt, _ in no_sale_price_found))}")
+    print(f"Categories with NO sale price found anywhere, even from siblings (see scripts/no_sale_price_found.md): {len(by_category)}")
     print(f"PDF-only prints backfilled with real photo/sizes from a historical snapshot: {historical_backfill_count}")
+    print(f"Prints backfilled with a sibling print's confirmed sale price: {sum(1 for e in entries.values() for p in e['prints'] if p.get('priceSource') == 'inferred-from-siblings')}")
 
 
 if __name__ == "__main__":

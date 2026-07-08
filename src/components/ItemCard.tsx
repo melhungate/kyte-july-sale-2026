@@ -24,7 +24,7 @@ function summarizePrints(prints: EnrichedPrint[]): { priceLabel: string; sizesLa
   if (withPrice.length > 0) {
     const min = Math.min(...withPrice.map(p => p.price!.min));
     const max = Math.max(...withPrice.map(p => p.price!.max));
-    const hasUncertain = withPrice.some(p => p.priceSource === 'pdf-starting-only');
+    const hasUncertain = withPrice.some(p => p.priceSource === 'pdf-starting-only' || p.priceSource === 'inferred-from-siblings');
     priceLabel = min === max ? `$${min.toFixed(0)}` : `$${min.toFixed(0)}–$${max.toFixed(0)}`;
     if (hasUncertain) priceLabel += '+';
   }

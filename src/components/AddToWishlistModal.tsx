@@ -110,9 +110,15 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
           <span>Price:</span>
           <span
             className="price-value"
-            title={print.priceSource === 'pdf-starting-only' ? 'Starting price only — larger sizes may cost more' : undefined}
+            title={
+              print.priceSource === 'pdf-starting-only'
+                ? 'Starting price only — larger sizes may cost more'
+                : print.priceSource === 'inferred-from-siblings'
+                  ? "Price based on this product's other prints — not confirmed for this specific print"
+                  : undefined
+            }
           >
-            {formatPrice(currentPrice)}{print.priceSource === 'pdf-starting-only' ? '+' : ''}
+            {formatPrice(currentPrice)}{print.priceSource === 'pdf-starting-only' || print.priceSource === 'inferred-from-siblings' ? '+' : ''}
           </span>
         </div>
 

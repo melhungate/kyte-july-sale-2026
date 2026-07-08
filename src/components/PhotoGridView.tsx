@@ -28,8 +28,14 @@ interface FlatCard {
 function formatPrice(print: EnrichedPrint): string {
   if (!print.price) return '';
   const { min, max } = print.price;
-  const suffix = print.priceSource === 'pdf-starting-only' ? '+' : '';
+  const suffix = print.priceSource === 'pdf-starting-only' || print.priceSource === 'inferred-from-siblings' ? '+' : '';
   return min === max ? `$${min.toFixed(0)}${suffix}` : `$${min.toFixed(0)}–$${max.toFixed(0)}${suffix}`;
+}
+
+function priceTitle(print: EnrichedPrint): string | undefined {
+  if (print.priceSource === 'pdf-starting-only') return 'Starting price only — larger sizes may cost more';
+  if (print.priceSource === 'inferred-from-siblings') return "Price based on this product's other prints — not confirmed for this specific print";
+  return undefined;
 }
 
 export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, searchTerm, onWishlistClick }) => {
@@ -99,7 +105,7 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
                 {print.price && (
                   <span
                     className="photo-card-price"
-                    title={print.priceSource === 'pdf-starting-only' ? 'Starting price only — larger sizes may cost more' : undefined}
+                    title={priceTitle(print)}
                   >
                     {formatPrice(print)}
                   </span>
