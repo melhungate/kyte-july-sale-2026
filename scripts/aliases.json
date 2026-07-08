@@ -12,10 +12,7 @@
     "toddler short sleeve pajama set": [{"product_type": "Short Sleeve Toddler Pajama Set"}],
     "toddler short sleeve with pants pajama set": [{"product_type": "Short Sleeve with Pants Pajamas"}],
     "short sleeve crew neck tee": [{"product_type": "Short Sleeve Toddler Unisex Tee"}],
-    "twirl dress": [
-      {"product_type": "Toddler Long Sleeve Twirl Dress"},
-      {"product_type": "Toddler Short Sleeve Twirl Dress"}
-    ],
+    "twirl dress": [{"product_type": "Toddler Short Sleeve Twirl Dress"}],
     "boy's briefs": [{"product_type": "Underwear", "title_prefix": "Briefs"}],
     "girl's undies": [{"product_type": "Underwear", "title_prefix": "Undies"}],
     "girl's shorties": [{"product_type": "Shorties"}],
@@ -49,7 +46,8 @@
   "excluded_prints": ["Tahoe"],
   "category_renames_comment": "Kyte's own raw product_type occasionally uses two different names for what is really one product line. Renames the display category (and its normalized id) to the canonical name after category resolution, so both sides merge into one entry instead of splitting into an orphaned duplicate.",
   "category_renames": {
-    "Sleeveless Zipper Romper": "Zippered Sleeveless Romper"
+    "Sleeveless Zipper Romper": "Zippered Sleeveless Romper",
+    "Toddler Long Sleeve Twirl Dress": "Long Sleeve Twirl Dress"
   },
   "category_price_overrides_comment": "Keyed by the exact category display name. Overrides EVERY print's price in that category to a flat confirmed number, regardless of what price source the pipeline otherwise derived (predictions, PDF, sibling-inferred) — used when Kyte confirmed a flat promotional price for a whole product line (e.g. via Instagram Live).",
   "category_price_overrides": {
