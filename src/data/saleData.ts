@@ -801,6 +801,54 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119944810607_f3f1ed3a08bc.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Adult"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799786668143_6a3836e93660.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Adult"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752396963951_f25c2580d523.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Adult"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -1079,9 +1127,78 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798817718383_1f66b98d7462.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L/XL",
+          "S/M"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798817816687_82b34bd1f1af.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L/XL",
+          "S/M"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798817783919_de35cc7b0814.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L/XL",
+          "S/M"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538400879_22f5821d66d5.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L/XL",
+          "S/M"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ]
   },
   {
     "id": "baby-blanket-10",
@@ -2571,6 +2688,102 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7800623595631_50f67cee0c56.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7800623497327_a8a61d04447c.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270099055_6b7edfc5b5cd.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Basketball",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853569310831_05bdde8453c6.jpg",
+        "swatchImageUrl": "swatches/basketball.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752397095023_159a9130aaf7.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033525108847_f29e7b614a24.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -3061,6 +3274,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907236577391_215925a27e73.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": {
+          "min": 20,
+          "max": 20
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "OS"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -3119,6 +3351,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538433647_0db24e014c06.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": {
+          "min": 20,
+          "max": 20
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "OS"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -3493,6 +3744,40 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814122471535_ec6f827a7ccc.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "1-2T",
+          "2-6T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814122504303_09f0d4ba84bd.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "1-2T",
+          "2-6T"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -4517,6 +4802,53 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814126698607_f1cd93bf3c31.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814126731375_9efacda6a00d.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "5T",
+          "6-12 months",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -4913,6 +5245,24 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814122700911_49ca8056544b.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "2T",
+          "3T",
+          "4T"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -6445,6 +6795,63 @@ export const saleEntries: SaleEntry[] = [
           "One Size"
         ],
         "historicalSnapshotDate": "2026-07-06"
+      },
+      {
+        "name": "Puffin",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853577142383_35773c83c64b.jpg",
+        "swatchImageUrl": "swatches/puffin.jpeg",
+        "price": {
+          "min": 9,
+          "max": 9
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119951331439_cbf7026539fc.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": {
+          "min": 9,
+          "max": 9
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270131823_6328b8744fa2.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": {
+          "min": 9,
+          "max": 9
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -9587,9 +9994,48 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7816617295983_632b91369738.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "1-4T",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812981686383_1e0f77bc0737.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "1-4T",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ]
   },
   {
     "id": "boys-briefs",
@@ -10589,6 +11035,28 @@ export const saleEntries: SaleEntry[] = [
           "6T"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752403058799_bf30f152a95b.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": {
+          "min": 7,
+          "max": 7
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "2T",
+          "3T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -14893,6 +15361,54 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7120042164335_226698fe5e93.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798819913839_ded184fd5b4a.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752233156719_104379eab52d.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -15345,7 +15861,46 @@ export const saleEntries: SaleEntry[] = [
     "id": "cozy-playsuits-10-tog",
     "name": "Cozy Playsuits 1.0 TOG",
     "section": "Other",
-    "fridayPrints": [],
+    "fridayPrints": [
+      {
+        "name": "Puffin",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853573898351_0709b6b9ec0f.jpg",
+        "swatchImageUrl": "swatches/puffin.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7816605073519_d944f2a51197.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ],
     "sundayPrints": [
       {
         "name": "Ski",
@@ -15389,6 +15944,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815910490223_ffa8b4b21d69.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -16910,6 +17484,86 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119948906607_0678f6ea22ed.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Crib Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799190126703_5d6b41858dfa.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Crib Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799190192239_31696934f609.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Crib Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270164591_a94f6c0d4ff9.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Crib Sheet"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033543196783_72653baf7ac5.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Crib Sheet"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -16996,6 +17650,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538794095_2d57c13b0198.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Crib Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -17087,6 +17757,63 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799243309167_5b08c054b8bb.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": {
+          "min": 9,
+          "max": 9
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799251730543_415e7710e140.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": {
+          "min": 9,
+          "max": 9
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799247470703_aa71fb7d3c37.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": {
+          "min": 9,
+          "max": 9
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -17733,6 +18460,73 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Basketball",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853572817007_9be4f31f8c71.jpg",
+        "swatchImageUrl": "swatches/basketball.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7764309213295_ca7ade78bc34.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7766137340015_6bda4e2ced34.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -19099,6 +19893,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7749178392687_4a98332fcdea.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -19554,6 +20367,29 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752227324015_40fc64790dce.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -19590,6 +20426,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/4426124689519_018439551302.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-07-05"
       }
     ],
     "sundayPrints": []
@@ -19827,6 +20679,27 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7852742901871_96b30a2a802e.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-24 months",
+          "2T-4T",
+          "3-6 months",
+          "4T-6T",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -21433,9 +22306,103 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7120041508975_41d3a628e27a.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "1-4T",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799788830831_a73af29ab750.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "1-4T",
+          "3-6 Months",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799788798063_e114e14cd5d5.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "1-4T",
+          "3-6 Months",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752240005231_85249658c086.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "1-4T",
+          "3-6 Months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7893850849391_1e5af388222f.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "1-4T",
+          "3-6 Months",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ]
   },
   {
     "id": "knotted-cap",
@@ -23136,6 +24103,98 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7120041181295_dca91037cf01.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799786799215_6956d281000b.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799786864751_b975012e66c3.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "3-6 Months",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799786831983_60867887ef31.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3-6 Months",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752240103535_426615b2c882.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -23178,6 +24237,26 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7863091396719_c454b44fd714.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": {
+          "min": 20,
+          "max": 20
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -23541,6 +24620,23 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270033519_f33bd859dcc2.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": []
@@ -25400,6 +26496,49 @@ export const saleEntries: SaleEntry[] = [
           "Newborn"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Puffin",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853576552559_5599d3ed6683.jpg",
+        "swatchImageUrl": "swatches/puffin.jpeg",
+        "price": {
+          "min": 14,
+          "max": 14
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "3-6 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033827033199_f02c2d7f64f4.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": {
+          "min": 14,
+          "max": 14
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "6-12 months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -25560,6 +26699,29 @@ export const saleEntries: SaleEntry[] = [
           "12-18 months",
           "Preemie"
         ]
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812978540655_cc38a45dd1ef.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": {
+          "min": 14,
+          "max": 14
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -30066,6 +31228,47 @@ export const saleEntries: SaleEntry[] = [
           "12",
           "7T"
         ]
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907271049327_79582712582f.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": {
+          "min": 25,
+          "max": 25
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Basketball",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853569441903_f25d4ec28772.jpg",
+        "swatchImageUrl": "swatches/basketball.jpeg",
+        "price": {
+          "min": 25,
+          "max": 25
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "18-24 Months",
+          "2T",
+          "4T"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
       }
     ],
     "sundayPrints": [
@@ -33207,6 +34410,76 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7120040329327_ab7343ea3e27.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799327064175_b456dc5a35a1.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Basketball",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853569278063_68d37449fb3c.jpg",
+        "swatchImageUrl": "swatches/basketball.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
       }
     ],
     "sundayPrints": [
@@ -33345,6 +34618,29 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538499183_47730ec444cd.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -33443,6 +34739,52 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Puffin",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853575110767_b810686f5870.jpg",
+        "swatchImageUrl": "swatches/puffin.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "12-18 months",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799782834287_f82a02929a6f.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -35324,6 +36666,29 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7120039346287_8beb1eb7a137.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -35437,6 +36802,27 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538531951_133ff1888cb5.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -40439,6 +41825,56 @@ export const saleEntries: SaleEntry[] = [
           "7"
         ],
         "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119961817199_3f19e86a6bce.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": {
+          "min": 28,
+          "max": 28
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799327129711_1444f2212739.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": {
+          "min": 28,
+          "max": 28
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -40723,6 +42159,34 @@ export const saleEntries: SaleEntry[] = [
           "10",
           "8"
         ]
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538597487_6dee082db1a5.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": {
+          "min": 28,
+          "max": 28
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -40869,6 +42333,90 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7800616976495_ec17e967db9a.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "2XL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7800616648815_515839815c45.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "2XL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7800616550511_984a00f45165.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "2XL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907281928303_ac3cb342062a.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "2XL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -40924,6 +42472,23 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812982276207_e58bc95c93d1.png",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "XS (0-2)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -41752,7 +43317,30 @@ export const saleEntries: SaleEntry[] = [
         }
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538630255_d641bd181b0a.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ]
   },
   {
     "id": "lovey",
@@ -42458,6 +44046,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752397193327_2ee48d5b35cf.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -43509,6 +45113,47 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752403157103_788aa4d00747.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL",
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033805832303_75fdc903f4d2.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Men's L",
+          "Men's M",
+          "Men's S",
+          "Men's XL",
+          "Men's XXL"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -45029,6 +46674,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033808060527_14b7f989d6d3.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Men's XXL"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -45602,6 +47263,46 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799779393647_6a3857891d78.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Men's L",
+          "Men's M",
+          "Men's S",
+          "Men's XL",
+          "Men's XXL"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7864368660591_cde9b3c07cf2.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Men's L",
+          "Men's M",
+          "Men's S",
+          "Men's XL",
+          "Men's XXL"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -46758,6 +48459,27 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033806520431_745aaca0ac18.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Men's 3XL",
+          "Men's L",
+          "Men's M",
+          "Men's S",
+          "Men's XL",
+          "Men's XXL"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -47217,6 +48939,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799190978671_c2c15e704283.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Mini Crib Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -47827,9 +49565,143 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7120038297711_ea09594693a0.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799782408303_3f5dccba65f1.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799782309999_0238d9ca476f.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7750243450991_08159cf56330.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033830015087_4d37d36522d9.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538663023_84d22640a9ee.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ]
   },
   {
     "id": "toddler-short-sleeve-pocket-dress",
@@ -48381,6 +50253,29 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270066287_41c5333b64b0.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -49367,6 +51262,29 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270393967_646c8aa49d37.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -49801,6 +51719,44 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814154551407_5d49b852c81c.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "1-4T",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814154616943_41c9b5887713.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "1-4T",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -50025,6 +51981,53 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814144852079_f214a16950d9.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814144917615_01678bb8b1cf.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -50246,6 +52249,57 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815484276847_4195e4471cf8.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "5T",
+          "6-12 months",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815484244079_3dc4c4a0896c.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "5T",
+          "6-12 months",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -50508,6 +52562,44 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815517896815_0164038d0380.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815517962351_4be8f4c31ad5.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -50873,6 +52965,43 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815877984367_7a87817690cd.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815877918831_8b24ec097e3e.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "3-6 months",
+          "5T",
+          "6-12 months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -52128,6 +54257,26 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814154453103_22fff2beca1d.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -52351,6 +54500,51 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814150619247_5bc8866a08e5.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814150652015_420bf7ce46ab.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -56433,6 +58627,47 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7749178458223_8cfdc8cadbe8.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7011498819695_285e1c1a5256.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -56642,6 +58877,27 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538826863_c30a6a009fb5.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -56733,6 +58989,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907281666159_02ddd7823762.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -56854,6 +59126,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907281698927_af762d894e95.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -56919,6 +59207,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799273095279_6864f49f1fc2.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": {
+          "min": 4,
+          "max": 4
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -64311,6 +66618,44 @@ export const saleEntries: SaleEntry[] = [
         "inferredSizes": [
           "XS"
         ]
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798805266543_875e4abb2254.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "XS"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7746423849071_5c415cc0fd5e.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "XS"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -65217,6 +67562,88 @@ export const saleEntries: SaleEntry[] = [
           "XL",
           "M"
         ]
+      },
+      {
+        "name": "Puffin",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853576847471_cfe3c2a6ab5a.jpg",
+        "swatchImageUrl": "swatches/puffin.jpeg",
+        "price": {
+          "min": 45,
+          "max": 45
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798815981679_c1b2777ffb2d.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": {
+          "min": 45,
+          "max": 45
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7746423980143_57f2ae68fdf3.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": {
+          "min": 45,
+          "max": 45
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/6990179729519_d1477a8a13fe.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": {
+          "min": 45,
+          "max": 45
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -65404,6 +67831,26 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812538990703_81ba5ba745bb.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": {
+          "min": 45,
+          "max": 45
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -65585,6 +68032,27 @@ export const saleEntries: SaleEntry[] = [
           "M",
           "XL"
         ]
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7746424012911_eadc9d15ba41.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": {
+          "min": 43,
+          "max": 43
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -65669,6 +68137,66 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798809395311_21cdf4826749.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798809362543_a4e2390851e2.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798809264239_d1cfa294e295.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -68904,6 +71432,90 @@ export const saleEntries: SaleEntry[] = [
           "XS",
           "S"
         ]
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798802481263_c154fceb3f15.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": {
+          "min": 35,
+          "max": 35
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "XS"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Basketball",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853570359407_d001d7f9b450.jpg",
+        "swatchImageUrl": "swatches/basketball.jpeg",
+        "price": {
+          "min": 35,
+          "max": 35
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7746429354095_951f9d046aac.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": {
+          "min": 35,
+          "max": 35
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "M",
+          "S",
+          "XS"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/6990170161263_6c0ccd85d8bb.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": {
+          "min": 35,
+          "max": 35
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -69681,6 +72293,78 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119947563119_733c28f6e1dc.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798809100399_22f8a1c2322e.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798809198703_76c93dd89a65.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "XL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/6990170816623_d199059c32ea.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -69812,6 +72496,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812540956783_d74f8b3ebff9.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "S"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -71309,6 +74009,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7746429321327_a0affe27c142.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": {
+          "min": 35,
+          "max": 35
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "M"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -71802,6 +74521,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7749178523759_f2bedbcfdb6a.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "3-6 Months",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -73274,6 +76012,24 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798807461999_bb838122b4cc.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -74334,6 +77090,44 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798820012143_1bf5491a77f1.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": {
+          "min": 27,
+          "max": 27
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "Standard"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798819979375_643507e18a5b.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": {
+          "min": 27,
+          "max": 27
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "Standard"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -76763,6 +79557,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270557807_41f350298ebd.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -76905,6 +79715,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539056239_db6a7b4508d1.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -77165,6 +79991,24 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270590575_bce3596083f6.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "Newborn",
+          "Preemie"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": []
@@ -78025,6 +80869,31 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Basketball",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853569540207_9226c45350fb.jpg",
+        "swatchImageUrl": "swatches/basketball.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
       }
     ],
     "sundayPrints": [
@@ -78090,6 +80959,28 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539121775_a46eca3a6110.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -79846,6 +82737,38 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270262895_2f020bb7b1d8.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Basketball",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853569409135_14bb32f5fa3a.jpg",
+        "swatchImageUrl": "swatches/basketball.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-04-13"
       }
     ],
     "sundayPrints": [
@@ -79960,6 +82883,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812982046831_a031556e4a5d.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -80247,6 +83186,54 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798826008687_9dbd7baed2e6.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752397324399_b31272f4d2a0.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033525370991_821f59247b94.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": []
@@ -83922,6 +86909,29 @@ export const saleEntries: SaleEntry[] = [
           "7"
         ],
         "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752410497135_f03de363fb20.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": {
+          "min": 16,
+          "max": 16
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -84654,6 +87664,51 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119962013807_769a40cf350d.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799327260783_5c9b84e5b580.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -84662,7 +87717,34 @@ export const saleEntries: SaleEntry[] = [
     "id": "toddler-long-sleeve-polo",
     "name": "Toddler Long Sleeve Polo",
     "section": "Other",
-    "fridayPrints": [],
+    "fridayPrints": [
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7816606253167_ccbc1881067b.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": {
+          "min": 24,
+          "max": 24
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ],
     "sundayPrints": [
       {
         "name": "Ski",
@@ -85041,6 +88123,38 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798820110447_1a03b3d831f6.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798820077679_5cfdfa3132b4.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -85127,6 +88241,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539154543_92a189f37456.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -86128,6 +89258,23 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7108574019695_9af318c6f72d.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 months",
+          "18-24 months"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": []
@@ -86933,6 +90080,31 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270721647_33a402e95938.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "10",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T",
+          "5T",
+          "6T",
+          "7",
+          "8"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -87435,6 +90607,54 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119951036527_de8b80c9fd9a.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Twin Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798820175983_3be1242d414b.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Twin Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7047410647151_a39f1f6b4370.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Twin Sheet"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -87465,6 +90685,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539187311_3ca03730eb00.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Twin Sheet"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -89836,6 +93072,28 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270754415_f9c916032eab.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
       }
     ],
     "sundayPrints": [
@@ -91906,6 +95164,48 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799196745839_3653e7f88970.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL (24-26)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/14995665191023_eef6f3a28522.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": []
@@ -95214,6 +98514,28 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799785095279_e90e143cba9c.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL (24-26)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -95274,6 +98596,28 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539252847_8e5685108f83.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL (24-26)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -96034,6 +99378,48 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7844711170159_dc8f3d1e42fe.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7831372759151_3640792888c7.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -97134,6 +100520,28 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7877053644911_84beabcd5ac7.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL (24-26)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -97247,6 +100655,28 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539285615_59cfe5aed5d8.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL (24-26)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -98030,7 +101460,26 @@ export const saleEntries: SaleEntry[] = [
         }
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539318383_8e0b6e483473.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "M/L",
+          "XL/XXL",
+          "XS/S"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ]
   },
   {
     "id": "womens-nightgown",
@@ -103055,6 +106504,27 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539351151_fdbfb00f8101.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -103166,6 +106636,27 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7232372408431_2b11779a2de8.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -103642,6 +107133,27 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7125885157487_a46cdf4754b0.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": []
@@ -104307,6 +107819,51 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270787183_3b91a737ff3c.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": {
+          "min": 40,
+          "max": 40
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7752397488239_d6bdb5d0c6de.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -105545,6 +109102,28 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799787061359_1f9b53bf7d42.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL",
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -106085,6 +109664,86 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119946449007_7ad7b19fcbe9.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Youth"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798826106991_759e2eabc600.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Youth"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7798826074223_6e409de95217.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Youth"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7907270819951_daf1bab4c762.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Youth"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033527402607_5783e65e2e79.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Youth"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -106171,6 +109830,22 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": true
         }
+      },
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539383919_c87292de34db.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Youth"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ]
   },
@@ -110857,6 +114532,47 @@ export const saleEntries: SaleEntry[] = [
           "Preemie"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Puffin",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7853576781935_c5714af81ebe.jpg",
+        "swatchImageUrl": "swatches/puffin.jpeg",
+        "price": {
+          "min": 22,
+          "max": 22
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7033810976879_66e47ba81f99.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": {
+          "min": 22,
+          "max": 22
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "18-24 months",
+          "3-6 months",
+          "6-12 months"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -116467,6 +120183,33 @@ export const saleEntries: SaleEntry[] = [
           "18-24 Months",
           "Newborn"
         ]
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7119948382319_790ab224381e.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": {
+          "min": 22,
+          "max": 22
+        },
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "6-12 months",
+          "Newborn"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
       }
     ],
     "sundayPrints": [
@@ -119914,6 +123657,25 @@ export const saleEntries: SaleEntry[] = [
           ],
           "isFirstTimeOnClearance": false
         }
+      },
+      {
+        "name": "Dew",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7750243713135_7945f3d7f76c.jpg",
+        "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "18-24 Months",
+          "2T",
+          "3T",
+          "4T"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": [
@@ -119981,5 +123743,560 @@ export const saleEntries: SaleEntry[] = [
         }
       }
     ]
+  },
+  {
+    "id": "mens-ribbed-henley-set",
+    "name": "Men's Ribbed Henley Set",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815902429295_791a939b5b17.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL",
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815902330991_df4e8ae02a6d.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "3XL",
+          "S",
+          "XL",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "womens-ribbed-henley-set",
+    "name": "Women's Ribbed Henley Set",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815899381871_6c4fd5c4e530.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7815899283567_0649a1b94e48.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS",
+          "XXL"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "womens-biker-short-set",
+    "name": "Women's Biker Short Set",
+    "section": "Other",
+    "fridayPrints": [],
+    "sundayPrints": [
+      {
+        "name": "Latte Leopard",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7812539220079_b2cb5a1bd0e2.jpg",
+        "swatchImageUrl": "swatches/latte-leopard.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ]
+  },
+  {
+    "id": "bamboo-jersey-harem-pants",
+    "name": "Bamboo Jersey Harem Pants",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814126829679_f1951dde90a9.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7814126862447_ce493671c429.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "2T",
+          "3T",
+          "4T"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "tiny-nylon-bow",
+    "name": "Tiny Nylon Bow",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Latte",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799788142703_773bdfe9501b.jpg",
+        "swatchImageUrl": "swatches/latte.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799788011631_73b6843abfe2.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Fir",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799788929135_466af2eeca6e.jpg",
+        "swatchImageUrl": "swatches/fir.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "OS"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7799788896367_3c45d30743f1.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "OS"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "bamboo-muslin-burp-cloth",
+    "name": "Bamboo Muslin Burp Cloth",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7690420322415_e78d5499c095.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "One Size"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "bamboo-muslin-swaddle-blanket",
+    "name": "Bamboo Muslin Swaddle Blanket",
+    "section": "Sleep Bags & Swaddles",
+    "fridayPrints": [
+      {
+        "name": "Espresso",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7702447554671_3ffbec891bd0.jpg",
+        "swatchImageUrl": "swatches/espresso.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Infant"
+        ],
+        "historicalSnapshotDate": "2026-02-09"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "sleeveless-zipper-romper",
+    "name": "Sleeveless Zipper Romper",
+    "section": "Rompers & Footies",
+    "fridayPrints": [
+      {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7969959936111_b60311cc04d7.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "bamboo-flex-womens-leggings",
+    "name": "Bamboo Flex Women's Leggings",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Bisque",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7898853965935_a2f87ba9c2a4.jpg",
+        "swatchImageUrl": "swatches/bisque.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16)",
+          "XS (0-2)",
+          "XXL (18-20)"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "adult-crew-socks",
+    "name": "Adult Crew Socks",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7861010563183_57c8a64ac017.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "M/L (US 8-12)",
+          "S/M (US 4-8)"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "adult-scrunch-socks",
+    "name": "Adult Scrunch Socks",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7861010137199_e8ed9a4cf12d.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "M/L (US 8-12)",
+          "S/M (US 4-8)"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "infant-bath-robe",
+    "name": "Infant Bath Robe",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7724354699375_7ada82b5904e.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "18-36 months",
+          "4T",
+          "6-18 months"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "fitted-sheet",
+    "name": "Fitted Sheet",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7585435156591_80344354487d.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Full",
+          "King",
+          "Queen"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "toddler-hooded-bath-towel",
+    "name": "Toddler Hooded Bath Towel",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/6564870946927_155032efb923.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "Toddler"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "terry-washcloths",
+    "name": "Terry Washcloths",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/6535280525423_81d60f489e2b.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "OS"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "washcloth",
+    "name": "Washcloth",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Storm",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/1485032620143_4c685daccc53.jpg",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "OS"
+        ],
+        "historicalSnapshotDate": "2026-06-01"
+      }
+    ],
+    "sundayPrints": []
+  },
+  {
+    "id": "womens-camisole",
+    "name": "Women's Camisole",
+    "section": "Other",
+    "fridayPrints": [
+      {
+        "name": "Tahoe",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/14924496633967_dfd6f45f3164.jpg",
+        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "XXL (20-22)"
+        ],
+        "historicalSnapshotDate": "2026-07-06"
+      }
+    ],
+    "sundayPrints": []
   }
 ];

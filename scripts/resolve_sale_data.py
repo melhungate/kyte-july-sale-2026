@@ -318,6 +318,29 @@ def match_product_category(product, matchers):
     return None
 
 
+def resolve_category_for_product(product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names):
+    """Same category-resolution branch order used for every real predictions
+    product: PDF-aliased match first, then title-prefix split, then bare-TOG
+    suffix, then the raw product_type as-is. Shared with historical-snapshot
+    products (see load_historical_snapshot_products) so a confirmed print's
+    leftover inventory resolves to the exact same category identity a live
+    product would, regardless of which dataset it came from."""
+    matched_category = match_product_category(product, matchers)
+    if matched_category is not None:
+        category_display = category_display_names.get(matched_category, matched_category)
+        category_norm = matched_category
+    elif product["product_type"] in product_types_needing_split:
+        category_display = derive_title_prefix(product["title"])
+        category_norm = normalize_category(category_display)
+    elif product["product_type"] in bare_type_tog_suffixes:
+        category_display = f"{product['product_type']} {bare_type_tog_suffixes[product['product_type']]}"
+        category_norm = normalize_category(category_display)
+    else:
+        category_display = product["product_type"]
+        category_norm = normalize_category(product["product_type"])
+    return category_display, category_norm, matched_category
+
+
 def main():
     aliases = json.loads((SCRIPTS_DIR / "aliases.json").read_text())
     category_aliases = aliases["category_aliases"]
@@ -339,31 +362,32 @@ def main():
     bare_type_tog_suffixes = find_bare_type_tog_suffixes(predictions["products"])
     swapped_option_vocab = find_swapped_option_types(predictions["products"])
 
-    # (pdf_category_norm, normalized_print) -> historical product dict, for
-    # backfilling real photos/sizes on PDF-only prints (see loop (b) below).
-    # PDF-only entries only ever occur for the ~20 PDF-aliased categories, so
-    # match_product_category alone (no split/bare-TOG heuristics needed) is
-    # enough to resolve each historical product's category correctly.
+    # normalized PDF category -> original display text (e.g. "0.5 tog sleep bag" -> "0.5 TOG Sleep Bag")
+    category_display_names = {}
+    for pdf_entry in pdf_data["entries"]:
+        category_display_names.setdefault(normalize_category(pdf_entry["category"]), pdf_entry["category"])
+
+    # (category_norm, normalized_print) -> historical product dict — real
+    # photos/sizes to backfill wherever a confirmed print (see print_day_map)
+    # has no matching live Kyte product. Uses the exact same category
+    # resolution as real predictions products (loop (a) below) so e.g. a
+    # historical "Baby Bows in Latte Leopard" resolves to the same category
+    # a live one would, not just the ~20 PDF-aliased categories.
     historical_lookup = {}
     for hp in load_historical_snapshot_products():
         variants = hp.get("variants", [])
         if not variants:
             continue
-        matched = match_product_category(hp, matchers)
-        if matched is None:
-            continue
         hist_print_raw = variants[0].get("option1") or ""
         if not hist_print_raw:
             continue
         hist_print_norm = normalize_print(hist_print_raw, print_aliases)
-        key = (matched, hist_print_norm)
+        _, hist_category_norm, _ = resolve_category_for_product(
+            hp, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names
+        )
+        key = (hist_category_norm, hist_print_norm)
         if key not in historical_lookup:  # earliest-listed snapshot wins
             historical_lookup[key] = hp
-
-    # normalized PDF category -> original display text (e.g. "0.5 tog sleep bag" -> "0.5 TOG Sleep Bag")
-    category_display_names = {}
-    for pdf_entry in pdf_data["entries"]:
-        category_display_names.setdefault(normalize_category(pdf_entry["category"]), pdf_entry["category"])
 
     PRODUCT_PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -371,7 +395,8 @@ def main():
     # print carries its own resolved `day`; fridayPrints/sundayPrints are split
     # out of this single flat list at TS-codegen time)
     entries = {}
-    covered_category_print_pairs = set()  # (pdf_category_normalized, normalized_print)
+    covered_category_print_pairs = set()  # (pdf_category_normalized, normalized_print) — PDF-aliased categories only
+    real_category_print_pairs = set()  # (category_norm, normalized_print) — every real predictions product, any category
     carryover_defaulted = []
     conflict_defaulted = []
     copied_photos = 0
@@ -554,18 +579,10 @@ def main():
             },
         }
 
-        if matched_category is not None:
-            category_display = category_display_names.get(matched_category, matched_category)
-            category_norm = matched_category
-        elif product["product_type"] in product_types_needing_split:
-            category_display = derive_title_prefix(product["title"])
-            category_norm = normalize_category(category_display)
-        elif product["product_type"] in bare_type_tog_suffixes:
-            category_display = f"{product['product_type']} {bare_type_tog_suffixes[product['product_type']]}"
-            category_norm = normalize_category(category_display)
-        else:
-            category_display = product["product_type"]
-            category_norm = normalize_category(product["product_type"])
+        category_display, category_norm, _ = resolve_category_for_product(
+            product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names
+        )
+        real_category_print_pairs.add((category_norm, normalized_print))
         entry = get_entry(day, category_display, category_norm)
         entry["prints"].append(enriched_print)
 
@@ -573,6 +590,7 @@ def main():
     missing_swatches = []  # (day, category, print)
     pdf_only_swatch_count = 0
     historical_backfill_count = 0
+    pdf_only_added_pairs = set()  # (category_norm, normalized_print) added by (b), so (c) doesn't duplicate them
     for pdf_entry in pdf_data["entries"]:
         day = pdf_entry["day"]
         # Canonicalize so a variant-phrased category header (see
@@ -645,6 +663,100 @@ def main():
             }
             entry = get_entry(day, category_display, category_norm)
             entry["prints"].append(enriched_print)
+            pdf_only_added_pairs.add((category_norm, normalized_print))
+
+    # (c) Confirmed prints (present anywhere in print_day_map, i.e. mentioned
+    # somewhere in the Look Book) that a historical snapshot shows in
+    # categories the PDF itself never explicitly listed for that print — the
+    # Look Book only samples a few categories per print, but per the user's
+    # own knowledge of the sale, once a print is confirmed, ALL of its
+    # remaining inventory is included, not just what's pictured. Skips
+    # anything (a) or (b) above already added. Never uses the snapshot's
+    # price — see historical_lookup's own docstring.
+    for (hist_category_norm, hist_normalized_print), historical_product in historical_lookup.items():
+        if hist_normalized_print not in print_day_map:
+            continue  # this print was never confirmed for the sale at all
+        if (hist_category_norm, hist_normalized_print) in real_category_print_pairs:
+            continue  # already a real predictions product
+        if (hist_category_norm, hist_normalized_print) in pdf_only_added_pairs:
+            continue  # already added above from the PDF's own print list
+
+        day_info = print_day_map[hist_normalized_print]
+        if len(day_info["days"]) == 1:
+            day = day_info["days"][0]
+            day_source = "pdf"
+        else:
+            day = "friday"
+            day_source = "default-conflict"
+
+        category_display, _, matched_category = resolve_category_for_product(
+            historical_product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names
+        )
+
+        price = None
+        price_source = "pdf-starting-only"
+        is_no_sale_price = False
+        if matched_category is not None:
+            pdf_price = category_day_price_map.get(f"{matched_category}|{day}")
+            if pdf_price is not None:
+                price = {"min": pdf_price, "max": pdf_price}
+        if price is None:
+            manual_price = manual_price_overrides.get(historical_product["product_type"])
+            if manual_price is not None:
+                price = {"min": manual_price, "max": manual_price}
+                price_source = "manual-override"
+            else:
+                is_no_sale_price = True
+                no_sale_price_found.append((historical_product["product_type"], historical_product["variants"][0].get("option1") or ""))
+
+        print_name_raw = historical_product["variants"][0].get("option1") or ""
+        if hist_normalized_print in BRAND_DISPLAY_NAMES:
+            print_name_raw = BRAND_DISPLAY_NAMES[hist_normalized_print]
+
+        swatch_url = find_swatch_url(print_name_raw, hist_normalized_print, swatch_database, swatch_database_lower, local_swatch_files)
+        image_url = swatch_url
+        local_image = historical_product.get("local_image")
+        if local_image:
+            src = historical_product["_snapshot_dir"] / local_image
+            if src.exists():
+                dst = PRODUCT_PHOTOS_DIR / Path(local_image).name
+                if not dst.exists():
+                    shutil.copy2(src, dst)
+                image_url = f"product-photos/{Path(local_image).name}"
+
+        sizes_seen = []
+        seen_size_keys = set()
+        for v in historical_product.get("variants", []):
+            size = v.get("option2") or "One Size"
+            size_key = size.lower()
+            if size_key not in seen_size_keys:
+                seen_size_keys.add(size_key)
+                sizes_seen.append(size)
+        if sizes_seen:
+            historical_backfill_count += 1
+
+        source = "pdf-only-swatch" if image_url is not None else "pdf-only-missing"
+        if source == "pdf-only-swatch":
+            pdf_only_swatch_count += 1
+        else:
+            missing_swatches.append((day, category_display, print_name_raw))
+
+        enriched_print = {
+            "name": print_name_raw,
+            "day": day,
+            "daySource": day_source,
+            "source": source,
+            "imageUrl": image_url,
+            "swatchImageUrl": swatch_url,
+            "price": price,
+            "priceSource": price_source,
+            "noSalePriceFound": is_no_sale_price,
+            "productMatch": None,
+            "historicalSizes": sizes_seen or None,
+            "historicalSnapshotDate": historical_product["_snapshot_date"] if sizes_seen else None,
+        }
+        entry = get_entry(day, category_display, hist_category_norm)
+        entry["prints"].append(enriched_print)
 
     # PDF-only prints (no live Kyte product, so no real variant data) — infer
     # an exhaustive size list from sibling prints of the SAME product that DO
