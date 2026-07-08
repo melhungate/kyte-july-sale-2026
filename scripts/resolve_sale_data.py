@@ -318,7 +318,7 @@ def match_product_category(product, matchers):
     return None
 
 
-def resolve_category_for_product(product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names):
+def resolve_category_for_product(product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names, category_renames=None):
     """Same category-resolution branch order used for every real predictions
     product: PDF-aliased match first, then title-prefix split, then bare-TOG
     suffix, then the raw product_type as-is. Shared with historical-snapshot
@@ -338,6 +338,14 @@ def resolve_category_for_product(product, matchers, product_types_needing_split,
     else:
         category_display = product["product_type"]
         category_norm = normalize_category(product["product_type"])
+    if category_renames and category_display in category_renames:
+        # Kyte's own raw product_type occasionally uses two different names
+        # for what is really one product line (e.g. a handful of historical
+        # products tagged "Sleeveless Zipper Romper" instead of the "Zippered
+        # Sleeveless Romper" every other product in that line uses) — collapse
+        # onto the canonical name so they land in the same entry.
+        category_display = category_renames[category_display]
+        category_norm = normalize_category(category_display)
     return category_display, category_norm, matched_category
 
 
@@ -347,6 +355,10 @@ def main():
     print_aliases = aliases.get("print_aliases", {})
     manual_price_overrides = aliases.get("manual_price_overrides", {})
     pdf_category_aliases = aliases.get("pdf_category_aliases", {})
+    category_renames = aliases.get("category_renames", {})
+    category_price_overrides = aliases.get("category_price_overrides", {})
+    manual_print_additions = aliases.get("manual_print_additions", [])
+    excluded_prints = {normalize_print(p, print_aliases) for p in aliases.get("excluded_prints", [])}
 
     pdf_data = json.loads((DATA_DIR / "pdf_sale_data.json").read_text())
     print_day_map = json.loads((DATA_DIR / "print_day_map.json").read_text())
@@ -408,7 +420,7 @@ def main():
             continue
         hist_print_norm = normalize_print(hist_print_raw, print_aliases)
         _, hist_category_norm, _ = resolve_category_for_product(
-            hp, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names
+            hp, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names, category_renames
         )
         key = (hist_category_norm, hist_print_norm)
         if key not in historical_lookup:  # earliest-listed snapshot wins
@@ -483,6 +495,8 @@ def main():
         if not print_name_raw:
             continue
         normalized_print = normalize_print(print_name_raw, print_aliases)
+        if normalized_print in excluded_prints:
+            continue
         if normalized_print in BRAND_DISPLAY_NAMES:
             print_name_raw = BRAND_DISPLAY_NAMES[normalized_print]
 
@@ -602,7 +616,7 @@ def main():
         }
 
         category_display, category_norm, _ = resolve_category_for_product(
-            product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names
+            product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names, category_renames
         )
         real_category_print_pairs.add((category_norm, normalized_print))
         entry = get_entry(day, category_display, category_norm)
@@ -613,6 +627,7 @@ def main():
     pdf_only_swatch_count = 0
     historical_backfill_count = 0
     pdf_only_added_pairs = set()  # (category_norm, normalized_print) added by (b), so (c) doesn't duplicate them
+    historical_added_pairs = set()  # (category_norm, normalized_print) added by (c), so (d) doesn't duplicate them
     for pdf_entry in pdf_data["entries"]:
         day = pdf_entry["day"]
         # Canonicalize so a variant-phrased category header (see
@@ -625,6 +640,8 @@ def main():
         price = pdf_entry["starting_price"]
         for print_name in pdf_entry["prints"]:
             normalized_print = normalize_print(print_name, print_aliases)
+            if normalized_print in excluded_prints:
+                continue
             if (category_norm, normalized_print) in covered_category_print_pairs:
                 continue  # already represented by a real predictions product
 
@@ -697,6 +714,8 @@ def main():
     # anything (a) or (b) above already added. Never uses the snapshot's
     # price — see historical_lookup's own docstring.
     for (hist_category_norm, hist_normalized_print), historical_product in historical_lookup.items():
+        if hist_normalized_print in excluded_prints:
+            continue
         if hist_normalized_print not in print_day_map:
             continue  # this print was never confirmed for the sale at all
         if (hist_category_norm, hist_normalized_print) in real_category_print_pairs:
@@ -713,7 +732,7 @@ def main():
             day_source = "default-conflict"
 
         category_display, _, matched_category = resolve_category_for_product(
-            historical_product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names
+            historical_product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names, category_renames
         )
 
         price = None
@@ -781,6 +800,57 @@ def main():
         }
         entry = get_entry(day, category_display, hist_category_norm)
         entry["prints"].append(enriched_print)
+        historical_added_pairs.add((hist_category_norm, hist_normalized_print))
+
+    # (d) Manual additions: prints confirmed by the user (e.g. via Kyte's
+    # Instagram Live) for specific categories that neither the Look Book PDF
+    # text nor a historical snapshot already covers. Treated exactly like a
+    # PDF-only entry — no live product, so size/price get inferred from
+    # sibling prints in the same category by the post-processing blocks below.
+    for addition in manual_print_additions:
+        category_str = addition["category"]
+        print_name_raw = addition["print"]
+        normalized_print = normalize_print(print_name_raw, print_aliases)
+        if normalized_print in excluded_prints:
+            continue
+        if normalized_print in BRAND_DISPLAY_NAMES:
+            print_name_raw = BRAND_DISPLAY_NAMES[normalized_print]
+
+        category_norm = normalize_category(category_str)
+        pair = (category_norm, normalized_print)
+        if pair in real_category_print_pairs or pair in pdf_only_added_pairs or pair in historical_added_pairs:
+            continue  # already covered by a real product or another loop
+
+        category_display = entries[category_norm]["name"] if category_norm in entries else category_str
+
+        day_info = print_day_map.get(normalized_print)
+        if day_info is not None and len(day_info["days"]) == 1:
+            day = day_info["days"][0]
+            day_source = "pdf"
+        else:
+            day = addition["day"]
+            day_source = "default-carryover"
+
+        swatch_url = find_swatch_url(print_name_raw, normalized_print, swatch_database, swatch_database_lower, local_swatch_files)
+        source = "pdf-only-swatch" if swatch_url is not None else "pdf-only-missing"
+
+        enriched_print = {
+            "name": print_name_raw,
+            "day": day,
+            "daySource": day_source,
+            "source": source,
+            "imageUrl": swatch_url,
+            "swatchImageUrl": swatch_url,
+            "price": None,
+            "priceSource": "pdf-starting-only",
+            "noSalePriceFound": True,
+            "isFirstTimeOnClearance": normalized_print not in print_ever_carryover,
+            "productMatch": None,
+            "historicalSizes": None,
+            "historicalSnapshotDate": None,
+        }
+        entry = get_entry(day, category_display, category_norm)
+        entry["prints"].append(enriched_print)
 
     # PDF-only prints (no live Kyte product, so no real variant data) — infer
     # an exhaustive size list from sibling prints of the SAME product that DO
@@ -829,7 +899,24 @@ def main():
                 p["priceSource"] = "inferred-from-siblings"
                 p["noSalePriceFound"] = False
 
-    sale_entries = list(entries.values())
+    # Flat category-wide price corrections (e.g. Kyte confirmed a single
+    # promotional price for a whole product line on Instagram Live) — applied
+    # last so it wins over whatever price source the pipeline otherwise
+    # derived (predictions, PDF, sibling-inferred) for every print in the
+    # category, not just ones missing a price.
+    for entry in entries.values():
+        override_price = category_price_overrides.get(entry["name"])
+        if override_price is None:
+            continue
+        for p in entry["prints"]:
+            p["price"] = {"min": override_price, "max": override_price}
+            p["priceSource"] = "manual-override"
+            p["noSalePriceFound"] = False
+
+    # Excluding a print (see excluded_prints) can leave a category with zero
+    # remaining prints (e.g. a category only ever carried the excluded print)
+    # — drop those instead of shipping an empty card.
+    sale_entries = [e for e in entries.values() if e["prints"]]
     (DATA_DIR / "resolved_sale_data.json").write_text(json.dumps(sale_entries, indent=2))
 
     # MISSING_SWATCHES.md

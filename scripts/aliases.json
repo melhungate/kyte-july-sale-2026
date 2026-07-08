@@ -43,6 +43,32 @@
     "Sleep Bag Walker": 50,
     "Standard Pillow Case": 27,
     "Toddler Long Sleeve Polo": 24,
-    "Women's Short Sleeve Pajama Set": 40
-  }
+    "Women's Short Sleeve Pajama Set": 55
+  },
+  "excluded_prints_comment": "Prints confirmed (e.g. via Kyte's Instagram Live) to NOT actually be in the sale, despite Look Book/historical-snapshot evidence suggesting otherwise. Filtered out everywhere — real products, PDF-only entries, historical backfill — before entries are built.",
+  "excluded_prints": ["Tahoe"],
+  "category_renames_comment": "Kyte's own raw product_type occasionally uses two different names for what is really one product line. Renames the display category (and its normalized id) to the canonical name after category resolution, so both sides merge into one entry instead of splitting into an orphaned duplicate.",
+  "category_renames": {
+    "Sleeveless Zipper Romper": "Zippered Sleeveless Romper"
+  },
+  "category_price_overrides_comment": "Keyed by the exact category display name. Overrides EVERY print's price in that category to a flat confirmed number, regardless of what price source the pipeline otherwise derived (predictions, PDF, sibling-inferred) — used when Kyte confirmed a flat promotional price for a whole product line (e.g. via Instagram Live).",
+  "category_price_overrides": {
+    "Lounge Pant": 25
+  },
+  "manual_print_additions_comment": "Prints confirmed (e.g. via Instagram Live) for specific categories that neither the Look Book PDF text nor a historical snapshot already covers. Added as pdf-only entries (no real live product), so sizes/price are inferred from sibling prints in the same category exactly like any other PDF-only print. Automatically skipped if the (category, print) pair is already covered by a real product or another loop, so it's safe to list a category that might already have this print.",
+  "manual_print_additions": [
+    {"category": "1.0 TOG Sleep Bag", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "1.0 TOG Sleep Bag Swaddler", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Bodysuit Dress", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Toddler Short Sleeve Pajama Set", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Toddler Basic Tee", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Women's Short Sleeve Pajama Set", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Women's Crew Neck Tee", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Women's Lounge Robe", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Baby Blanket 1.0", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Crib Sheet", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Adult Blanket 2.5", "print": "Sakura Peony", "day": "sunday"},
+    {"category": "Bundler", "print": "Navy", "day": "friday"},
+    {"category": "Bundler", "print": "Midnight", "day": "friday"}
+  ]
 }

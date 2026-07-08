@@ -872,7 +872,29 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": "2026-06-01"
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 135.0,
+          "max": 135.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "Adult"
+        ]
+      }
+    ]
   },
   {
     "id": "adult-blanket-10",
@@ -2825,26 +2847,6 @@ export const saleEntries: SaleEntry[] = [
           "Infant"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033525108847_f29e7b614a24.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 35.0,
-          "max": 35.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Infant"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -2987,6 +2989,28 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
+      },
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "Infant",
+          "One Size"
+        ]
       }
     ]
   },
@@ -6864,26 +6888,6 @@ export const saleEntries: SaleEntry[] = [
         "inferredSizes": [
           "One Size"
         ]
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033535660143_82e1af1b0a78.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 9,
-          "max": 9
-        },
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "One Size"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       },
       {
         "name": "Puffin",
@@ -12555,6 +12559,54 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
+      },
+      {
+        "name": "Navy",
+        "day": "friday",
+        "daySource": "default-carryover",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/products/kyte-baby-crib-sheet-navy-crib-sheet-crib-sheet-in-navy-30221076103279_3000x.jpg?v=1762184125",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/products/kyte-baby-crib-sheet-navy-crib-sheet-crib-sheet-in-navy-30221076103279_3000x.jpg?v=1762184125",
+        "price": {
+          "min": 16.0,
+          "max": 16.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "Preemie"
+        ]
+      },
+      {
+        "name": "Midnight",
+        "day": "friday",
+        "daySource": "default-carryover",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/MIDNIGHT_480x480.jpg?v=1652219265",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/MIDNIGHT_480x480.jpg?v=1652219265",
+        "price": {
+          "min": 16.0,
+          "max": 16.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "0-3 months",
+          "3-6 months",
+          "Newborn",
+          "Preemie"
+        ]
       }
     ],
     "sundayPrints": []
@@ -17700,26 +17752,6 @@ export const saleEntries: SaleEntry[] = [
           "Crib Sheet"
         ],
         "historicalSnapshotDate": "2026-03-02"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033543196783_72653baf7ac5.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 30.0,
-          "max": 30.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Crib Sheet"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -17826,6 +17858,28 @@ export const saleEntries: SaleEntry[] = [
           "Crib Sheet"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 30.0,
+          "max": 30.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "Crib Sheet",
+          "One Size"
+        ]
       }
     ]
   },
@@ -18673,35 +18727,6 @@ export const saleEntries: SaleEntry[] = [
           "7"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7766137340015_6bda4e2ced34.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 20.0,
-          "max": 24.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "10",
-          "12-18 months",
-          "18-24 months",
-          "2T",
-          "3T",
-          "4T",
-          "5T",
-          "6T",
-          "7",
-          "8"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -26759,29 +26784,6 @@ export const saleEntries: SaleEntry[] = [
           "Newborn"
         ],
         "historicalSnapshotDate": "2026-02-09"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033827033199_f02c2d7f64f4.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 14,
-          "max": 14
-        },
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "12-18 months",
-          "18-24 months",
-          "6-12 months",
-          "Newborn"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -45476,30 +45478,6 @@ export const saleEntries: SaleEntry[] = [
           "XXL"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033805832303_75fdc903f4d2.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 15.0,
-          "max": 15.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Men's L",
-          "Men's M",
-          "Men's S",
-          "Men's XL",
-          "Men's XXL"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -47020,26 +46998,6 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033808060527_14b7f989d6d3.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 60.0,
-          "max": 60.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Men's XXL"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -47637,30 +47595,6 @@ export const saleEntries: SaleEntry[] = [
           "Men's XXL"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7864368660591_cde9b3c07cf2.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 35.0,
-          "max": 35.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Men's L",
-          "Men's M",
-          "Men's S",
-          "Men's XL",
-          "Men's XXL"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -48817,31 +48751,6 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033806520431_745aaca0ac18.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 35.0,
-          "max": 35.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Men's 3XL",
-          "Men's L",
-          "Men's M",
-          "Men's S",
-          "Men's XL",
-          "Men's XXL"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -50034,32 +49943,6 @@ export const saleEntries: SaleEntry[] = [
           "6-12 Months"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033830015087_4d37d36522d9.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 12.0,
-          "max": 13.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "0-3 months",
-          "12-18 months",
-          "18-24 months",
-          "2T",
-          "3-6 months",
-          "3T",
-          "6-12 months"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -59102,30 +58985,6 @@ export const saleEntries: SaleEntry[] = [
           "Newborn"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7011498819695_285e1c1a5256.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 20.0,
-          "max": 20.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "0-3 months",
-          "12-18 months",
-          "18-24 months",
-          "3-6 months",
-          "6-12 months"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -67192,6 +67051,27 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
+      },
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 50.0,
+          "max": 50.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XS"
+        ]
       }
     ]
   },
@@ -68131,28 +68011,6 @@ export const saleEntries: SaleEntry[] = [
           "XL"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/6990179729519_d1477a8a13fe.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 45,
-          "max": 45
-        },
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "L",
-          "M",
-          "XL"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -72022,28 +71880,6 @@ export const saleEntries: SaleEntry[] = [
           "XS"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/6990170161263_6c0ccd85d8bb.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 35,
-          "max": 35
-        },
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "L",
-          "M",
-          "S"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -72274,6 +72110,31 @@ export const saleEntries: SaleEntry[] = [
           "max": 35
         },
         "priceSource": "pdf-starting-only",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL",
+          "XS",
+          "S"
+        ]
+      },
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 35.0,
+          "max": 40.0
+        },
+        "priceSource": "inferred-from-siblings",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
@@ -72888,28 +72749,6 @@ export const saleEntries: SaleEntry[] = [
           "XL"
         ],
         "historicalSnapshotDate": "2026-02-09"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/6990170816623_d199059c32ea.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 40.0,
-          "max": 45.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "L",
-          "M",
-          "S"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -81562,6 +81401,36 @@ export const saleEntries: SaleEntry[] = [
           "8"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 14.0,
+          "max": 18.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "6T",
+          "3T",
+          "4T",
+          "5T",
+          "7",
+          "10",
+          "8"
+        ]
       }
     ]
   },
@@ -83819,26 +83688,6 @@ export const saleEntries: SaleEntry[] = [
           "Toddler"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033525370991_821f59247b94.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 55.0,
-          "max": 55.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Toddler"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": []
@@ -89886,27 +89735,6 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7108574019695_9af318c6f72d.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 12.0,
-          "max": 14.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "12-18 months",
-          "18-24 months"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": []
@@ -91283,26 +91111,6 @@ export const saleEntries: SaleEntry[] = [
           "Twin Sheet"
         ],
         "historicalSnapshotDate": "2026-02-09"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7047410647151_a39f1f6b4370.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 50.0,
-          "max": 50.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Twin Sheet"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -93810,6 +93618,34 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
+      },
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 22.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "0-3 months",
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3-6 months",
+          "3T",
+          "4T",
+          "6-12 months"
+        ]
       }
     ]
   },
@@ -95849,14 +95685,16 @@ export const saleEntries: SaleEntry[] = [
           "XXL (20-22)"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
+      }
+    ],
+    "sundayPrints": [
       {
-        "name": "Tahoe",
-        "day": "friday",
+        "name": "Sakura Peony",
+        "day": "sunday",
         "daySource": "pdf",
         "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/14995665191023_eef6f3a28522.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
         "price": {
           "min": 15.0,
           "max": 15.0
@@ -95865,17 +95703,20 @@ export const saleEntries: SaleEntry[] = [
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
-        "historicalSizes": [
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XXL",
+          "3XL (24-26)",
           "L (12-14)",
           "M (8-10)",
           "S (4-6)",
+          "XL (16-18)",
           "XS (0-2)",
           "XXL (20-22)"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
+        ]
       }
-    ],
-    "sundayPrints": []
+    ]
   },
   {
     "id": "womens-french-terry-nursing-hoodie",
@@ -100078,31 +99919,6 @@ export const saleEntries: SaleEntry[] = [
           "XXL"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7831372759151_3640792888c7.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 15.0,
-          "max": 15.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "L",
-          "M",
-          "S",
-          "XL",
-          "XS",
-          "XXL"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -100358,10 +100174,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7721404465263_c0f25428eaf1.jpg",
         "swatchImageUrl": "swatches/celebration.png",
         "price": {
-          "min": 30.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100401,10 +100217,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7120838721647_7783f226cb9b.jpg",
         "swatchImageUrl": "swatches/cloud-deer.jpg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100459,10 +100275,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7342152384623_39f64221b098.jpg",
         "swatchImageUrl": "swatches/construction.jpg",
         "price": {
-          "min": 30.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100512,10 +100328,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7901202710639_19bdfa65432b.jpg",
         "swatchImageUrl": "swatches/disco-cowgirl.jpeg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": {
@@ -100570,10 +100386,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7877044863087_8424d5dc551e.jpg",
         "swatchImageUrl": "swatches/emerald.png",
         "price": {
-          "min": 30.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100618,10 +100434,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7527241580655_111b87afeff3.jpg",
         "swatchImageUrl": "swatches/football.png",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100646,10 +100462,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7554568913007_9d4083f9f0c6.jpg",
         "swatchImageUrl": "swatches/holiday-train.png",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100674,10 +100490,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7584488783983_2c497a40e116.jpg",
         "swatchImageUrl": "swatches/journey.png",
         "price": {
-          "min": 30.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100732,10 +100548,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7721402990703_ff46e1c72228.jpg",
         "swatchImageUrl": "swatches/liberty-rip-tide.png",
         "price": {
-          "min": 30.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100785,10 +100601,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7020841074799_cbab1ae1d9e1.jpg",
         "swatchImageUrl": "swatches/marigold-cheetah.jpg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100838,10 +100654,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7120838754415_825c2b106425.jpg",
         "swatchImageUrl": "swatches/midnight-deer.jpg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100891,10 +100707,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7120920838255_feb9b85498f0.jpg",
         "swatchImageUrl": "swatches/mistletoe.png",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100924,10 +100740,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7713758412911_a460bc9a7f1e.jpg",
         "swatchImageUrl": "swatches/pineapple.png",
         "price": {
-          "min": 30.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -100957,10 +100773,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7020841468015_9ac525797302.jpg",
         "swatchImageUrl": "swatches/rust-tiger.jpg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -101010,10 +100826,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7833232572527_5b008ebb1b27.jpg",
         "swatchImageUrl": "swatches/sparkles-and-speed.jpeg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": {
@@ -101058,10 +100874,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7798797205615_24acf2ac7507.jpg",
         "swatchImageUrl": "swatches/superman.png",
         "price": {
-          "min": 30.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -101106,10 +100922,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7922538283119_cda02cb88b1d.jpg",
         "swatchImageUrl": "swatches/wicked.jpg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": {
@@ -101164,10 +100980,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7120920871023_a1e36f8f6e15.jpg",
         "swatchImageUrl": "swatches/winterberry.png",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": false,
         "productMatch": {
@@ -101203,32 +101019,6 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7877053644911_84beabcd5ac7.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 15.0,
-          "max": 30.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "3XL (24-26)",
-          "L (12-14)",
-          "M (8-10)",
-          "S (4-6)",
-          "XL (16-18)",
-          "XS (0-2)",
-          "XXL (20-22)"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -101240,10 +101030,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7833234210927_5102aa2fee12.jpg",
         "swatchImageUrl": "swatches/fast-and-fierce.jpeg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": {
@@ -101293,10 +101083,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7861014167663_03c602b1afe7.jpg",
         "swatchImageUrl": "swatches/ski.jpeg",
         "price": {
-          "min": 15.0,
-          "max": 15.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "predictions",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": {
@@ -101351,10 +101141,10 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7812539285615_59cfe5aed5d8.jpg",
         "swatchImageUrl": "swatches/latte-leopard.jpeg",
         "price": {
-          "min": 15.0,
-          "max": 30.0
+          "min": 25,
+          "max": 25
         },
-        "priceSource": "inferred-from-siblings",
+        "priceSource": "manual-override",
         "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
@@ -102173,6 +101963,29 @@ export const saleEntries: SaleEntry[] = [
           "XS/S"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 45.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XS/S",
+          "M/L",
+          "XL/XXL"
+        ]
       }
     ]
   },
@@ -108140,8 +107953,8 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7901202808943_0737d33eedb5.jpg",
         "swatchImageUrl": "swatches/disco-cowgirl.jpeg",
         "price": {
-          "min": 40,
-          "max": 40
+          "min": 55,
+          "max": 55
         },
         "priceSource": "manual-override",
         "noSalePriceFound": false,
@@ -108155,32 +107968,32 @@ export const saleEntries: SaleEntry[] = [
             {
               "size": "L (12-14)",
               "sku": "1615CWSK4",
-              "price": 40
+              "price": 55
             },
             {
               "size": "M (8-10)",
               "sku": "1615CWSK3",
-              "price": 40
+              "price": 55
             },
             {
               "size": "S (4-6)",
               "sku": "1615CWSK2",
-              "price": 40
+              "price": 55
             },
             {
               "size": "XL (16-18)",
               "sku": "1615CWSK5",
-              "price": 40
+              "price": 55
             },
             {
               "size": "XS (0-2)",
               "sku": "1615CWSK1",
-              "price": 40
+              "price": 55
             },
             {
               "size": "XXL (20-22)",
               "sku": "1615CWSK6",
-              "price": 40
+              "price": 55
             }
           ]
         }
@@ -108193,8 +108006,8 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7922538381423_d43f4f8ae1c1.jpg",
         "swatchImageUrl": "swatches/wicked.jpg",
         "price": {
-          "min": 40,
-          "max": 40
+          "min": 55,
+          "max": 55
         },
         "priceSource": "manual-override",
         "noSalePriceFound": false,
@@ -108208,37 +108021,37 @@ export const saleEntries: SaleEntry[] = [
             {
               "size": "3XL (24-26)",
               "sku": "1615WCKD7",
-              "price": 40
+              "price": 55
             },
             {
               "size": "L (12-14)",
               "sku": "1615WCKD4",
-              "price": 40
+              "price": 55
             },
             {
               "size": "M (8-10)",
               "sku": "1615WCKD3",
-              "price": 40
+              "price": 55
             },
             {
               "size": "S (4-6)",
               "sku": "1615WCKD2",
-              "price": 40
+              "price": 55
             },
             {
               "size": "XL (16-18)",
               "sku": "1615WCKD5",
-              "price": 40
+              "price": 55
             },
             {
               "size": "XS (0-2)",
               "sku": "1615WCKD1",
-              "price": 40
+              "price": 55
             },
             {
               "size": "XXL (20-22)",
               "sku": "1615WCKD6",
-              "price": 40
+              "price": 55
             }
           ]
         }
@@ -108535,8 +108348,8 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7907270787183_3b91a737ff3c.jpg",
         "swatchImageUrl": "swatches/bear-hearts.jpeg",
         "price": {
-          "min": 40,
-          "max": 40
+          "min": 55,
+          "max": 55
         },
         "priceSource": "manual-override",
         "noSalePriceFound": false,
@@ -108560,7 +108373,7 @@ export const saleEntries: SaleEntry[] = [
         "imageUrl": "product-photos/7752397488239_d6bdb5d0c6de.jpg",
         "swatchImageUrl": "https://kytebaby.com/cdn/shop/files/1908DW-01.jpg",
         "price": {
-          "min": 40,
+          "min": 55.0,
           "max": 55.0
         },
         "priceSource": "inferred-from-siblings",
@@ -108578,7 +108391,36 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": "2026-06-01"
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Sakura Peony",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/sakura-peony.jpeg",
+        "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XL (16-18)",
+          "XXL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XS (0-2)",
+          "3XL (24-26)",
+          "2X (20-22)"
+        ]
+      }
+    ]
   },
   {
     "id": "womens-lounge-dress",
@@ -110460,26 +110302,6 @@ export const saleEntries: SaleEntry[] = [
           "Youth"
         ],
         "historicalSnapshotDate": "2026-03-02"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033527402607_5783e65e2e79.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 95.0,
-          "max": 95.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "Youth"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -115305,29 +115127,6 @@ export const saleEntries: SaleEntry[] = [
           "0-3 Months"
         ],
         "historicalSnapshotDate": "2026-02-09"
-      },
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7033810976879_66e47ba81f99.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": {
-          "min": 22,
-          "max": 22
-        },
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "0-3 months",
-          "18-24 months",
-          "3-6 months",
-          "6-12 months"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": [
@@ -124444,6 +124243,33 @@ export const saleEntries: SaleEntry[] = [
         }
       },
       {
+        "name": "Bear Hearts",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "product-photos/7969959936111_b60311cc04d7.jpg",
+        "swatchImageUrl": "swatches/bear-hearts.jpeg",
+        "price": {
+          "min": 20.0,
+          "max": 22.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": [
+          "0-3 Months",
+          "12-18 Months",
+          "18-24 Months",
+          "2T",
+          "3-6 Months",
+          "3T",
+          "4T",
+          "6-12 Months"
+        ],
+        "historicalSnapshotDate": "2026-03-02"
+      },
+      {
         "name": "Dew",
         "day": "friday",
         "daySource": "pdf",
@@ -124839,38 +124665,6 @@ export const saleEntries: SaleEntry[] = [
     "sundayPrints": []
   },
   {
-    "id": "sleeveless-zipper-romper",
-    "name": "Sleeveless Zipper Romper",
-    "section": "Rompers & Footies",
-    "fridayPrints": [
-      {
-        "name": "Bear Hearts",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7969959936111_b60311cc04d7.jpg",
-        "swatchImageUrl": "swatches/bear-hearts.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "0-3 Months",
-          "12-18 Months",
-          "18-24 Months",
-          "2T",
-          "3-6 Months",
-          "3T",
-          "4T",
-          "6-12 Months"
-        ],
-        "historicalSnapshotDate": "2026-03-02"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
     "id": "bamboo-flex-womens-leggings",
     "name": "Bamboo Flex Women's Leggings",
     "section": "Other",
@@ -125077,36 +124871,6 @@ export const saleEntries: SaleEntry[] = [
           "OS"
         ],
         "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "womens-camisole",
-    "name": "Women's Camisole",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Tahoe",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/14924496633967_dfd6f45f3164.jpg",
-        "swatchImageUrl": "swatches/tahoe.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": true,
-        "productMatch": null,
-        "historicalSizes": [
-          "L (12-14)",
-          "M (8-10)",
-          "S (4-6)",
-          "XL (16-18)",
-          "XS (0-2)",
-          "XXL (20-22)"
-        ],
-        "historicalSnapshotDate": "2026-07-06"
       }
     ],
     "sundayPrints": []
