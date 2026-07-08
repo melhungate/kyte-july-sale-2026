@@ -11,6 +11,7 @@ import { AddToWishlistModal } from './components/AddToWishlistModal'
 import { MultiSelectDropdown } from './components/MultiSelectDropdown'
 import { sortSizes } from './utils/priceUtils'
 import { useIncrementalRender } from './hooks/useIncrementalRender'
+import { tokenizeSearch, textMatchesTokens } from './utils/searchFilter'
 
 const GROUPED_PAGE_SIZE = 20
 
@@ -107,27 +108,30 @@ function AppContent() {
   const anyPrintFilterActive = selectedPrintNames.length > 0 || selectedSizes.length > 0 || firstTimeOnly;
 
   // Filter items
-  const filteredItems = useMemo(() => items
-    .filter(item => selectedTypes.length === 0 || selectedTypes.includes(item.name))
-    .map(item => {
-      if (!anyPrintFilterActive) return item;
-      return {
-        ...item,
-        fridayPrints: item.fridayPrints.filter(printMatchesFilters),
-        sundayPrints: item.sundayPrints.filter(printMatchesFilters),
-      };
-    })
-    .filter(item => {
-      const allPrints = [...item.fridayPrints, ...item.sundayPrints];
-      const matchSearch = searchTerm === '' ||
-        item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        allPrints.some(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()))
-      // Also filter out items that have no prints for the selected day
-      const hasPrintsForDay = filterDay === 'all'
-        ? allPrints.length > 0
-        : (filterDay === 'friday' ? item.fridayPrints.length > 0 : item.sundayPrints.length > 0)
-      return matchSearch && hasPrintsForDay
-    }),
+  const filteredItems = useMemo(() => {
+    const searchTokens = tokenizeSearch(searchTerm)
+    return items
+      .filter(item => selectedTypes.length === 0 || selectedTypes.includes(item.name))
+      .map(item => {
+        if (!anyPrintFilterActive) return item;
+        return {
+          ...item,
+          fridayPrints: item.fridayPrints.filter(printMatchesFilters),
+          sundayPrints: item.sundayPrints.filter(printMatchesFilters),
+        };
+      })
+      .filter(item => {
+        const allPrints = [...item.fridayPrints, ...item.sundayPrints];
+        const matchSearch = searchTokens.length === 0 ||
+          textMatchesTokens(item.name, searchTokens) ||
+          allPrints.some(p => textMatchesTokens(p.name, searchTokens))
+        // Also filter out items that have no prints for the selected day
+        const hasPrintsForDay = filterDay === 'all'
+          ? allPrints.length > 0
+          : (filterDay === 'friday' ? item.fridayPrints.length > 0 : item.sundayPrints.length > 0)
+        return matchSearch && hasPrintsForDay
+      })
+    },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [items, selectedTypes, anyPrintFilterActive, selectedPrintNames, selectedSizes, firstTimeOnly, searchTerm, filterDay])
 

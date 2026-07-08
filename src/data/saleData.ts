@@ -20116,6 +20116,33 @@ export const saleEntries: SaleEntry[] = [
           "Newborn"
         ],
         "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Strawberry",
+        "day": "friday",
+        "daySource": "default-carryover",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1823SB2_600x600.jpg?v=1672898470",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1823SB2_600x600.jpg?v=1672898470",
+        "price": {
+          "min": 20.0,
+          "max": 20.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "Newborn",
+          "Preemie"
+        ]
       }
     ],
     "sundayPrints": [
@@ -38522,6 +38549,37 @@ export const saleEntries: SaleEntry[] = [
           "7"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Holiday Train",
+        "day": "friday",
+        "daySource": "default-carryover",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2024-10-02_at_5.24.54_PM.png?v=1727907919",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2024-10-02_at_5.24.54_PM.png?v=1727907919",
+        "price": {
+          "min": 30.0,
+          "max": 32.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       }
     ],
     "sundayPrints": [
@@ -38659,6 +38717,37 @@ export const saleEntries: SaleEntry[] = [
           "8"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Twinkle Tree",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/twinkle-tree.jpeg",
+        "swatchImageUrl": "swatches/twinkle-tree.jpeg",
+        "price": {
+          "min": 30.0,
+          "max": 32.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "12-18 months",
+          "18-24 months",
+          "2T",
+          "3T",
+          "4T",
+          "6T",
+          "7",
+          "5T",
+          "7T",
+          "10",
+          "8"
+        ]
       }
     ]
   },
@@ -38905,6 +38994,33 @@ export const saleEntries: SaleEntry[] = [
           "XS (0-2)"
         ],
         "historicalSnapshotDate": "2026-03-02"
+      },
+      {
+        "name": "Peach",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1401PH01_435c7561-2564-4c8b-a5b3-db2e463ffb99_600x600.jpg?v=1684290078",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1401PH01_435c7561-2564-4c8b-a5b3-db2e463ffb99_600x600.jpg?v=1684290078",
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "2XL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "3XL (24-26)"
+        ]
       }
     ],
     "sundayPrints": [
@@ -38981,6 +39097,33 @@ export const saleEntries: SaleEntry[] = [
           "XS (0-2)"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Candy Cane",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/candy-cane.jpeg",
+        "swatchImageUrl": "swatches/candy-cane.jpeg",
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "2XL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XS (0-2)",
+          "3XL (24-26)"
+        ]
       }
     ]
   },
@@ -43213,6 +43356,33 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
+      },
+      {
+        "name": "Santa Sleigh",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/santa-sleigh.jpeg",
+        "swatchImageUrl": "swatches/santa-sleigh.jpeg",
+        "price": {
+          "min": 60.0,
+          "max": 60.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "Men's 3XL",
+          "Men's XXL",
+          "Men's S",
+          "Men's XL",
+          "Men's L",
+          "Men's M",
+          "Men's XS"
+        ]
       }
     ]
   },
@@ -43805,6 +43975,58 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
+      },
+      {
+        "name": "Santa Sleigh",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/santa-sleigh.jpeg",
+        "swatchImageUrl": "swatches/santa-sleigh.jpeg",
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "Men's S",
+          "Men's XL",
+          "Men's XXL",
+          "Men's L",
+          "Men's M",
+          "Men's 3XL"
+        ]
+      },
+      {
+        "name": "Vintage Toys",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/vintage-toys.jpeg",
+        "swatchImageUrl": "swatches/vintage-toys.jpeg",
+        "price": {
+          "min": 35.0,
+          "max": 35.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "Men's S",
+          "Men's XL",
+          "Men's XXL",
+          "Men's L",
+          "Men's M",
+          "Men's 3XL"
+        ]
       }
     ]
   },
@@ -64583,6 +64805,26 @@ export const saleEntries: SaleEntry[] = [
           "XL"
         ],
         "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Caribbean",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-05-31_at_3.12.55_PM_600x600.png?v=1685564345",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-05-31_at_3.12.55_PM_600x600.png?v=1685564345",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL"
+        ]
       }
     ],
     "sundayPrints": []
@@ -64730,6 +64972,121 @@ export const saleEntries: SaleEntry[] = [
           "XL"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Thyme",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Thyme_1bf338c7-9b90-4623-8705-fad1c0fc7e9f_480x480.png?v=1722915216",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Thyme_1bf338c7-9b90-4623-8705-fad1c0fc7e9f_480x480.png?v=1722915216",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL"
+        ]
+      },
+      {
+        "name": "Cloud Poppies",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1833PPCD03_fcce0e63-afa1-48ad-96d4-d82047c1c2a8_600x600.jpg?v=1694554112",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1833PPCD03_fcce0e63-afa1-48ad-96d4-d82047c1c2a8_600x600.jpg?v=1694554112",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL"
+        ]
+      },
+      {
+        "name": "Midnight Poppies",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1833PPMD03_3a0c3425-06b1-4e49-ada6-26aed1c2a4c3_600x600.jpg?v=1694554170",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1833PPMD03_3a0c3425-06b1-4e49-ada6-26aed1c2a4c3_600x600.jpg?v=1694554170",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL"
+        ]
+      },
+      {
+        "name": "Dusty Rose",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/pantone-color-chip-18-1435-tpg_copy_600x600.jpg?v=1693339110",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/pantone-color-chip-18-1435-tpg_copy_600x600.jpg?v=1693339110",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL"
+        ]
+      },
+      {
+        "name": "Currant",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Currant_d7e97c35-a74c-447b-92e9-8fd2e1ecef3c_480x480.png?v=1722915216",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Currant_d7e97c35-a74c-447b-92e9-8fd2e1ecef3c_480x480.png?v=1722915216",
+        "price": {
+          "min": 50,
+          "max": 50
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L",
+          "M",
+          "XL"
+        ]
       }
     ],
     "sundayPrints": []
@@ -76583,7 +76940,52 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": "2026-03-02"
       }
     ],
-    "sundayPrints": []
+    "sundayPrints": [
+      {
+        "name": "Merry & Bright",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/merry-and-bright.jpeg",
+        "swatchImageUrl": "swatches/merry-and-bright.jpeg",
+        "price": {
+          "min": 24.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "0-3 months",
+          "Newborn"
+        ]
+      },
+      {
+        "name": "Candy Cane",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/candy-cane.jpeg",
+        "swatchImageUrl": "swatches/candy-cane.jpeg",
+        "price": {
+          "min": 24.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "0-3 months",
+          "Newborn"
+        ]
+      }
+    ]
   },
   {
     "id": "tank-twirl-dress",
@@ -99143,6 +99545,93 @@ export const saleEntries: SaleEntry[] = [
           "XXL (20-22)"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Holiday Bow",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/holiday-bow.jpeg",
+        "swatchImageUrl": "swatches/holiday-bow.jpeg",
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "3XL (24-26)",
+          "XS (0-2)",
+          "XXL (20-22)",
+          "L (12-14)",
+          "XL (16-18)",
+          "M (8-10)",
+          "S (4-6)",
+          "2XL",
+          "XS"
+        ]
+      },
+      {
+        "name": "Santa Sleigh",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/santa-sleigh.jpeg",
+        "swatchImageUrl": "swatches/santa-sleigh.jpeg",
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "3XL (24-26)",
+          "XS (0-2)",
+          "XXL (20-22)",
+          "L (12-14)",
+          "XL (16-18)",
+          "M (8-10)",
+          "S (4-6)",
+          "2XL",
+          "XS"
+        ]
+      },
+      {
+        "name": "Vintage Toys",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/vintage-toys.jpeg",
+        "swatchImageUrl": "swatches/vintage-toys.jpeg",
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "3XL (24-26)",
+          "XS (0-2)",
+          "XXL (20-22)",
+          "L (12-14)",
+          "XL (16-18)",
+          "M (8-10)",
+          "S (4-6)",
+          "2XL",
+          "XS"
+        ]
       }
     ]
   },
@@ -101167,6 +101656,60 @@ export const saleEntries: SaleEntry[] = [
           "XXL (20-22)"
         ],
         "historicalSnapshotDate": "2026-02-09"
+      },
+      {
+        "name": "Candy Cane",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/candy-cane.jpeg",
+        "swatchImageUrl": "swatches/candy-cane.jpeg",
+        "price": {
+          "min": 25,
+          "max": 25
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L (12-14)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XXL (20-22)",
+          "3XL (24-26)",
+          "M (8-10)",
+          "XS (0-2)"
+        ]
+      },
+      {
+        "name": "Vintage Santa",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/vintage-santa.jpeg",
+        "swatchImageUrl": "swatches/vintage-santa.jpeg",
+        "price": {
+          "min": 25,
+          "max": 25
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "L (12-14)",
+          "S (4-6)",
+          "XL (16-18)",
+          "XXL (20-22)",
+          "3XL (24-26)",
+          "M (8-10)",
+          "XS (0-2)"
+        ]
       }
     ]
   },
@@ -101980,6 +102523,29 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "swatches/sakura-peony.jpeg",
         "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 45.0,
+          "max": 45.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XS/S",
+          "M/L",
+          "XL/XXL"
+        ]
+      },
+      {
+        "name": "Small Love Bow",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/small-love-bow.jpeg",
+        "swatchImageUrl": "swatches/small-love-bow.jpeg",
         "price": {
           "min": 45.0,
           "max": 45.0
@@ -108398,6 +108964,62 @@ export const saleEntries: SaleEntry[] = [
           "XXL (20-22)"
         ],
         "historicalSnapshotDate": "2026-06-01"
+      },
+      {
+        "name": "Peach",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1401PH01_435c7561-2564-4c8b-a5b3-db2e463ffb99_600x600.jpg?v=1684290078",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/1401PH01_435c7561-2564-4c8b-a5b3-db2e463ffb99_600x600.jpg?v=1684290078",
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XL (16-18)",
+          "XXL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XS (0-2)",
+          "3XL (24-26)",
+          "2X (20-22)"
+        ]
+      },
+      {
+        "name": "Guava",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-01-30_at_8.54.56_PM_600x600.png?v=1738292133",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-01-30_at_8.54.56_PM_600x600.png?v=1738292133",
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XL (16-18)",
+          "XXL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XS (0-2)",
+          "3XL (24-26)",
+          "2X (20-22)"
+        ]
       }
     ],
     "sundayPrints": [
@@ -108408,6 +109030,34 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "swatches/sakura-peony.jpeg",
         "swatchImageUrl": "swatches/sakura-peony.jpeg",
+        "price": {
+          "min": 55.0,
+          "max": 55.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "XL (16-18)",
+          "XXL (20-22)",
+          "L (12-14)",
+          "M (8-10)",
+          "S (4-6)",
+          "XS (0-2)",
+          "3XL (24-26)",
+          "2X (20-22)"
+        ]
+      },
+      {
+        "name": "Small Love Bow",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/small-love-bow.jpeg",
+        "swatchImageUrl": "swatches/small-love-bow.jpeg",
         "price": {
           "min": 55.0,
           "max": 55.0
@@ -115614,6 +116264,33 @@ export const saleEntries: SaleEntry[] = [
           "Newborn",
           "18-24 Months"
         ]
+      },
+      {
+        "name": "Candy Cane",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/candy-cane.jpeg",
+        "swatchImageUrl": "swatches/candy-cane.jpeg",
+        "price": {
+          "min": 22.0,
+          "max": 22.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "3-6 months",
+          "6-12 months",
+          "0-3 months",
+          "Preemie",
+          "12-18 Months",
+          "Newborn",
+          "18-24 Months"
+        ]
       }
     ]
   },
@@ -121356,6 +122033,64 @@ export const saleEntries: SaleEntry[] = [
           "18-24 Months",
           "Newborn"
         ]
+      },
+      {
+        "name": "Vintage Santa",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/vintage-santa.jpeg",
+        "swatchImageUrl": "swatches/vintage-santa.jpeg",
+        "price": {
+          "min": 22.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
+      },
+      {
+        "name": "Candy Cane",
+        "day": "sunday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "swatches/candy-cane.jpeg",
+        "swatchImageUrl": "swatches/candy-cane.jpeg",
+        "price": {
+          "min": 22.0,
+          "max": 24.0
+        },
+        "priceSource": "inferred-from-siblings",
+        "noSalePriceFound": false,
+        "isFirstTimeOnClearance": true,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null,
+        "inferredSizes": [
+          "2T",
+          "3T",
+          "4T",
+          "0-3 months",
+          "3-6 months",
+          "6-12 months",
+          "12-18 Months",
+          "18-24 Months",
+          "Newborn"
+        ]
       }
     ]
   },
@@ -124474,7 +125209,38 @@ export const saleEntries: SaleEntry[] = [
     "id": "womens-biker-short-set",
     "name": "Women's Biker Short Set",
     "section": "Other",
-    "fridayPrints": [],
+    "fridayPrints": [
+      {
+        "name": "Guava",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-01-30_at_8.54.56_PM_600x600.png?v=1738292133",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-01-30_at_8.54.56_PM_600x600.png?v=1738292133",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null
+      },
+      {
+        "name": "Makai",
+        "day": "friday",
+        "daySource": "pdf",
+        "source": "pdf-only-swatch",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-02-03_at_6.53.09_PM_600x600.png?v=1738630406",
+        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screenshot_2025-02-03_at_6.53.09_PM_600x600.png?v=1738630406",
+        "price": null,
+        "priceSource": "pdf-starting-only",
+        "noSalePriceFound": true,
+        "isFirstTimeOnClearance": false,
+        "productMatch": null,
+        "historicalSizes": null,
+        "historicalSnapshotDate": null
+      }
+    ],
     "sundayPrints": [
       {
         "name": "Latte Leopard",
