@@ -100,10 +100,7 @@ function AppContent() {
       const hasSelectedSize = print.productMatch?.variants.some(v => selectedSizes.includes(v.size));
       if (!hasSelectedSize) return false;
     }
-    if (firstTimeOnly) {
-      const isFirstTime = print.productMatch ? print.productMatch.isFirstTimeOnClearance : true;
-      if (!isFirstTime) return false;
-    }
+    if (firstTimeOnly && !print.isFirstTimeOnClearance) return false;
     return true;
   };
 

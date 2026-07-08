@@ -362,6 +362,31 @@ def main():
     bare_type_tog_suffixes = find_bare_type_tog_suffixes(predictions["products"])
     swapped_option_vocab = find_swapped_option_types(predictions["products"])
 
+    # Print-level "seen before" signal, scanned across every product in the
+    # full predictions dataset (not just ones that end up in an entry below).
+    # A print counts as previously-on-clearance the moment ANY product
+    # carrying it was a Carryover — even if a *different* product for that
+    # same print is only newly Confirmed in this scrape. Kyte's baseline
+    # scrape tags "Carryover" per Shopify product, not per print, so the same
+    # print (e.g. "Butter") can show up Carryover on one product (a crib
+    # sheet) and Confirmed on another (a sleep bag) purely because of which
+    # snapshot happened to catch which product first — that's an artifact of
+    # the scrape, not evidence the print itself is new to clearance.
+    print_ever_carryover = set()
+    for product in predictions["products"]:
+        variants = product.get("variants", [])
+        if not variants:
+            continue
+        is_swapped = (
+            product["product_type"] in swapped_option_vocab
+            and variants[0].get("option1") in swapped_option_vocab[product["product_type"]]
+        )
+        print_name_raw = (variants[0].get("option2") if is_swapped else variants[0].get("option1")) or ""
+        if not print_name_raw:
+            continue
+        if product.get("source") == "Carryover":
+            print_ever_carryover.add(normalize_print(print_name_raw, print_aliases))
+
     # normalized PDF category -> original display text (e.g. "0.5 tog sleep bag" -> "0.5 TOG Sleep Bag")
     category_display_names = {}
     for pdf_entry in pdf_data["entries"]:
@@ -565,17 +590,14 @@ def main():
             "price": price,
             "priceSource": price_source,
             "noSalePriceFound": is_no_sale_price,
+            # Print-level, not product-level — see print_ever_carryover above.
+            "isFirstTimeOnClearance": normalized_print not in print_ever_carryover,
             "productMatch": {
                 "productId": product["id"],
                 "productTitle": product["title"],
                 "productUrl": product["url"],
                 "localImage": photo_path,
                 "variants": variant_sizes,
-                # predictions data tags each product "Carryover" (seen in a
-                # prior sale) or "Confirmed: <print>" (newly confirmed for
-                # this sale) — mirrors the predictions site's own "first time
-                # on clearance" toggle (source.py:kyte_july_sale_predictions).
-                "isFirstTimeOnClearance": product.get("source") != "Carryover",
             },
         }
 
@@ -657,6 +679,7 @@ def main():
                 # PDF's "starting at" price holds for larger sizes either.
                 "priceSource": "pdf-starting-only",
                 "noSalePriceFound": False,
+                "isFirstTimeOnClearance": normalized_print not in print_ever_carryover,
                 "productMatch": None,
                 "historicalSizes": historical_sizes,
                 "historicalSnapshotDate": historical_snapshot_date,
@@ -751,6 +774,7 @@ def main():
             "price": price,
             "priceSource": price_source,
             "noSalePriceFound": is_no_sale_price,
+            "isFirstTimeOnClearance": hist_normalized_print not in print_ever_carryover,
             "productMatch": None,
             "historicalSizes": sizes_seen or None,
             "historicalSnapshotDate": historical_product["_snapshot_date"] if sizes_seen else None,

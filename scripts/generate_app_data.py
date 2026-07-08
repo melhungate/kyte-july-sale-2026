@@ -43,7 +43,6 @@ export interface ProductMatch {
   productUrl: string;
   localImage: string;
   variants: ProductVariantInfo[];
-  isFirstTimeOnClearance: boolean;
 }
 
 export interface PriceRange {
@@ -67,6 +66,13 @@ export interface EnrichedPrint {
   // coverage, and the predictions scrape found no compare_at_price/discount
   // either) — `price` above is just Kyte's regular retail price.
   noSalePriceFound: boolean;
+  // Print-level, not product-level: false the moment ANY product carrying
+  // this print anywhere in the full predictions dataset was tagged
+  // "Carryover" (seen in a prior sale) — even if this specific product/entry
+  // was independently confirmed new. See resolve_sale_data.py's
+  // print_ever_carryover for why per-product Carryover tagging can't be
+  // trusted in isolation.
+  isFirstTimeOnClearance: boolean;
   productMatch?: ProductMatch | null;
   // Only set when productMatch is null (a PDF-only print with no live Kyte
   // product): the union of sizes seen across this print's sibling prints in
