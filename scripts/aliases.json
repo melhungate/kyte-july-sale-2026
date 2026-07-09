@@ -45,6 +45,17 @@
   },
   "excluded_prints_comment": "Prints confirmed (e.g. via Kyte's Instagram Live) to NOT actually be in the sale, despite Look Book/historical-snapshot evidence suggesting otherwise. Filtered out everywhere — real products, PDF-only entries, historical backfill — before entries are built.",
   "excluded_prints": ["Tahoe"],
+  "excluded_category_prints_comment": "Like excluded_prints, but scoped to one specific (category, print) pair rather than the print everywhere — used when a print is legitimately in the sale for most categories but a specific product line was never actually pulled from the site (e.g. Storm bath robes kept showing up as live/regular-priced products no matter which historical snapshot or live scrape caught them, so rather than chase individual product IDs, the whole Storm family is excluded from Bath Robe categories specifically).",
+  "excluded_category_prints": [
+    {"category": "Toddler Bath Robe", "print": "Storm"},
+    {"category": "Toddler Bath Robe", "print": "Storm with Cloud Trim"},
+    {"category": "Toddler Bath Robe", "print": "Cloud with Storm Trim"},
+    {"category": "Toddler Bath Robe", "print": "Storm with Midnight Trim"},
+    {"category": "Adult Bath Robe", "print": "Storm"},
+    {"category": "Adult Bath Robe", "print": "Storm with Cloud Trim"},
+    {"category": "Adult Bath Robe", "print": "Cloud with Storm Trim"},
+    {"category": "Adult Bath Robe", "print": "Storm with Midnight Trim"}
+  ],
   "category_renames_comment": "Kyte's own raw product_type occasionally uses two different names for what is really one product line. Renames the display category (and its normalized id) to the canonical name after category resolution, so both sides merge into one entry instead of splitting into an orphaned duplicate.",
   "category_renames": {
     "Sleeveless Zipper Romper": "Zippered Sleeveless Romper",

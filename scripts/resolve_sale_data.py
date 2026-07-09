@@ -401,6 +401,10 @@ def main():
     category_price_overrides = aliases.get("category_price_overrides", {})
     manual_print_additions = aliases.get("manual_print_additions", [])
     excluded_prints = {normalize_print(p, print_aliases) for p in aliases.get("excluded_prints", [])}
+    excluded_category_prints = {
+        (normalize_category(x["category"]), normalize_print(x["print"], print_aliases))
+        for x in aliases.get("excluded_category_prints", [])
+    }
     single_size_categories = aliases.get("single_size_categories", {})
 
     pdf_data = json.loads((DATA_DIR / "pdf_sale_data.json").read_text())
@@ -664,6 +668,8 @@ def main():
         category_display, category_norm, _ = resolve_category_for_product(
             product, matchers, product_types_needing_split, bare_type_tog_suffixes, category_display_names, category_renames
         )
+        if (category_norm, normalized_print) in excluded_category_prints:
+            continue
         real_category_print_pairs.add((category_norm, normalized_print))
         entry = get_entry(day, category_display, category_norm)
         entry["prints"].append(enriched_print)
@@ -687,6 +693,8 @@ def main():
         for print_name in pdf_entry["prints"]:
             normalized_print = normalize_print(print_name, print_aliases)
             if normalized_print in excluded_prints:
+                continue
+            if (category_norm, normalized_print) in excluded_category_prints:
                 continue
             if (category_norm, normalized_print) in covered_category_print_pairs:
                 continue  # already represented by a real predictions product
@@ -761,6 +769,8 @@ def main():
     # price — see historical_lookup's own docstring.
     for (hist_category_norm, hist_normalized_print), historical_product in historical_lookup.items():
         if hist_normalized_print in excluded_prints:
+            continue
+        if (hist_category_norm, hist_normalized_print) in excluded_category_prints:
             continue
         if hist_normalized_print not in print_day_map:
             continue  # this print was never confirmed for the sale at all
@@ -866,6 +876,8 @@ def main():
         pair = (category_norm, normalized_print)
         if pair in real_category_print_pairs or pair in pdf_only_added_pairs or pair in historical_added_pairs:
             continue  # already covered by a real product or another loop
+        if pair in excluded_category_prints:
+            continue
 
         category_display = entries[category_norm]["name"] if category_norm in entries else category_str
 
