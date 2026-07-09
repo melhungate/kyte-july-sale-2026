@@ -40,7 +40,8 @@
     "Sleep Bag Walker": 50,
     "Standard Pillow Case": 27,
     "Toddler Long Sleeve Polo": 24,
-    "Women's Short Sleeve Pajama Set": 55
+    "Women's Short Sleeve Pajama Set": 55,
+    "Bamboo Jersey Harem Pants": {"min": 16, "max": 17}
   },
   "excluded_prints_comment": "Prints confirmed (e.g. via Kyte's Instagram Live) to NOT actually be in the sale, despite Look Book/historical-snapshot evidence suggesting otherwise. Filtered out everywhere — real products, PDF-only entries, historical backfill — before entries are built.",
   "excluded_prints": ["Tahoe"],
@@ -99,5 +100,13 @@
     {"category": "Men's Jogger Set", "print": "Santa Sleigh", "day": "sunday"},
     {"category": "Men's Long Sleeve Henley Top", "print": "Santa Sleigh", "day": "sunday"},
     {"category": "Men's Long Sleeve Henley Top", "print": "Vintage Toys", "day": "sunday"}
-  ]
+  ],
+  "single_size_categories_comment": "Categories where every real product only ever comes in one size (label inconsistencies aside — e.g. 'Infant' vs 'One Size' for the same blanket, or 'Crib Sheet' used as a literal size label). Sibling-inferred sizes for these are normalized to the listed canonical label and skip the 'not confirmed' disclaimer entirely, since there's no real ambiguity to flag.",
+  "single_size_categories": {
+    "1.0 TOG Sleep Bag Swaddler": "XS",
+    "Adult Blanket 2.5": "Adult",
+    "Bib": "One Size",
+    "Baby Blanket 1.0": "Infant",
+    "Crib Sheet": "Crib Sheet"
+  }
 }

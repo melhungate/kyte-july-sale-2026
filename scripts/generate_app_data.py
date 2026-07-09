@@ -77,14 +77,19 @@ export interface EnrichedPrint {
   // Only set when productMatch is null (a PDF-only print with no live Kyte
   // product): the union of sizes seen across this print's sibling prints in
   // the same category, since no real size/stock data exists for this print
-  // itself. The UI should flag these as unconfirmed for this specific print.
-  // Superseded by historicalSizes when that's set (more specific).
+  // itself. The UI should flag these as unconfirmed for this specific print
+  // — unless singleSizeCategory is set (see below). Superseded by
+  // historicalSizes when that's set (more specific).
   inferredSizes?: string[];
+  // True when every real product in this category only ever comes in one
+  // size (see aliases.json:single_size_categories) — inferredSizes is still
+  // set (and normalized to that single size), but the UI should skip the
+  // "unconfirmed" disclaimer since there's no real ambiguity to flag.
+  singleSizeCategory?: boolean;
   // Only set when productMatch is null: real confirmed sizes (and imageUrl
   // is a real photo, not a swatch) pulled from a snapshot taken shortly
   // before Kyte removed this exact print from the site — never its price,
-  // which reflects a pre-clearance cost, not this sale's pricing. The UI
-  // should flag current availability as unconfirmed.
+  // which reflects a pre-clearance cost, not this sale's pricing.
   historicalSizes?: string[] | null;
   historicalSnapshotDate?: string | null;
 }

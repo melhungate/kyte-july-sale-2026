@@ -49,14 +49,42 @@ TARGETED_HISTORICAL_SNAPSHOTS = [
     "2026-03-24_all-moo_ski",
     "2026-04-13_all-wicked_disco-cowgirl_basketball_gingham-bisque",
     "2026-06-01_all-jurassic_fast-and-fierce_gingham-breeze_gingham-chamomile_gingham-thistle_carrot_storm_dew_bisque",
-    "2026-07-05_all-storm",
     "2026-07-06_all-wildflower_classic-cowboy_tahoe_patriotic-gingham_patriotic-goose",
 ]
+
+# Kyte usually pulls EVERY style of a print at once when discontinuing it, so
+# a targeted "about to be removed" snapshot is normally safe to treat as
+# "all of this belongs in the clearance sale." Storm broke that pattern —
+# some styles were still live on the site weeks after the June 1 snapshot,
+# so a follow-up snapshot on July 5 specifically captured what was STILL
+# live (i.e. NOT actually discontinued, so NOT eligible for this sale).
+# These (product_type, print) pairs get subtracted from every targeted
+# snapshot above rather than treated as their own source of inventory.
+STILL_LIVE_EXCLUSION_SNAPSHOTS = [
+    "2026-07-05_all-storm",
+]
+
+
+def load_still_live_exclusions():
+    exclusions = set()
+    for name in STILL_LIVE_EXCLUSION_SNAPSHOTS:
+        inventory_path = HISTORICAL_SNAPSHOTS_DIR / name / "inventory.json"
+        if not inventory_path.exists():
+            continue
+        data = json.loads(inventory_path.read_text())
+        for p in data["products"]:
+            variants = p.get("variants", [])
+            print_raw = (variants[0].get("option1") or "") if variants else ""
+            if not print_raw:
+                continue
+            exclusions.add((p["product_type"], print_raw.strip().lower()))
+    return exclusions
 
 
 def load_historical_snapshot_products():
     """Products from the targeted snapshots above, each tagged with where it
     came from so we can locate its photo file and cite the capture date."""
+    still_live = load_still_live_exclusions()
     products = []
     for name in TARGETED_HISTORICAL_SNAPSHOTS:
         snapshot_dir = HISTORICAL_SNAPSHOTS_DIR / name
@@ -65,6 +93,10 @@ def load_historical_snapshot_products():
             continue
         data = json.loads(inventory_path.read_text())
         for p in data["products"]:
+            variants = p.get("variants", [])
+            print_raw = (variants[0].get("option1") or "") if variants else ""
+            if (p["product_type"], print_raw.strip().lower()) in still_live:
+                continue
             p["_snapshot_dir"] = snapshot_dir
             p["_snapshot_date"] = name.split("_")[0]
             products.append(p)
@@ -95,6 +127,16 @@ def strip_brand_prefix(lowered_name):
         if lowered_name.startswith(prefix):
             return lowered_name[len(prefix):]
     return lowered_name
+
+
+def resolve_manual_price(value):
+    """manual_price_overrides values are either a flat number (one price
+    covers every size) or a {"min": x, "max": y} object for a print where the
+    user knows an actual size-tiered price ladder (e.g. smaller sizes vs.
+    toddler sizes costing different amounts)."""
+    if isinstance(value, dict):
+        return {"min": value["min"], "max": value["max"]}
+    return {"min": value, "max": value}
 
 
 def normalize_print(name, print_aliases):
@@ -359,6 +401,7 @@ def main():
     category_price_overrides = aliases.get("category_price_overrides", {})
     manual_print_additions = aliases.get("manual_print_additions", [])
     excluded_prints = {normalize_print(p, print_aliases) for p in aliases.get("excluded_prints", [])}
+    single_size_categories = aliases.get("single_size_categories", {})
 
     pdf_data = json.loads((DATA_DIR / "pdf_sale_data.json").read_text())
     print_day_map = json.loads((DATA_DIR / "print_day_map.json").read_text())
@@ -558,9 +601,12 @@ def main():
                 override_key = derive_title_prefix(product["title"])
             manual_price = manual_price_overrides.get(override_key)
             if manual_price is not None:
-                price = {"min": manual_price, "max": manual_price}
+                price = resolve_manual_price(manual_price)
                 price_source = "manual-override"
-                price_override = manual_price
+                # A flat override forces every variant to the same price; a
+                # range override just sets the display range and leaves each
+                # variant's own scraped price alone.
+                price_override = manual_price if not isinstance(manual_price, dict) else None
             else:
                 is_no_sale_price = True
                 no_sale_price_found.append((override_key, print_name_raw))
@@ -745,7 +791,7 @@ def main():
         if price is None:
             manual_price = manual_price_overrides.get(historical_product["product_type"])
             if manual_price is not None:
-                price = {"min": manual_price, "max": manual_price}
+                price = resolve_manual_price(manual_price)
                 price_source = "manual-override"
             else:
                 is_no_sale_price = True
@@ -893,6 +939,21 @@ def main():
                 # don't overwrite it when already set.
                 if not p.get("productMatch") and not p.get("historicalSizes"):
                     p["inferredSizes"] = real_sizes
+
+    # A handful of categories only ever come in one size (label
+    # inconsistencies aside — e.g. "Infant" vs "One Size" for the same
+    # blanket, or "Crib Sheet" used as a literal size label) — normalize
+    # sibling-inferred sizes to the single canonical label and flag them as
+    # confident, so the UI doesn't show an "unconfirmed" disclaimer for
+    # something that was never actually ambiguous.
+    for entry in entries.values():
+        canonical_size = single_size_categories.get(entry["name"])
+        if canonical_size is None:
+            continue
+        for p in entry["prints"]:
+            if p.get("inferredSizes"):
+                p["inferredSizes"] = [canonical_size]
+                p["singleSizeCategory"] = True
 
     # Some prints (mostly historical-snapshot backfills for categories the
     # PDF doesn't cover) have no sale-price evidence of their own at all. If

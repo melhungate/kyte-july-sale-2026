@@ -23,8 +23,14 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
   day,
 }) => {
   const { addItem, isInWishlist } = useWishlist();
+  // historicalSizes (a real past scrape of this exact print) is trusted the
+  // same as a live product match — no disclaimer needed. inferredSizes
+  // (borrowed from sibling prints in the same category, no direct evidence
+  // for this print at all) gets a disclaimer, unless the whole category only
+  // ever comes in one size anyway (see aliases.json:single_size_categories).
   const sizesAreHistorical = !print.productMatch && !!print.historicalSizes?.length;
   const sizesAreInferred = !print.productMatch && !sizesAreHistorical && !!print.inferredSizes?.length;
+  const showInferredSizeNote = sizesAreInferred && !print.singleSizeCategory;
   const availableSizes = print.productMatch
     ? sortSizes(Array.from(new Set(print.productMatch.variants.map(v => v.size))))
     : sizesAreHistorical
@@ -94,12 +100,7 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
               </button>
             ))}
           </div>
-          {sizesAreHistorical && (
-            <p className="size-inferred-note">
-              ⓘ Sizes shown are from a {print.historicalSnapshotDate} snapshot taken before this print was removed from the site — current availability isn't confirmed.
-            </p>
-          )}
-          {sizesAreInferred && (
+          {showInferredSizeNote && (
             <p className="size-inferred-note">
               ⓘ Sizes shown are based on this product's other prints — exact stock for {print.name} isn't confirmed.
             </p>
@@ -113,12 +114,10 @@ export const AddToWishlistModal: React.FC<AddToWishlistModalProps> = ({
             title={
               print.priceSource === 'pdf-starting-only'
                 ? 'Starting price only — larger sizes may cost more'
-                : print.priceSource === 'inferred-from-siblings'
-                  ? "Price based on this product's other prints — not confirmed for this specific print"
-                  : undefined
+                : undefined
             }
           >
-            {formatPrice(currentPrice)}{print.priceSource === 'pdf-starting-only' || print.priceSource === 'inferred-from-siblings' ? '+' : ''}
+            {formatPrice(currentPrice)}{print.priceSource === 'pdf-starting-only' ? '+' : ''}
           </span>
         </div>
 

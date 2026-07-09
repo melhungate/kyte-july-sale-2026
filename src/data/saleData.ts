@@ -61,14 +61,19 @@ export interface EnrichedPrint {
   // Only set when productMatch is null (a PDF-only print with no live Kyte
   // product): the union of sizes seen across this print's sibling prints in
   // the same category, since no real size/stock data exists for this print
-  // itself. The UI should flag these as unconfirmed for this specific print.
-  // Superseded by historicalSizes when that's set (more specific).
+  // itself. The UI should flag these as unconfirmed for this specific print
+  // — unless singleSizeCategory is set (see below). Superseded by
+  // historicalSizes when that's set (more specific).
   inferredSizes?: string[];
+  // True when every real product in this category only ever comes in one
+  // size (see aliases.json:single_size_categories) — inferredSizes is still
+  // set (and normalized to that single size), but the UI should skip the
+  // "unconfirmed" disclaimer since there's no real ambiguity to flag.
+  singleSizeCategory?: boolean;
   // Only set when productMatch is null: real confirmed sizes (and imageUrl
   // is a real photo, not a swatch) pulled from a snapshot taken shortly
   // before Kyte removed this exact print from the site — never its price,
-  // which reflects a pre-clearance cost, not this sale's pricing. The UI
-  // should flag current availability as unconfirmed.
+  // which reflects a pre-clearance cost, not this sale's pricing.
   historicalSizes?: string[] | null;
   historicalSnapshotDate?: string | null;
 }
@@ -892,7 +897,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "Adult"
-        ]
+        ],
+        "singleSizeCategory": true
       }
     ]
   },
@@ -3008,9 +3014,9 @@ export const saleEntries: SaleEntry[] = [
         "historicalSizes": null,
         "historicalSnapshotDate": null,
         "inferredSizes": [
-          "Infant",
-          "One Size"
-        ]
+          "Infant"
+        ],
+        "singleSizeCategory": true
       }
     ]
   },
@@ -6803,7 +6809,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Lemon",
@@ -6824,7 +6831,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Bisque",
@@ -6845,7 +6853,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Fir",
@@ -6866,7 +6875,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Mist",
@@ -6887,7 +6897,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Puffin",
@@ -7110,7 +7121,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Santa Sleigh",
@@ -7131,7 +7143,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Vintage Santa",
@@ -7152,7 +7165,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Vintage Toys",
@@ -7173,7 +7187,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "One Size"
-        ]
+        ],
+        "singleSizeCategory": true
       }
     ]
   },
@@ -17877,9 +17892,9 @@ export const saleEntries: SaleEntry[] = [
         "historicalSizes": null,
         "historicalSnapshotDate": null,
         "inferredSizes": [
-          "Crib Sheet",
-          "One Size"
-        ]
+          "Crib Sheet"
+        ],
+        "singleSizeCategory": true
       }
     ]
   },
@@ -20661,26 +20676,6 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
-      },
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/4426124689519_018439551302.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": {
-          "min": 25.0,
-          "max": 25.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "Infant"
-        ],
-        "historicalSnapshotDate": "2026-07-05"
       }
     ],
     "sundayPrints": []
@@ -20918,31 +20913,6 @@ export const saleEntries: SaleEntry[] = [
             }
           ]
         }
-      },
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7852742901871_96b30a2a802e.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": {
-          "min": 5.0,
-          "max": 5.0
-        },
-        "priceSource": "inferred-from-siblings",
-        "noSalePriceFound": false,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "0-3 months",
-          "12-24 months",
-          "2T-4T",
-          "3-6 months",
-          "4T-6T",
-          "6-12 months"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
       }
     ],
     "sundayPrints": []
@@ -63334,7 +63304,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "XS"
-        ]
+        ],
+        "singleSizeCategory": true
       },
       {
         "name": "Latte",
@@ -63453,7 +63424,8 @@ export const saleEntries: SaleEntry[] = [
         "historicalSnapshotDate": null,
         "inferredSizes": [
           "XS"
-        ]
+        ],
+        "singleSizeCategory": true
       }
     ]
   },
@@ -125290,9 +125262,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814126829679_f1951dde90a9.jpg",
         "swatchImageUrl": "swatches/fir.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 16,
+          "max": 17
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
         "historicalSizes": [
@@ -125310,9 +125285,12 @@ export const saleEntries: SaleEntry[] = [
         "source": "pdf-only-swatch",
         "imageUrl": "product-photos/7814126862447_ce493671c429.jpg",
         "swatchImageUrl": "swatches/bisque.jpeg",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
+        "price": {
+          "min": 16,
+          "max": 17
+        },
+        "priceSource": "manual-override",
+        "noSalePriceFound": false,
         "isFirstTimeOnClearance": true,
         "productMatch": null,
         "historicalSizes": [
@@ -125475,187 +125453,6 @@ export const saleEntries: SaleEntry[] = [
           "XL (16)",
           "XS (0-2)",
           "XXL (18-20)"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "adult-crew-socks",
-    "name": "Adult Crew Socks",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7861010563183_57c8a64ac017.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "M/L (US 8-12)",
-          "S/M (US 4-8)"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "adult-scrunch-socks",
-    "name": "Adult Scrunch Socks",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7861010137199_e8ed9a4cf12d.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "M/L (US 8-12)",
-          "S/M (US 4-8)"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "infant-bath-robe",
-    "name": "Infant Bath Robe",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7724354699375_7ada82b5904e.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "18-36 months",
-          "4T",
-          "6-18 months"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "fitted-sheet",
-    "name": "Fitted Sheet",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/7585435156591_80344354487d.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "Full",
-          "King",
-          "Queen"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "toddler-hooded-bath-towel",
-    "name": "Toddler Hooded Bath Towel",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/6564870946927_155032efb923.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "Toddler"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "terry-washcloths",
-    "name": "Terry Washcloths",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/6535280525423_81d60f489e2b.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "OS"
-        ],
-        "historicalSnapshotDate": "2026-06-01"
-      }
-    ],
-    "sundayPrints": []
-  },
-  {
-    "id": "washcloth",
-    "name": "Washcloth",
-    "section": "Other",
-    "fridayPrints": [
-      {
-        "name": "Storm",
-        "day": "friday",
-        "daySource": "pdf",
-        "source": "pdf-only-swatch",
-        "imageUrl": "product-photos/1485032620143_4c685daccc53.jpg",
-        "swatchImageUrl": "https://cdn.shopify.com/s/files/1/0019/7106/0847/files/Screen_Shot_2023-06-04_at_11.52.57_PM_480x480.png?v=1685940801",
-        "price": null,
-        "priceSource": "pdf-starting-only",
-        "noSalePriceFound": true,
-        "isFirstTimeOnClearance": false,
-        "productMatch": null,
-        "historicalSizes": [
-          "OS"
         ],
         "historicalSnapshotDate": "2026-06-01"
       }

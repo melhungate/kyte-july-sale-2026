@@ -28,13 +28,14 @@ interface FlatCard {
 function formatPrice(print: EnrichedPrint): string {
   if (!print.price) return '';
   const { min, max } = print.price;
-  const suffix = print.priceSource === 'pdf-starting-only' || print.priceSource === 'inferred-from-siblings' ? '+' : '';
+  // Kyte prices by silhouette/size, not by print, so a sibling-inferred price
+  // is treated as confirmed — only flag PDF starting-only prices as uncertain.
+  const suffix = print.priceSource === 'pdf-starting-only' ? '+' : '';
   return min === max ? `$${min.toFixed(0)}${suffix}` : `$${min.toFixed(0)}–$${max.toFixed(0)}${suffix}`;
 }
 
 function priceTitle(print: EnrichedPrint): string | undefined {
   if (print.priceSource === 'pdf-starting-only') return 'Starting price only — larger sizes may cost more';
-  if (print.priceSource === 'inferred-from-siblings') return "Price based on this product's other prints — not confirmed for this specific print";
   return undefined;
 }
 
@@ -66,8 +67,13 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
     <div className="photo-grid">
       {visibleCards.map(({ key, itemId, itemName, print }) => {
         const imageUrl = resolveImage(print);
+        // historicalSizes is a real past scrape of this exact print — trusted
+        // the same as a live product match, no flag needed. inferredSizes is
+        // borrowed from sibling prints with no direct evidence for this
+        // print, so it's flagged unless the category only ever has one size.
         const sizesHistorical = !print.productMatch && !!print.historicalSizes?.length;
         const sizesInferred = !print.productMatch && !sizesHistorical && !!print.inferredSizes?.length;
+        const showInferredSizeFlag = sizesInferred && !print.singleSizeCategory;
         const sizeChip = print.productMatch
           ? sortSizes(Array.from(new Set(print.productMatch.variants.map(v => v.size)))).join(', ')
           : sizesHistorical
@@ -118,15 +124,9 @@ export const PhotoGridView: React.FC<PhotoGridViewProps> = ({ items, filterDay, 
                 {sizeChip && (
                   <span
                     className="photo-card-sizes"
-                    title={
-                      sizesHistorical
-                        ? `From a ${print.historicalSnapshotDate} snapshot before this print was removed — current availability unconfirmed`
-                        : sizesInferred
-                          ? "Based on this product's other prints — exact stock for this print unknown"
-                          : 'Sizes currently in stock'
-                    }
+                    title={showInferredSizeFlag ? "Based on this product's other prints — exact stock for this print unknown" : undefined}
                   >
-                    {sizeChip}{sizesHistorical || sizesInferred ? ' ⓘ' : ''}
+                    {sizeChip}{showInferredSizeFlag ? ' ⓘ' : ''}
                   </span>
                 )}
               </div>
